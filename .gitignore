@@ -41,4 +41,5 @@ yarn-error.log*
 next-env.d.ts
 
 # wrangler
-.wrangler
+.wranglercontent_template/
+test-results/
