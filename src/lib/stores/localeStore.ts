@@ -4,7 +4,7 @@ import { create } from 'zustand';
 import { matchLocale } from '@/lib/i18n/config';
 import type { I18nRuntimeConfig } from '@/types/i18n';
 
-const LOCALE_STORAGE_KEY = 'locale-storage';
+const LOCALE_STORAGE_KEY = 'locale-user-selection-v2';
 
 interface LocaleStore {
   locale: string;
