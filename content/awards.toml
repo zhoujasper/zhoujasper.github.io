@@ -1,0 +1,50 @@
+type = "card"
+title = "Awards"
+description = "Honors and awards I have received"
+
+[[items]]
+title = "United Kingdom Best Pairs Entry"
+subtitle = "Simon Marais Mathematics Competition"
+date = "2025"
+selected = true
+content = "Together with Kevin Zhao, achieved the top-scoring pairs entry from the United Kingdom in the West Division with a score of 21. Results can be found [here](https://www.simonmarais.org/west-division.html)."
+
+[[items]]
+title = "Top 3 in Programme / Top 5% in Year Group in the School of Mathematics"
+subtitle = "University of Edinburgh"
+date = "2025"
+selected = true
+content = "Placed 3rd out of 24 within the programme and 4th out of 120 in the year group in the School of Mathematics academic rankings for 2024/25."
+
+[[items]]
+title = "Kelland Memorial Prize"
+subtitle = "University of Edinburgh"
+date = "2024"
+selected = true
+content = "Awarded for distinguished performance as a direct entrant into second-year Mathematics. Official information can be found [here](https://registryservices.ed.ac.uk/student-funding/current-students/university-prizes-awards/science-engineering/mathematics)."
+
+[[items]]
+title = "William and Isabella Dick Prize"
+subtitle = "University of Edinburgh"
+date = "2024"
+selected = true
+content = "Awarded for outstanding performance in second-year Mathematics. Official information can be found [here](https://registryservices.ed.ac.uk/student-funding/current-students/university-prizes-awards/science-engineering/mathematics)."
+
+[[items]]
+title = "School of Mathematics Vacation Scholarship"
+subtitle = "University of Edinburgh"
+date = "2024"
+selected = true
+content = "Awarded summer research funding through the School of Mathematics Vacation Scholarship scheme. Information about Mathematics scholarships and prizes can be found [here](https://registryservices.ed.ac.uk/student-funding/current-students/university-prizes-awards/science-engineering/mathematics), and details on School of Mathematics vacation scholarships can be found [here](https://teaching.maths.ed.ac.uk/undergraduate/opportunities/vacation-scholarships/funding)."
+
+[[items]]
+title = "Top 25% Worldwide in Euclid Mathematics Contest"
+subtitle = "Euclid Mathematics Contest"
+date = "2023"
+content = "Placed in the top 25% worldwide in the Euclid Mathematics Contest. Official contest information can be found [here](https://cemc.uwaterloo.ca/contests/euclid)."
+
+[[items]]
+title = "Third Prize in China Mathematical Olympiad (Province)"
+subtitle = "China Mathematical Olympiad"
+date = "2022"
+content = "Awarded Third Prize in the China Mathematical Olympiad."

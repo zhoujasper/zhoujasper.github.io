@@ -1,0 +1,63 @@
+type = "about"
+title = "关于我"
+
+[profile]
+research_interests = [
+  "代数学",
+  "代数几何",
+  "数论",
+  "计算算法",
+  "黎曼猜想 (bushi)"
+]
+skills = [
+  "LaTeX",
+  "Python (Pandas, NumPy, Matplotlib, PyTorch)",
+  "R (统计计算)",
+  "数学建模",
+  "Excel VBA",
+  "MS Office (Word、Excel、PowerPoint)",
+  "Adobe Photoshop (熟练)",
+  "英语 (流利)",
+  "中文 (母语)"
+]
+hobbies = [
+  "钢琴 (十级证书)",
+  "阅读",
+  "羽毛球 (打得一般)",
+  "摄影",
+  "数独"
+]
+
+[[sections]]
+id = "about"
+type = "markdown"
+source = "bio.md"
+title = "关于我"
+
+[[sections]]
+id = "Education"
+type = "cards"
+title = "教育背景"
+source = "education.toml"
+limit = 3
+
+[[sections]]
+id = "featured_awards"
+type = "cards"
+title = "精选奖项"
+source = "awards.toml"
+limit = 5
+
+[[sections]]
+id = "featured_experiences"
+type = "cards"
+title = "精选履历"
+source = "experience.toml"
+limit = 3
+
+[[sections]]
+id = "news"
+type = "list"
+title = "动态"
+source = "news.toml"
+limit = 5

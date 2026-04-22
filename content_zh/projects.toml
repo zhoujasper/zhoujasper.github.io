@@ -1,0 +1,11 @@
+type = "card"
+title = "项目"
+description = "我的研究项目和经历"
+
+[[items]]
+title = "示例课程"
+subtitle = "示例"
+date = "2048"
+content = "示例"
+selected = true
+tags = ["示例"]

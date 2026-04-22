@@ -1,0 +1,50 @@
+type = "card"
+title = "奖项荣誉"
+description = "我获得的荣誉、奖项与学术成绩"
+
+[[items]]
+title = "英国最佳双人组成绩"
+subtitle = "Simon Marais Mathematics Competition"
+date = "2025"
+selected = true
+content = "与 Kevin Zhao 搭档，在 West Division 中取得 United Kingdom 最佳双人组成绩，得分为 21。比赛结果可见[此处](https://www.simonmarais.org/west-division.html)。"
+
+[[items]]
+title = "专业第 3 / 年级前 5% 在爱丁堡大学数学学院"
+subtitle = "爱丁堡大学"
+date = "2025"
+selected = true
+content = "在 2024/25 学年数学学院学术排名中，项目内位列第 3/24，年级总排名位列第 4/120，进入前 5%。"
+
+[[items]]
+title = "Kelland Memorial Prize"
+subtitle = "爱丁堡大学"
+date = "2024"
+selected = true
+content = "因作为直录进入数学二年级学生中的优异表现而获奖。官方信息可见[此处](https://registryservices.ed.ac.uk/student-funding/current-students/university-prizes-awards/science-engineering/mathematics)。"
+
+[[items]]
+title = "William and Isabella Dick Prize"
+subtitle = "爱丁堡大学"
+date = "2024"
+selected = true
+content = "因在数学二年级中的优异表现而获奖。官方信息可见[此处](https://registryservices.ed.ac.uk/student-funding/current-students/university-prizes-awards/science-engineering/mathematics)。"
+
+[[items]]
+title = "数学学院暑期研究奖学金"
+subtitle = "爱丁堡大学"
+date = "2024"
+selected = true
+content = "获得爱丁堡大学数学学院暑期研究项目奖学金资助。数学奖项官方页面可见[此处](https://registryservices.ed.ac.uk/student-funding/current-students/university-prizes-awards/science-engineering/mathematics)，数学学院 vacation scholarships 介绍可见[此处](https://teaching.maths.ed.ac.uk/undergraduate/opportunities/vacation-scholarships/funding)。"
+
+[[items]]
+title = "Euclid 数学竞赛全球前 25%"
+subtitle = "Euclid Mathematics Contest"
+date = "2023"
+content = "在 Euclid Mathematics Contest 中取得全球前 25% 的成绩。官方比赛信息可见[此处](https://cemc.uwaterloo.ca/contests/euclid)。"
+
+[[items]]
+title = "中国数学奥林匹克（省级）三等奖"
+subtitle = "China Mathematical Olympiad"
+date = "2022"
+content = "在中国数学奥林匹克竞赛中获得三等奖。"

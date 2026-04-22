@@ -1,0 +1,64 @@
+type = "about"
+title = "About"
+
+[profile]
+research_interests = [
+  "Algebra",
+  "Algebraic Geometry",
+  "Number Theory",
+  "Computational Algorithms",
+  "Riemann Hypothesis (joke)",
+]
+skills = [
+  "LaTeX",
+  "Python (Pandas, NumPy, Matplotlib, PyTorch)",
+  "R (Statistical Computing)",
+  "Mathematical Modelling",
+  "Excel VBA",
+  "MS Office (Word, Excel, PowerPoint)",
+  "Adobe Photoshop (Proficient)",
+  "English (Fluent)",
+  "Chinese (Native)"
+]
+hobbies = [
+  "Piano (Level 10 Certificate)",
+  "Reading",
+  "Badminton (Not Very Good)",
+  "Photography",
+  "Suduku"
+]
+
+[[sections]]
+id = "about"
+type = "markdown"
+source = "bio.md"
+title = "About"
+
+[[sections]]
+id = "Education"
+type = "cards"
+title = "Education"
+source = "education.toml"
+limit = 3
+
+[[sections]]
+id = "featured_awards"
+type = "cards"
+title = "Selected Awards"
+source = "awards.toml"
+limit = 5
+
+[[sections]]
+id = "featured_experiences"
+type = "cards"
+title = "Selected Experiences"
+source = "experience.toml"
+limit = 3
+
+[[sections]]
+id = "news"
+type = "list"
+title = "News"
+source = "news.toml"
+limit = 5
+

@@ -1,0 +1,10 @@
+type = "card"
+title = "Experience"
+description = "My work, teaching, volunteer, and other experiences"
+
+[[items]]
+title = "示例课程"
+subtitle = "示例"
+date = "2048"
+content = "示例"
+tags = ["示例"]

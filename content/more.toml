@@ -1,0 +1,10 @@
+type = "card"
+title = "Services"
+description = "Professional services and community involvement"
+
+[[items]]
+title = "示例课程"
+subtitle = "示例"
+date = "2048"
+content = "示例"
+tags = ["示例"]

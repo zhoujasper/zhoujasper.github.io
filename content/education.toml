@@ -1,0 +1,33 @@
+type = "card"
+title = "Education"
+description = "My educational background and qualifications"
+
+[[items]]
+title = "University of Oxford"
+subtitle = "MSc in Mathematics and Foundations of Computer Science (expected)"
+date = "2026 – 2027 (expected)"
+content = "Expected to begin postgraduate study in Mathematics and Foundations of Computer Science, with interests spanning pure mathematics, computational methods, and theoretical aspects of computer science. Content of the programme can be found [here](https://www.ox.ac.uk/admissions/graduate/courses/msc-mathematics-and-foundations-of-computer-science)."
+tags = ["Postgraduate", "Mathematics", "Foundations of Computer Science"]
+selected = true
+
+[[items]]
+title = "University of Edinburgh"
+subtitle = "BSc (Hons) Mathematics"
+date = "2023 – 2026"
+content = "Currently a final-year Mathematics student at the University of Edinburgh with First Class Honours standing. Entered through the Direct Entry programme and achieved strong results across advanced courses including Honours Algebra, Honours Complex Variables, Honours Differential Equations, and Fundamentals of Pure Mathematics. Content of the programme can be found [here](https://study.ed.ac.uk/programmes/undergraduate/55-mathematics)."
+tags = ["Undergraduate", "Mathematics", "First Class Honours"]
+selected = true
+
+[[items]]
+title = "Pennon Education"
+subtitle = "A-Level Study"
+date = "2022 – 2023"
+content = "Completed A-Level study alongside my secondary education in China, achieving A* A* A* in Mathematics, Further Mathematics, and Physics. This experience strengthened my foundation in mathematics and prepared me for further study in a rigorous academic environment. Information about Pennon Education can be found [here](https://www.pennon.com.cn/)."
+tags = ["A-Level", "Mathematics", "Further Mathematics", "Physics"]
+
+[[items]]
+title = "Kunming No.1 High School"
+subtitle = "Secondary Education (Science Track)"
+date = "2020 – 2023"
+content = "Completed my secondary education within China's national curriculum as a science-track student. Built a strong foundation in mathematics through rigorous coursework and intensive training, while also participating in mathematics competitions, including provincial-level Olympiad-related contests and the Euclid Mathematics Contest. More information about the school can be found [here](https://www.kmyz.com.cn/)."
+tags = ["High School", "Science Track", "Mathematics"]
