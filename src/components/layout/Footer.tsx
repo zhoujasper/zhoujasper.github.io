@@ -28,7 +28,7 @@ export default function Footer({ lastUpdated, lastUpdatedByLocale, defaultLocale
           </p>
           <p className="text-xs text-neutral-500 flex items-center">
             <a href="/" rel="noopener noreferrer">
-              {messages.footer.builtWithPrism}
+              {messages.footer.footnote}
             </a>
             <a href="https://github.com/xyjoey/PRISM" target="_blank" rel="noopener noreferrer">
                &nbsp;&nbsp;·&nbsp; Adapted from PRISM &nbsp;·

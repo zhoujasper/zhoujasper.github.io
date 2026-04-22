@@ -48,7 +48,7 @@ export interface LocaleMessages {
   };
   footer: {
     lastUpdated: string;
-    builtWithPrism: string;
+    footnote: string;
   };
 }
 
@@ -102,7 +102,7 @@ const en: LocaleMessages = {
   },
   footer: {
     lastUpdated: 'Last updated',
-    builtWithPrism: 'Jasper Zhou\'s Personal Homepage',
+    footnote: 'Jasper Zhou\'s Personal Homepage',
   },
 };
 
@@ -156,7 +156,7 @@ const zh: LocaleMessages = {
   },
   footer: {
     lastUpdated: '最近更新',
-    builtWithPrism: 'Jasper Zhou 的个人主页',
+    footnote: 'Jasper Zhou 的个人主页',
   },
 };
 
