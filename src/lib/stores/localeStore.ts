@@ -22,7 +22,7 @@ function updateDocumentLocale(locale: string) {
   root.setAttribute('data-locale', locale);
 }
 
-function readPersistedLocale(locales: string[]): string | null {
+function readUserSelectedLocale(locales: string[]): string | null {
   try {
     const raw = localStorage.getItem(LOCALE_STORAGE_KEY);
     return matchLocale(raw, locales);
@@ -31,7 +31,7 @@ function readPersistedLocale(locales: string[]): string | null {
   }
 }
 
-function writePersistedLocale(locale: string) {
+function writeUserSelectedLocale(locale: string) {
   try {
     localStorage.setItem(LOCALE_STORAGE_KEY, locale);
   } catch {
@@ -39,7 +39,7 @@ function writePersistedLocale(locale: string) {
   }
 }
 
-function clearPersistedLocale() {
+function clearUserSelectedLocale() {
   try {
     localStorage.removeItem(LOCALE_STORAGE_KEY);
   } catch {
@@ -48,15 +48,11 @@ function clearPersistedLocale() {
 }
 
 function resolveInitialLocale(config: I18nRuntimeConfig): string {
-  const bootLocale = matchLocale(document.documentElement.getAttribute('data-locale'), config.locales);
-  if (bootLocale) {
-    return bootLocale;
-  }
-
+  // User-selected locale always wins when persistence is enabled.
   if (config.persist) {
-    const persisted = readPersistedLocale(config.locales);
-    if (persisted) {
-      return persisted;
+    const userSelected = readUserSelectedLocale(config.locales);
+    if (userSelected) {
+      return userSelected;
     }
   }
 
@@ -64,8 +60,16 @@ function resolveInitialLocale(config: I18nRuntimeConfig): string {
     return config.fixedLocale;
   }
 
-  const browserLocale = matchLocale(navigator.language, config.locales);
-  return browserLocale || config.defaultLocale;
+  const browserCandidates = [navigator.language, ...(navigator.languages || [])];
+  for (const candidate of browserCandidates) {
+    const browserLocale = matchLocale(candidate, config.locales);
+    if (browserLocale) {
+      return browserLocale;
+    }
+  }
+
+  const bootLocale = matchLocale(document.documentElement.getAttribute('data-locale'), config.locales);
+  return bootLocale || config.defaultLocale;
 }
 
 export const useLocaleStore = create<LocaleStore>()((set, get) => ({
@@ -87,9 +91,14 @@ export const useLocaleStore = create<LocaleStore>()((set, get) => ({
     });
 
     if (config.persist) {
-      writePersistedLocale(initialLocale);
+      // Keep system-language auto detection as default behavior.
+      // Persist only explicit user selections via setLocale.
+      const existingUserSelection = readUserSelectedLocale(config.locales);
+      if (!existingUserSelection) {
+        clearUserSelectedLocale();
+      }
     } else {
-      clearPersistedLocale();
+      clearUserSelectedLocale();
     }
 
     updateDocumentLocale(initialLocale);
@@ -102,9 +111,9 @@ export const useLocaleStore = create<LocaleStore>()((set, get) => ({
     set({ locale: nextLocale });
 
     if (persistSelection) {
-      writePersistedLocale(nextLocale);
+      writeUserSelectedLocale(nextLocale);
     } else {
-      clearPersistedLocale();
+      clearUserSelectedLocale();
     }
 
     updateDocumentLocale(nextLocale);
