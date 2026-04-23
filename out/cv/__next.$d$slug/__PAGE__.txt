@@ -182,7 +182,7 @@ Edinburgh University Students’ Association
 - Piano  
 - Reading  
 - Badminton  
-- Photography0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"dataByLocale":{"zh":{"type":"text","config":{"type":"text","title":"简历","source":"cv.md"},"content":"$3"},"en":{"type":"text","config":{"type":"text","title":"CV","source":"cv.md"},"content":"$4"}},"defaultLocale":"en"}],["$L5","$L6"],"$L7"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"r4cK147QW3ifJCW60ncW8"}
+- Photography0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"dataByLocale":{"zh":{"type":"text","config":{"type":"text","title":"简历","source":"cv.md"},"content":"$3"},"en":{"type":"text","config":{"type":"text","title":"CV","source":"cv.md"},"content":"$4"}},"defaultLocale":"en"}],["$L5","$L6"],"$L7"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"DcXP6aCArnTnsKUWXwO7H"}
 5:["$","script","script-0",{"src":"/_next/static/chunks/143kxxj0-__vy.js","async":true}]
 6:["$","script","script-1",{"src":"/_next/static/chunks/0ynly53idqggn.js","async":true}]
 7:["$","$L8",null,{"children":["$","$9",null,{"name":"Next.MetadataOutlet","children":"$@a"}]}]
