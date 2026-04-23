@@ -26,7 +26,7 @@ export default function SelectedPublications({ publications, title, enableOnePag
                 <h2 className="text-2xl font-serif font-bold text-primary">{resolvedTitle}</h2>
                 <Link
                     href={normalizeInternalRouteHref(enableOnePageMode ? "/#publications" : "/publications")}
-                    prefetch={true}
+                    prefetch={false}
                     className="text-accent hover:text-accent-dark text-sm font-medium transition-all duration-200 rounded hover:bg-accent/25 hover:shadow-sm"
                 >
                     {messages.home.viewAll} →

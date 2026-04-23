@@ -32,8 +32,7 @@ export function normalizeInternalRouteHref(href: string): string {
   }
 
   const url = new URL(href, 'https://internal.local');
-  const pathSegments = url.pathname.split('/').filter(Boolean);
-  const lastSegment = pathSegments[pathSegments.length - 1] || '';
+  const lastSegment = url.pathname.split('/').filter(Boolean).at(-1) || '';
 
   if (
     url.pathname === '/' ||

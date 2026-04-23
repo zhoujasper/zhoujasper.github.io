@@ -48,7 +48,7 @@ export default function News({
                 {showViewAll && (
                     <Link
                         href={normalizeInternalRouteHref(enableOnePageMode ? "/#news" : "/news")}
-                        prefetch={true}
+                        prefetch={false}
                         className="text-accent hover:text-accent-dark text-sm font-medium transition-all duration-200 rounded hover:bg-accent/25 hover:shadow-sm"
                     >
                         {messages.home.viewAll} →

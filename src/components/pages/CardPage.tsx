@@ -72,6 +72,7 @@ export default function CardPage({
     const normalizedLinkToPage = linkToPage ? normalizeInternalRouteHref(linkToPage) : null;
 
     const previewLength = 128;
+    const isStaticExportRuntime = process.env.NEXT_PUBLIC_IS_STATIC_EXPORT === 'true';
 
     const toggleExpanded = (itemKey: string) => {
         setExpandedItems((prev) => ({
@@ -140,6 +141,11 @@ export default function CardPage({
         sessionStorage.setItem('enableFlash', 'true');
 
         // 导航到新页面
+        if (isStaticExportRuntime) {
+            window.location.assign(normalizedLinkToPage);
+            return;
+        }
+
         router.push(normalizedLinkToPage);
     };
 
@@ -222,7 +228,7 @@ export default function CardPage({
                     {showViewAll && (
                         <Link
                             href={normalizedViewAllHref}
-                            prefetch={true}
+                            prefetch={false}
                             className="text-accent hover:text-accent-dark text-sm font-medium transition-all duration-200 rounded hover:bg-accent/25 hover:shadow-sm"
                         >
                             {messages.home.viewAll} →

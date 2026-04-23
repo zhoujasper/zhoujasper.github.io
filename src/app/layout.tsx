@@ -42,7 +42,7 @@ function buildLocaleBootstrapScript(config: ReturnType<typeof getRuntimeI18nConf
   return `
     try {
       const cfg = ${serializedConfig};
-      const storageKey = 'locale-storage';
+      const storageKey = 'locale-user-selection-v2';
       const normalize = (value) => typeof value === 'string' ? value.trim().replace('_', '-').toLowerCase() : '';
       const matchLocale = (candidate) => {
         const normalized = normalize(candidate);
