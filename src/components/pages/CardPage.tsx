@@ -489,7 +489,7 @@ export default function CardPage({
                                 >
                                     <div className="secret-lock-overlay absolute inset-0" />
                                     <div className="relative h-full flex flex-col justify-center">
-                                        <p className="text-sm text-neutral-600 dark:text-neutral-200 mb-3" style={{ color: '#f5deb3' }}>
+                                        <p className="text-sm text-neutral-600 dark:text-neutral-200 mb-3" style={{ color: '#b6935d' }}>
                                             {messages.cards.lockedHint}
                                         </p>
                                         <div className="flex flex-col sm:flex-row gap-2">

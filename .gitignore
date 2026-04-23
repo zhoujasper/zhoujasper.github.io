@@ -15,7 +15,13 @@
 
 # next.js
 /.next/
-/out/
+
+# deploy artifact (tracked)
+# /out/
+
+# local content source folders (kept locally, not pushed)
+/content/
+/content_zh/
 
 # production
 /build
