@@ -25,3 +25,23 @@ export function generateSlug(text: string): string {
     .replace(/[\s_-]+/g, '-')
     .replace(/^-+|-+$/g, '');
 }
+
+export function normalizeInternalRouteHref(href: string): string {
+  if (!href.startsWith('/') || href.startsWith('//')) {
+    return href;
+  }
+
+  const url = new URL(href, 'https://internal.local');
+  const pathSegments = url.pathname.split('/').filter(Boolean);
+  const lastSegment = pathSegments[pathSegments.length - 1] || '';
+
+  if (
+    url.pathname === '/' ||
+    url.pathname.endsWith('/') ||
+    /\.[^/]+$/.test(lastSegment)
+  ) {
+    return `${url.pathname}${url.search}${url.hash}`;
+  }
+
+  return `${url.pathname}/${url.search}${url.hash}`;
+}

@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { useMessages } from '@/lib/i18n/useMessages';
+import { normalizeInternalRouteHref } from '@/lib/utils';
 
 export interface NewsItem {
     date: string;
@@ -46,7 +47,7 @@ export default function News({
                 <h1 className="text-2xl font-serif font-bold text-primary">{resolvedTitle}</h1>
                 {showViewAll && (
                     <Link
-                        href={enableOnePageMode ? "/#news" : "/news"}
+                        href={normalizeInternalRouteHref(enableOnePageMode ? "/#news" : "/news")}
                         prefetch={true}
                         className="text-accent hover:text-accent-dark text-sm font-medium transition-all duration-200 rounded hover:bg-accent/25 hover:shadow-sm"
                     >

@@ -6,7 +6,7 @@ import { usePathname } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Disclosure } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
-import { cn } from '@/lib/utils';
+import { cn, normalizeInternalRouteHref } from '@/lib/utils';
 import { ThemeToggle } from '@/components/ui/ThemeToggle';
 import LanguageToggle from '@/components/ui/LanguageToggle';
 import type { SiteConfig } from '@/lib/config';
@@ -123,7 +123,7 @@ export default function Navigation({
         : pathname.startsWith(item.href));
 
   const getDesktopItemHref = (item: SiteConfig['navigation'][number]) =>
-    enableOnePageMode ? `/#${item.target}` : item.href;
+    normalizeInternalRouteHref(enableOnePageMode ? `/#${item.target}` : item.href);
 
   const activeItem = effectiveItems.find((item) => isDesktopItemActive(item)) ?? null;
   const activeHref = activeItem ? getDesktopItemHref(activeItem) : null;
@@ -308,7 +308,7 @@ export default function Navigation({
 
                       const href = enableOnePageMode
                         ? (item.href === '/' ? '/' : `/#${item.target}`)
-                        : item.href;
+                        : normalizeInternalRouteHref(item.href);
 
                       return (
                         <motion.div

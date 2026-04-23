@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { Publication } from '@/types/publication';
 import { useMessages } from '@/lib/i18n/useMessages';
+import { normalizeInternalRouteHref } from '@/lib/utils';
 
 interface SelectedPublicationsProps {
     publications: Publication[];
@@ -24,7 +25,7 @@ export default function SelectedPublications({ publications, title, enableOnePag
             <div className="flex items-center justify-between mb-4">
                 <h2 className="text-2xl font-serif font-bold text-primary">{resolvedTitle}</h2>
                 <Link
-                    href={enableOnePageMode ? "/#publications" : "/publications"}
+                    href={normalizeInternalRouteHref(enableOnePageMode ? "/#publications" : "/publications")}
                     prefetch={true}
                     className="text-accent hover:text-accent-dark text-sm font-medium transition-all duration-200 rounded hover:bg-accent/25 hover:shadow-sm"
                 >

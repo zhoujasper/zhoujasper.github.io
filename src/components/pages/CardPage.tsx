@@ -9,6 +9,7 @@ import { useRouter } from 'next/navigation';
 import { CardItem, CardPageConfig, SecretCardItem } from '@/types/page';
 import { useMessages } from '@/lib/i18n/useMessages';
 import { decryptSecretCard } from '@/lib/secretCardsClient';
+import { normalizeInternalRouteHref } from '@/lib/utils';
 
 const markdownComponents = {
     p: ({ children }: React.ComponentProps<'p'>) => <p className="mb-3 last:mb-0">{children}</p>,
@@ -67,6 +68,8 @@ export default function CardPage({
     const [secretShaking, setSecretShaking] = useState<Record<string, boolean>>({});
     const [unlockedSecretItems, setUnlockedSecretItems] = useState<Record<string, CardItem>>({});
     const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
+    const normalizedViewAllHref = normalizeInternalRouteHref(viewAllHref);
+    const normalizedLinkToPage = linkToPage ? normalizeInternalRouteHref(linkToPage) : null;
 
     const previewLength = 128;
 
@@ -127,7 +130,7 @@ export default function CardPage({
     };
 
     const handleCardClick = (itemTitle: string) => {
-        if (!linkToPage) return;
+        if (!normalizedLinkToPage) return;
 
         // 创建一个唯一的 ID 用于定位卡片
         const itemId = `card-${itemTitle.toLowerCase().replace(/\s+/g, '-')}`;
@@ -137,7 +140,7 @@ export default function CardPage({
         sessionStorage.setItem('enableFlash', 'true');
 
         // 导航到新页面
-        router.push(linkToPage);
+        router.push(normalizedLinkToPage);
     };
 
     const years = useMemo(() => {
@@ -218,7 +221,7 @@ export default function CardPage({
                     <h1 className={`${embedded ? "text-2xl" : "text-4xl"} font-serif font-bold text-primary`}>{config.title}</h1>
                     {showViewAll && (
                         <Link
-                            href={viewAllHref}
+                            href={normalizedViewAllHref}
                             prefetch={true}
                             className="text-accent hover:text-accent-dark text-sm font-medium transition-all duration-200 rounded hover:bg-accent/25 hover:shadow-sm"
                         >
@@ -333,7 +336,7 @@ export default function CardPage({
             <div className={`grid ${embedded ? "gap-4" : "gap-6"}`}>
                 {filteredItems.map((item, index) => {
                     const itemId = `card-${item.title.toLowerCase().replace(/\s+/g, '-')}`;
-                    const isClickable = (!!linkToPage && (onlyShowTitle || enableClickToJump));
+                    const isClickable = (!!normalizedLinkToPage && (onlyShowTitle || enableClickToJump));
                     const itemStateKey = `normal-${index}`;
                     
                     return (
@@ -440,7 +443,7 @@ export default function CardPage({
                     const unlockedItem = unlockedSecretItems[secretItem.id];
                     const displayItem = unlockedItem || { title: secretItem.title };
                     const itemId = `card-${displayItem.title.toLowerCase().replace(/\s+/g, '-')}`;
-                    const isClickable = Boolean(unlockedItem && linkToPage && (onlyShowTitle || enableClickToJump));
+                    const isClickable = Boolean(unlockedItem && normalizedLinkToPage && (onlyShowTitle || enableClickToJump));
                     const itemStateKey = `secret-${secretItem.id}`;
 
                     return (
