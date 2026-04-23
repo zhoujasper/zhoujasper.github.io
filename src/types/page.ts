@@ -31,10 +31,27 @@ export interface LinkItem {
     url: string;
 }
 
+export interface SecretCardCiphertext {
+    version: 1;
+    kdf: {
+        name: 'scrypt';
+        salt: string;
+        n: number;
+        r: number;
+        p: number;
+        dkLen: number;
+    };
+    cipher: {
+        name: 'AES-GCM';
+        nonce: string;
+        data: string;
+    };
+}
+
 export interface SecretCardItem {
     id: string;
     title: string;
-    token: string;
+    encrypted: SecretCardCiphertext;
     selected?: boolean;
 }
 

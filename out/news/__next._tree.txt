@@ -1,3 +1,3 @@
-:HL["/_next/static/chunks/07-~-2tilbs4m.css","style"]
+:HL["/_next/static/chunks/0i3bmp-8_fza~.css","style"]
 :HL["https://jialeliu.com/fonts/georgiab.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"slug","param":{"type":"d","key":"news","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"ef8s0VBj-NJdKLDLfbnsJ"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"slug","param":{"type":"d","key":"news","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"Etv4L3PFcf2EN-qtia9Tt"}

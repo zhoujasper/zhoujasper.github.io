@@ -8,6 +8,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { CardItem, CardPageConfig, SecretCardItem } from '@/types/page';
 import { useMessages } from '@/lib/i18n/useMessages';
+import { decryptSecretCard } from '@/lib/secretCardsClient';
 
 const markdownComponents = {
     p: ({ children }: React.ComponentProps<'p'>) => <p className="mb-3 last:mb-0">{children}</p>,
@@ -90,7 +91,7 @@ export default function CardPage({
     };
 
     const handleUnlockSecret = async (secretItem: SecretCardItem) => {
-        const password = (secretPasswords[secretItem.id] || '').trim();
+        const password = secretPasswords[secretItem.id] || '';
         if (!password) {
             triggerSecretError(secretItem.id);
             return;
@@ -100,26 +101,11 @@ export default function CardPage({
         setSecretErrors((prev) => ({ ...prev, [secretItem.id]: false }));
 
         try {
-            const response = await fetch('/api/secret-cards/unlock', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({
-                    token: secretItem.token,
-                    password,
-                }),
-            });
-
-            const data = (await response.json()) as { ok: boolean; item?: CardItem };
-            if (!response.ok || !data.ok || !data.item) {
-                triggerSecretError(secretItem.id);
-                return;
-            }
+            const item = await decryptSecretCard(secretItem, password);
 
             setUnlockedSecretItems((prev) => ({
                 ...prev,
-                [secretItem.id]: data.item as CardItem,
+                [secretItem.id]: item,
             }));
             setSecretPasswords((prev) => ({ ...prev, [secretItem.id]: '' }));
             setSecretErrors((prev) => ({ ...prev, [secretItem.id]: false }));
@@ -495,6 +481,7 @@ export default function CardPage({
                                         <div className="flex flex-col sm:flex-row gap-2">
                                             <input
                                                 type="password"
+                                                autoComplete="current-password"
                                                 value={secretPasswords[secretItem.id] || ''}
                                                 onChange={(e) => {
                                                     setSecretPasswords((prev) => ({ ...prev, [secretItem.id]: e.target.value }));
