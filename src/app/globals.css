@@ -311,3 +311,49 @@ body {
 .animate-shake {
   animation: secretShake 0.38s ease-in-out;
 }
+
+.secret-lock-panel {
+  background:
+    linear-gradient(130deg, rgba(255, 255, 255, 0.72) 0%, rgba(241, 245, 249, 0.6) 45%, rgba(218, 158, 72, 0.14) 100%);
+  border-color: rgba(148, 163, 184, 0.34);
+  backdrop-filter: blur(18px) saturate(135%);
+  -webkit-backdrop-filter: blur(18px) saturate(135%);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.5),
+    0 8px 24px rgba(15, 23, 42, 0.08);
+}
+
+.dark .secret-lock-panel {
+  background:
+    linear-gradient(130deg, rgba(15, 23, 42, 0.72) 0%, rgba(30, 41, 59, 0.62) 50%, rgba(228, 185, 118, 0.2) 100%);
+  border-color: rgba(228, 185, 118, 0.32);
+  box-shadow:
+    inset 0 1px 0 rgba(248, 250, 252, 0.08),
+    0 10px 30px rgba(2, 6, 23, 0.45),
+    0 0 0 1px rgba(228, 185, 118, 0.1);
+}
+
+.secret-lock-overlay {
+  background: radial-gradient(circle at 23% 59%, #da9e4852 -23%, #d990270a 78%);
+}
+
+.dark .secret-lock-overlay {
+  background:
+    radial-gradient(circle at 11% 75%, #e4b97633 0%, #0000 83%),
+    radial-gradient(circle at 26% 6%, #94a3b81c 0%, #0000 47%)
+}
+
+.secret-password-input {
+  background: rgba(255, 255, 255, 0.82);
+  border-color: rgba(148, 163, 184, 0.45);
+}
+
+.dark .secret-password-input {
+  background: rgba(15, 23, 42, 0.55);
+  border-color: rgba(228, 185, 118, 0.28);
+  color: rgba(248, 250, 252, 0.94);
+}
+
+.dark .secret-password-input::placeholder {
+  color: rgba(203, 213, 225, 0.56);
+}

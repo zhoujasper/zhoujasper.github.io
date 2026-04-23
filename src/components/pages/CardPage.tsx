@@ -482,14 +482,14 @@ export default function CardPage({
 
                             {!unlockedItem && (
                                 <div
-                                    className={`relative mt-3 h-56 rounded-xl border p-4 overflow-hidden bg-white/70 dark:bg-neutral-900/70 backdrop-blur-md ${secretErrors[secretItem.id]
+                                    className={`secret-lock-panel relative mt-3 h-56 rounded-xl border p-4 overflow-hidden ${secretErrors[secretItem.id]
                                         ? 'border-red-500 dark:border-red-500'
-                                        : 'border-neutral-200 dark:border-neutral-700'} ${secretShaking[secretItem.id] ? 'animate-shake' : ''}`}
+                                        : ''} ${secretShaking[secretItem.id] ? 'animate-shake' : ''}`}
                                     onClick={(e) => e.stopPropagation()}
                                 >
-                                    <div className="absolute inset-0 bg-gradient-to-br from-white/45 via-neutral-100/30 to-neutral-200/20 dark:from-neutral-900/40 dark:via-neutral-800/30 dark:to-neutral-700/20" />
+                                    <div className="secret-lock-overlay absolute inset-0" />
                                     <div className="relative h-full flex flex-col justify-center">
-                                        <p className="text-sm text-neutral-600 dark:text-neutral-300 mb-3">
+                                        <p className="text-sm text-neutral-600 dark:text-neutral-200 mb-3" style={{ color: '#f5deb3' }}>
                                             {messages.cards.lockedHint}
                                         </p>
                                         <div className="flex flex-col sm:flex-row gap-2">
@@ -510,9 +510,9 @@ export default function CardPage({
                                                 }}
                                                 onClick={(e) => e.stopPropagation()}
                                                 placeholder={messages.cards.passwordPlaceholder}
-                                                className={`w-full sm:flex-1 sm:min-w-0 px-3 py-2 rounded-lg border bg-white/85 dark:bg-neutral-900/85 focus:ring-2 focus:ring-accent focus:border-transparent transition-all duration-200 ${secretErrors[secretItem.id]
+                                                className={`secret-password-input w-full sm:flex-1 sm:min-w-0 px-3 py-2 rounded-lg border focus:ring-2 focus:ring-accent focus:border-transparent transition-all duration-200 ${secretErrors[secretItem.id]
                                                     ? 'border-red-500 text-red-600 dark:text-red-400'
-                                                    : 'border-neutral-300 dark:border-neutral-700 text-neutral-700 dark:text-neutral-200'}`}
+                                                    : 'text-neutral-700 dark:text-neutral-100'}`}
                                             />
                                             <button
                                                 type="button"

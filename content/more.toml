@@ -22,8 +22,8 @@ gallery = [
 ]
 
 [[items-secret]]
-title = "Secret Project Name"
-subtitle = "Secret Subtitle"
+title = "Protected Project Name"
+subtitle = "Protected Subtitle"
 date = "2025"
 content = "Project description..."
 password = "123"
