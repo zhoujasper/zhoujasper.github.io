@@ -9,7 +9,7 @@ import TextPage from '@/components/pages/TextPage';
 import CardPage from '@/components/pages/CardPage';
 import type { SiteConfig } from '@/lib/config';
 import { Publication } from '@/types/publication';
-import { CardPageConfig, PublicationPageConfig, TextPageConfig, CardItem } from '@/types/page';
+import { CardPageConfig, PublicationPageConfig, TextPageConfig, CardItem, SecretCardItem } from '@/types/page';
 import { useLocaleStore } from '@/lib/stores/localeStore';
 
 interface SectionConfig {
@@ -24,6 +24,7 @@ interface SectionConfig {
   publications?: Publication[];
   items?: NewsItem[];
   cards?: CardItem[];
+  secretCards?: SecretCardItem[];
 }
 
 type PageData =
@@ -104,6 +105,9 @@ export default function HomePageClient({ dataByLocale, defaultLocale }: HomePage
                       />
                     );
                   case 'cards':
+                    const isAwardsSection = section.source === 'awards.toml';
+                    const isEducationSection = section.source === 'education.toml';
+                    const isProjectsSection = section.source === 'projects.toml';
                     return (
                       <CardPage
                         key={section.id}
@@ -112,11 +116,15 @@ export default function HomePageClient({ dataByLocale, defaultLocale }: HomePage
                           title: section.title || '',
                           description: section.description,
                           items: section.cards || [],
+                          secretItems: section.secretCards || [],
                         }}
                         embedded={true}
                         showDescription={false}
                         showViewAll={true}
                         viewAllHref={section.source ? `/${section.source.replace(/\.toml$/, '')}` : '/experience'}
+                        onlyShowTitle={false}
+                        enableClickToJump={isEducationSection || isProjectsSection || isAwardsSection}
+                        linkToPage={isAwardsSection || isEducationSection || isProjectsSection ? `/${section.source?.replace(/\.toml$/, '') || 'education'}` : null}
                       />
                     );
                   default:

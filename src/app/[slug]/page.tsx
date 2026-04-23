@@ -11,6 +11,7 @@ import {
   ListPageConfig,
   ListItem,
 } from '@/types/page';
+import { normalizeCardSource, RawCardPageSource } from '@/lib/secretCards';
 
 import { Metadata } from 'next';
 import { getRuntimeI18nConfig } from '@/lib/i18n/config';
@@ -62,9 +63,16 @@ function loadDynamicPageData(slug: string, locale?: string): DynamicPageLocaleDa
   }
 
   if (pageConfig.type === 'card') {
+    const normalizedCardSource = normalizeCardSource(pageConfig as RawCardPageSource, slug, locale);
     return {
       type: 'card',
-      config: pageConfig as CardPageConfig,
+      config: {
+        type: 'card',
+        title: pageConfig.title,
+        description: pageConfig.description,
+        items: normalizedCardSource.items,
+        secretItems: normalizedCardSource.secretItems,
+      },
     };
   }
 

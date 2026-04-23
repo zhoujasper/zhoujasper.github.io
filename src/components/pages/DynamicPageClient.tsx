@@ -1,5 +1,6 @@
 'use client';
 
+import { useEffect } from 'react';
 import PublicationsList from '@/components/publications/PublicationsList';
 import TextPage from '@/components/pages/TextPage';
 import CardPage from '@/components/pages/CardPage';
@@ -29,6 +30,34 @@ export default function DynamicPageClient({ dataByLocale, defaultLocale }: Dynam
   const locale = useLocaleStore((state) => state.locale);
   const fallback = dataByLocale[defaultLocale] || Object.values(dataByLocale)[0];
   const pageData = dataByLocale[locale] || fallback;
+
+  useEffect(() => {
+    const targetCardId = sessionStorage.getItem('targetCardId');
+    const enableFlash = sessionStorage.getItem('enableFlash');
+
+    if (targetCardId && enableFlash === 'true') {
+      // 延迟以确保 DOM 已经渲染
+      const timer = setTimeout(() => {
+        const element = document.getElementById(targetCardId);
+        if (element) {
+          // 平滑滚动到卡片
+          element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+          // 添加闪烁动画标记
+          element.setAttribute('data-flash', 'true');
+          
+          // 清理 sessionStorage 和动画标记
+          setTimeout(() => {
+            sessionStorage.removeItem('targetCardId');
+            sessionStorage.removeItem('enableFlash');
+            element.removeAttribute('data-flash');
+          }, 3000);
+        }
+      }, 100);
+
+      return () => clearTimeout(timer);
+    }
+  }, []);
 
   if (!pageData) {
     return null;

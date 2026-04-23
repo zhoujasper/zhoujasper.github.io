@@ -26,18 +26,32 @@ export interface ListPageConfig extends BasePageConfig {
     news?: ListItem[];
 }
 
+export interface LinkItem {
+    name: string;
+    url: string;
+}
+
+export interface SecretCardItem {
+    id: string;
+    title: string;
+    token: string;
+    selected?: boolean;
+}
+
 export interface CardItem {
     title: string;
     subtitle?: string;
     date?: string;
     content?: string;
     tags?: string[];
-    link?: string;
+    links?: LinkItem[];
     image?: string;
+    gallery?: string[];
     selected?: boolean;
 }
 
 export interface CardPageConfig extends BasePageConfig {
     type: 'card';
     items: CardItem[];
+    secretItems?: SecretCardItem[];
 }

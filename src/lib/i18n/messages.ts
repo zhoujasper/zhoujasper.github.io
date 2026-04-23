@@ -36,6 +36,18 @@ export interface LocaleMessages {
     readMore: string;
     readLess: string;
   };
+  cards: {
+    searchPlaceholder: string;
+    filters: string;
+    year: string;
+    tag: string;
+    noResults: string;
+    lockedHint: string;
+    passwordPlaceholder: string;
+    unlock: string;
+    unlocking: string;
+    wrongPassword: string;
+  };
   publications: {
     searchPlaceholder: string;
     filters: string;
@@ -90,6 +102,18 @@ const en: LocaleMessages = {
     readMore: 'Read More',
     readLess: 'Read Less',
   },
+  cards: {
+    searchPlaceholder: 'Search entries...',
+    filters: 'Filters',
+    year: 'Year',
+    tag: 'Tag',
+    noResults: 'No matching entries found.',
+    lockedHint: 'This content is protected. Enter password to unlock.',
+    passwordPlaceholder: 'Enter password',
+    unlock: 'Unlock',
+    unlocking: 'Unlocking...',
+    wrongPassword: 'Wrong password. Please try again.',
+  },
   publications: {
     searchPlaceholder: 'Search publications...',
     filters: 'Filters',
@@ -143,6 +167,18 @@ const zh: LocaleMessages = {
     viewAll: '查看全部',
     readMore: '阅读更多',
     readLess: '收起',
+  },
+  cards: {
+    searchPlaceholder: '搜索条目...',
+    filters: '筛选',
+    year: '年份',
+    tag: '标签',
+    noResults: '未找到匹配条目。',
+    lockedHint: '该内容受到密码保护，请输入密码解锁。',
+    passwordPlaceholder: '输入密码',
+    unlock: '解锁',
+    unlocking: '解锁中...',
+    wrongPassword: '密码错误，请重试。',
   },
   publications: {
     searchPlaceholder: '搜索论文...',

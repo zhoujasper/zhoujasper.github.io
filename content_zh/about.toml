@@ -4,8 +4,8 @@ title = "关于我"
 [profile]
 research_interests = [
   "代数学",
-  "代数几何",
   "数论",
+  "代数几何",
   "计算算法",
   "黎曼猜想 (bushi)"
 ]
@@ -15,17 +15,17 @@ skills = [
   "R (统计计算)",
   "数学建模",
   "Excel VBA",
-  "MS Office (Word、Excel、PowerPoint)",
-  "Adobe Photoshop (熟练)",
   "英语 (流利)",
-  "中文 (母语)"
+  "中文 (母语)",
+  "MS Office (Word、Excel、PowerPoint)",
+  "Adobe Photoshop (熟练)"
 ]
 hobbies = [
   "钢琴 (十级证书)",
-  "阅读",
-  "羽毛球 (打得一般)",
   "摄影",
-  "数独"
+  "阅读",
+  "数独",
+  "羽毛球 (打得一般)"
 ]
 
 [[sections]]
@@ -54,6 +54,13 @@ type = "cards"
 title = "精选履历"
 source = "experience.toml"
 limit = 3
+
+[[sections]]
+id = "featured_projects"
+type = "cards"
+title = "精选项目"
+source = "projects.toml"
+limit = 5
 
 [[sections]]
 id = "news"

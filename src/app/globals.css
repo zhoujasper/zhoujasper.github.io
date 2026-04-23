@@ -236,11 +236,11 @@ body {
 }
 
 .dark ::-webkit-scrollbar-thumb {
-  background: var(--neutral-600);
+  background: rgba(203, 213, 225, 0.18);
 }
 
 .dark ::-webkit-scrollbar-thumb:hover {
-  background: var(--neutral-500);
+  background: rgba(203, 213, 225, 0.32);
 }
 
 /* Card background utility */
@@ -252,4 +252,62 @@ body {
   background-color: #1e293b;
   /* Soften card borders in dark mode only */
   border-color: rgba(148, 163, 184, 0.24);
+}
+
+/* Pulse animation for card highlight effect in light mode */
+@keyframes pulseLight {
+  0%, 100% {
+    box-shadow:
+      0 0 0 0 rgba(218, 158, 72, 0),
+      0 0 0 0 rgba(218, 158, 72, 0);
+    background-color: transparent;
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    box-shadow:
+      0 0 0 5px rgba(218, 158, 72, 0.4),
+      0 0 13px 5px rgba(218, 158, 72, 0.3);
+    background-color: rgba(218, 158, 72, 0.08);
+    transform: translateY(-1px);
+    opacity: 1;
+  }
+}
+
+/* Enhanced glow effect in dark mode */
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow:
+      0 0 0 0 rgba(228, 185, 118, 0),
+      0 0 0 0 rgba(228, 185, 118, 0);
+    opacity: 1;
+  }
+  50% {
+    box-shadow:
+      0 0 0 5px rgba(228, 185, 118, 0.42),
+      0 0 13px 5px rgba(228, 185, 118, 0.3);
+    opacity: 1;
+  }
+}
+
+.light [data-flash],
+[data-theme='light'] [data-flash] {
+  animation: pulseLight 1.3s cubic-bezier(0.4, 0, 0.6, 1) 2 !important;
+}
+
+.dark [data-flash] {
+  animation: pulseGlow 1.3s cubic-bezier(0.4, 0, 0.6, 1) 2 !important;
+}
+
+@keyframes secretShake {
+  0% { transform: translateX(0); }
+  20% { transform: translateX(-6px); }
+  40% { transform: translateX(6px); }
+  60% { transform: translateX(-4px); }
+  80% { transform: translateX(4px); }
+  100% { transform: translateX(0); }
+}
+
+.animate-shake {
+  animation: secretShake 0.38s ease-in-out;
 }

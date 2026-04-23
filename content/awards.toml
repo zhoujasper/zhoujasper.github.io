@@ -7,44 +7,67 @@ title = "United Kingdom Best Pairs Entry"
 subtitle = "Simon Marais Mathematics Competition"
 date = "2025"
 selected = true
-content = "Together with Kevin Zhao, achieved the top-scoring pairs entry from the United Kingdom in the West Division with a score of 21. Results can be found [here](https://www.simonmarais.org/west-division.html)."
+content = "Together with Kevin Zhao, achieved the highest-scoring pairs entry from the United Kingdom in the West Division of the 2025 Simon Marais Mathematics Competition, with a score of 21. The official results list our pair as the United Kingdom's Best pairs entry by country. This distinction is especially meaningful to me because the competition emphasises creative, proof-based mathematical problem solving at university level rather than routine computation alone. Results can be found [here](https://www.simonmarais.org/west-division.html)."
+tags = ["Award", "Mathematics Competition", "Simon Marais Mathematics Competition", "United Kingdom Best Pairs Entry", "International Competition", "Problem Solving", "Proof-Based Mathematics", "University of Edinburgh"]
+links = [
+    { name = "Results", url = "https://www.simonmarais.org/west-division.html" }
+]
 
 [[items]]
 title = "Top 3 in Programme / Top 5% in Year Group in the School of Mathematics"
 subtitle = "University of Edinburgh"
 date = "2025"
 selected = true
-content = "Placed 3rd out of 24 within the programme and 4th out of 120 in the year group in the School of Mathematics academic rankings for 2024/25."
+content = "Placed 3rd out of 24 within the programme and 4th out of 120 in the year group in the School of Mathematics academic rankings for 2024/25. This reflects sustained high performance across advanced honours-level mathematics courses and places me among the highest-performing students in my cohort."
+tags = ["Award", "Academic Ranking", "University of Edinburgh", "School of Mathematics", "Top 3 in Programme", "Top 5% in Year Group", "Academic Excellence", "Honours Mathematics"]
 
 [[items]]
 title = "Kelland Memorial Prize"
 subtitle = "University of Edinburgh"
 date = "2024"
 selected = true
-content = "Awarded for distinguished performance as a direct entrant into second-year Mathematics. Official information can be found [here](https://registryservices.ed.ac.uk/student-funding/current-students/university-prizes-awards/science-engineering/mathematics)."
+content = "Awarded the Kelland Memorial Prize for distinguished performance as a direct entrant into second-year Mathematics. According to the University of Edinburgh prize description, this prize is awarded annually on the recommendation of the Board of Examiners to a student entering directly into the second year, making it a particularly meaningful recognition of my academic transition into the degree programme. Official information can be found [here](https://registryservices.ed.ac.uk/student-funding/current-students/university-prizes-awards/science-engineering/mathematics)."
+tags = ["Award", "University Prize", "Kelland Memorial Prize", "University of Edinburgh", "School of Mathematics", "Direct Entry", "Second Year Mathematics", "Academic Excellence"]
+links = [
+    { name = "Official Information", url = "https://registryservices.ed.ac.uk/student-funding/current-students/university-prizes-awards/science-engineering/mathematics" }
+]
 
 [[items]]
 title = "William and Isabella Dick Prize"
 subtitle = "University of Edinburgh"
 date = "2024"
 selected = true
-content = "Awarded for outstanding performance in second-year Mathematics. Official information can be found [here](https://registryservices.ed.ac.uk/student-funding/current-students/university-prizes-awards/science-engineering/mathematics)."
+content = "Awarded for outstanding performance in second-year Mathematics. The University of Edinburgh describes this prize as one or more awards made annually to the best current student(s) in second-year Mathematics. Receiving this prize recognised the consistency and strength of my performance across the full second-year curriculum. Official information can be found [here](https://registryservices.ed.ac.uk/student-funding/current-students/university-prizes-awards/science-engineering/mathematics)."
+tags = ["Award", "University Prize", "William and Isabella Dick Prize", "University of Edinburgh", "School of Mathematics", "Second Year Mathematics", "Academic Excellence", "Undergraduate Mathematics"]
+links = [
+    { name = "Official Information", url = "https://registryservices.ed.ac.uk/student-funding/current-students/university-prizes-awards/science-engineering/mathematics" }
+]
 
 [[items]]
 title = "School of Mathematics Vacation Scholarship"
 subtitle = "University of Edinburgh"
 date = "2024"
 selected = true
-content = "Awarded summer research funding through the School of Mathematics Vacation Scholarship scheme. Information about Mathematics scholarships and prizes can be found [here](https://registryservices.ed.ac.uk/student-funding/current-students/university-prizes-awards/science-engineering/mathematics), and details on School of Mathematics vacation scholarships can be found [here](https://teaching.maths.ed.ac.uk/undergraduate/opportunities/vacation-scholarships/funding)."
+content = "Awarded summer research funding through the School of Mathematics Vacation Scholarship scheme. This scheme supports supervised vacation research projects in mathematics; the current School description states that scholarships are typically funded for six weeks at £300 per week, with awards based on academic performance. Receiving this scholarship gave me the opportunity to carry out an early research project in mathematics in a more independent and exploratory setting. Information about Mathematics scholarships and prizes can be found [here](https://registryservices.ed.ac.uk/student-funding/current-students/university-prizes-awards/science-engineering/mathematics), and details on School of Mathematics vacation scholarships can be found [here](https://teaching.maths.ed.ac.uk/undergraduate/opportunities/vacation-scholarships/funding)."
+tags = ["Award", "Scholarship", "Vacation Scholarship", "Summer Research", "Research Funding", "University of Edinburgh", "School of Mathematics", "Undergraduate Research"]
+links = [
+    { name = "Official Information", url = "https://registryservices.ed.ac.uk/student-funding/current-students/university-prizes-awards/science-engineering/mathematics" },
+    { name = "Scholarship Description", url = "https://teaching.maths.ed.ac.uk/undergraduate/opportunities/vacation-scholarships/funding" }
+]
 
 [[items]]
 title = "Top 25% Worldwide in Euclid Mathematics Contest"
 subtitle = "Euclid Mathematics Contest"
 date = "2023"
-content = "Placed in the top 25% worldwide in the Euclid Mathematics Contest. Official contest information can be found [here](https://cemc.uwaterloo.ca/contests/euclid)."
+content = "Placed in the top 25% worldwide in the Euclid Mathematics Contest, which corresponds to a Certificate of Distinction under the official award structure of the contest. Organised by the Centre for Education in Mathematics and Computing at the University of Waterloo, the Euclid Contest is one of the best-known international pre-university mathematics competitions and places strong emphasis on rigorous written solutions as well as problem-solving ability. Official contest information can be found [here](https://cemc.uwaterloo.ca/contests/euclid)."
+tags = ["Award", "Mathematics Competition", "Euclid Mathematics Contest", "Certificate of Distinction", "Top 25% Worldwide", "University of Waterloo", "Problem Solving", "Pre-University Mathematics"]
+links = [
+    { name = "Official Information", url = "https://cemc.uwaterloo.ca/contests/euclid" }
+]
 
 [[items]]
 title = "Third Prize in China Mathematical Olympiad (Province)"
 subtitle = "China Mathematical Olympiad"
 date = "2022"
-content = "Awarded Third Prize in the China Mathematical Olympiad."
+content = "Awarded Third Prize at provincial level in the China Mathematical Olympiad competition track. This distinction reflects sustained training and strong performance in olympiad-style mathematical problem solving during secondary school."
+tags = ["Award", "Mathematics Competition", "Olympiad", "China Mathematical Olympiad", "Provincial Prize", "Third Prize", "Problem Solving", "Secondary School Mathematics"]

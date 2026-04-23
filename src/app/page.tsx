@@ -3,8 +3,9 @@ import { getMarkdownContent, getBibtexContent, getTomlContent, getPageConfig } f
 import { parseBibTeX } from '@/lib/bibtexParser';
 import HomePageClient, { type HomePageLocaleData } from '@/components/home/HomePageClient';
 import { Publication } from '@/types/publication';
-import { BasePageConfig, PublicationPageConfig, TextPageConfig, CardPageConfig, CardItem } from '@/types/page';
+import { BasePageConfig, PublicationPageConfig, TextPageConfig, CardPageConfig, CardItem, SecretCardItem } from '@/types/page';
 import { getRuntimeI18nConfig } from '@/lib/i18n/config';
+import { normalizeCardSource, RawCardPageSource, RawSecretCardItem } from '@/lib/secretCards';
 
 interface SectionConfig {
   id: string;
@@ -18,6 +19,7 @@ interface SectionConfig {
   publications?: Publication[];
   items?: NewsItem[];
   cards?: CardItem[];
+  secretCards?: SecretCardItem[];
 }
 
 interface CardsSectionSource {
@@ -25,6 +27,8 @@ interface CardsSectionSource {
   description?: string;
   items?: CardItem[];
   cards?: CardItem[];
+  'item-secret'?: RawSecretCardItem[];
+  'items-secret'?: RawSecretCardItem[];
 }
 
 interface NewsItem {
@@ -84,13 +88,21 @@ function processSections(sections: SectionConfig[], locale?: string): SectionCon
       }
       case 'cards': {
         const cardsData = section.source ? getTomlContent<CardsSectionSource>(section.source, locale) : null;
-        const sourceCards = cardsData?.items || cardsData?.cards || [];
-        const selectedCards = sourceCards.filter((item) => item.selected === true);
+        const sourceSlug = section.source?.replace(/\.toml$/, '') || section.id;
+        const normalizedCards = cardsData
+          ? normalizeCardSource(cardsData as RawCardPageSource, sourceSlug, locale)
+          : { items: [], secretItems: [] };
+        const selectedCards = normalizedCards.items.filter((item) => item.selected === true);
+        const selectedSecretCards = normalizedCards.secretItems.filter((item) => item.selected === true);
+        const maxCount = section.limit || (selectedCards.length + selectedSecretCards.length);
+        const limitedCards = selectedCards.slice(0, maxCount);
+        const limitedSecretCards = selectedSecretCards.slice(0, Math.max(maxCount - limitedCards.length, 0));
         return {
           ...section,
           title: section.title ?? cardsData?.title,
           description: section.description ?? cardsData?.description,
-          cards: selectedCards.slice(0, section.limit || selectedCards.length),
+          cards: limitedCards,
+          secretCards: limitedSecretCards,
         };
       }
       default:
@@ -149,10 +161,17 @@ function loadPageDataForLocale(locale: string | undefined): HomePageLocaleData {
         }
 
         if (pageConfig.type === 'card') {
+          const normalizedCardSource = normalizeCardSource(pageConfig as RawCardPageSource, item.target, locale);
           return {
             type: 'card',
             id: item.target,
-            config: pageConfig as CardPageConfig,
+            config: {
+              type: 'card',
+              title: pageConfig.title,
+              description: pageConfig.description,
+              items: normalizedCardSource.items,
+              secretItems: normalizedCardSource.secretItems,
+            },
           } as PageData;
         }
 

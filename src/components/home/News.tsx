@@ -27,7 +27,7 @@ export default function News({
     const resolvedTitle = title || messages.home.news;
     const [expandedItems, setExpandedItems] = useState<Record<number, boolean>>({});
 
-    const previewLength = 180;
+    const previewLength = 256;
 
     const toggleExpanded = (index: number) => {
         setExpandedItems((prev) => ({

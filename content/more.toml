@@ -1,10 +1,41 @@
 type = "card"
-title = "Services"
-description = "Professional services and community involvement"
+title = "More"
+description = "More content"
 
 [[items]]
-title = "示例课程"
-subtitle = "示例"
-date = "2048"
-content = "示例"
-tags = ["示例"]
+title = "Project Name"
+subtitle = "Subtitle"
+date = "2025"
+content = "Project description..."
+selected = true
+tags = ["Tag1", "Tag2"]
+links = [
+    { name = "GitHub", url = "https://github.com/..." },
+    { name = "Live Demo", url = "https://demo.example.com" },
+    { name = "Paper", url = "https://arxiv.org/..." }
+]
+gallery = [
+    "https://example.com/image1.jpg",
+    "https://example.com/image2.jpg",
+    "https://example.com/image3.jpg",
+    "https://example.com/image4.jpg"
+]
+
+[[items-secret]]
+title = "Secret Project Name"
+subtitle = "Secret Subtitle"
+date = "2025"
+content = "Project description..."
+password = "123"
+tags = ["Tag1", "Tag2"]
+links = [
+    { name = "GitHub", url = "https://github.com/..." },
+    { name = "Live Demo", url = "https://demo.example.com" },
+    { name = "Paper", url = "https://arxiv.org/..." }
+]
+gallery = [
+    "https://example.com/image1.jpg",
+    "https://example.com/image2.jpg",
+    "https://example.com/image3.jpg",
+    "https://example.com/image4.jpg"
+]
