@@ -1,189 +1,429 @@
 1:"$Sreact.fragment"
-2:I[21062,["/_next/static/chunks/0sttj63b0qs27.js","/_next/static/chunks/0q9sk20o7y8j7.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/027r0ojdmrt-x.js","/_next/static/chunks/143kxxj0-__vy.js","/_next/static/chunks/03-tmvx0-ngsw.js"],"default"]
-8:I[97367,["/_next/static/chunks/0sttj63b0qs27.js","/_next/static/chunks/0q9sk20o7y8j7.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/027r0ojdmrt-x.js"],"OutletBoundary"]
+2:I[21062,["/_next/static/chunks/0shfa0w7vx3ty.js","/_next/static/chunks/0dg8mowt35m~6.js","/_next/static/chunks/0iw2vjq4a6d0m.js","/_next/static/chunks/17sfdsy5vq21t.js","/_next/static/chunks/0_.b0r9r8~y00.js","/_next/static/chunks/0soqck6pyx_80.js"],"default"]
+8:I[97367,["/_next/static/chunks/0shfa0w7vx3ty.js","/_next/static/chunks/0dg8mowt35m~6.js","/_next/static/chunks/0iw2vjq4a6d0m.js","/_next/static/chunks/17sfdsy5vq21t.js"],"OutletBoundary"]
 9:"$Sreact.suspense"
-3:T12e2,# Need Update
+3:T2f88,# 周靖人
 
-# 周靖人
+**爱丁堡大学数学专业本科四年级学生**  
+**即将入读牛津大学 Mathematics and Foundations of Computer Science 硕士项目**（预计 2026 年入学）
 
-邮箱：jasper.zhou0925@gmail.com  
-LinkedIn：https://www.linkedin.com/in/zhoujingren  
-GitHub：https://github.com/jasperzhou
+**所在地：** 英国  
+**邮箱：** *jasper.zhou0925@gmail.com*  
+**GitHub：** [github.com/zhoujasper](https://github.com/zhoujasper)  
+**个人网站：** [zhoujasper.github.io](https://zhoujasper.github.io/)
+
+---
+
+## 个人简介
+
+我目前是爱丁堡大学数学专业本科四年级学生，成绩保持在 **First Class Honours** 水平，并计划于 2026 年进入牛津大学攻读 **MSc in Mathematics and Foundations of Computer Science**。我的学术兴趣主要集中在**纯数学**方向，尤其是代数、分析、数论与代数几何；同时，我也对具有坚实数学基础的计算方向感兴趣，包括优化、算法、统计建模、仿真以及基于图结构的机器学习方法。
+
+我的学习和项目经历结合了严格的证明型数学训练与较强的计算、建模和研究能力。我曾参与或主导过多个项目，主题涵盖**丢番图逼近**、**大学课程排课的约束规划模型**、**图神经网络**、**统计预测**以及**离散事件仿真**。此外，我也曾担任 **MathPALS Leader** 和 **Student Representative**，这些经历进一步提升了我的数学表达能力、教学支持能力、沟通能力、领导力与团队协作能力。
+
+---
 
 ## 教育背景
 
-**University of Oxford**，Mathematics and Foundations of Computer Science 硕士（预计入学），*2026 - 2027*  
-- 已获得 Oxford Mathematics and Foundations of Computer Science 项目录取。  
-- 学术兴趣涵盖纯数学、计算方法以及计算机科学的理论基础。
+### 牛津大学
+**MSc in Mathematics and Foundations of Computer Science**  
+*预计 2026–2027*
 
-**University of Edinburgh**，BSc (Hons) Mathematics，*2023 - 2026*  
-- 当前成绩保持在 **First Class Honours** 水平。  
-- 通过 **Direct Entry** 项目进入爱丁堡大学数学专业。  
-- 相关课程包括：Honours Algebra (97%), Honours Complex Variables (94%), Honours Differential Equations (93%), Fundamentals of Pure Mathematics (93%), Several Variable Calculus and Differential Equations (95%)。  
-- 毕业项目题目为 **Approximation by Rationals**，导师为 **Professor Jim Wright**。
+- 即将学习连接纯数学、理论计算机科学、逻辑、算法与计算方法的高级课程。
+- 计划关注的学术方向包括代数、数论、证明型数学、算法以及计算的数学基础。
 
-## 研究与项目经历
+### 爱丁堡大学
+**BSc Mathematics with Honours**  
+*2023–2026*
 
-**毕业项目：Approximation by Rationals**  
-爱丁堡大学，*2025 - 2026*  
-- 在 **Professor Jim Wright** 指导下研究丢番图逼近，重点讨论实数与代数数的有理逼近问题。  
-- 主要内容包括连分数、Liouville 定理、Thue 定理，以及它们在二元齐次多项式、Pell 方程和 Dirichlet 单位定理中的应用。
+- 本科四年级学生，目前成绩保持在 **First Class Honours** 水平。
+- 直接进入大学二年级学习，并在纯数学、应用数学、统计、优化与计算课程中取得优秀成绩。
+- 毕业小组项目：**Approximation by Rationals**，指导教师为 **Professor Jim Wright**。
+- 已修或正在学习的高级课程包括 **Commutative Algebra**、**Further Complex Variables**、**Numerical Linear Algebra**、**Introduction to Partial Differential Equations**、**Advanced Methods of Applied Mathematics**、**Topics in Applied Operational Research**、**Incomplete Data Analysis**、**Analytic Number Theory** 与 **Algebraic Geometry**。
 
-**Random-Walk-Based Approach to Graph Neural Networks**  
-Vacation Research Project，*2025*  
-- 研究 message-passing GNN 的局限性，包括 oversmoothing 与 oversquashing。  
-- 探索基于随机游走的图神经网络架构，并将方法拓展到 hypergraph 场景。  
-- 提升了自己在图论、深度学习框架及图学习模型评估方面的研究与实现能力。
+**部分代表性课程成绩**
 
-**Quantitative Modeling of Winter Peak Electricity Demand in Great Britain**  
-Team Leader，*2025*  
-- 基于 1991–2014 年数据构建多因素线性回归模型，用于预测英国冬季用电峰值需求。  
-- 综合考虑可再生能源发电、季节因素和工作日效应，以提升预测精度。  
-- 构建自动化交叉验证与 AIC/BIC 模型选择流程，提高模型验证效率。
+| 方向 | 代表课程与成绩 |
+|---|---|
+| 纯数学 | Honours Algebra **97**，Commutative Algebra **95**，Honours Complex Variables **94**，Fundamentals of Pure Mathematics **93**，Logic 1 **90**，Geometry **85** |
+| 分析、几何与微分方程 | Several Variable Calculus and Differential Equations **95**，Honours Differential Equations **93**，Honours Analysis **84**，Numerical Ordinary Differential Equations and Applications **86** |
+| 计算、数值与应用数学 | Computing and Numerics **92**，Numerical Linear Algebra **82**，Mathematical Biology **83** |
+| 概率、统计与建模 | Statistics **84**，Probability **82**，Statistical Methodology **81** |
 
-**Strategic Workforce Allocation Optimization: A MILP-Based Analysis**  
-Team Leader，*2025*  
-- 使用 **Xpress-Mosel** 建立混合整数线性规划模型，对 378 名顾问分配至 13 个项目进行优化。  
-- 在预算、岗位限制和风险因素约束下，分析利润最大化策略。  
-- 通过情景分析，对 outsourcing、remote work 和团队配置提出建议。
+### Pennon Education
+**A-Level Mathematics, Further Mathematics and Physics**  
+*2022–2023*
 
-## 教学与学生工作经历
+- 数学、进阶数学与物理均取得 **A\*** 成绩。
 
-**MathPALS Leader**  
-Edinburgh University Students’ Association  
-*2024 - 至今*  
-- 组织并带领数学相关课程的同伴辅导活动。  
-- 通过非正式、互动式的教学方式，帮助一年级学生提升对数学课程内容的理解。  
-- 在活动组织与同伴支持中提升了沟通、领导与协作能力。
+### 昆明市第一中学
+**高中理科教育**  
+*2020–2023*
 
-**Student Representative**  
-Edinburgh University Students’ Association  
-*2024 - 2025*  
-- 收集并整理学生反馈，并在 Student-Staff Liaison Committee 会议中进行沟通。  
-- 与其他学生代表合作，促进学生与教师之间的有效交流。  
-- 为建设更积极、支持性的学习环境作出贡献。
+- 完成中国高中理科方向课程学习。
+- 通过数学竞赛训练与国际数学竞赛经历，较早培养了对数学问题解决与严谨推理的兴趣。
 
-## 技能
-
-- **编程与计算：** Python, R, Excel VBA  
-- **Python 相关：** Pandas, NumPy, Matplotlib, PyTorch  
-- **数学与建模：** Mathematical Modelling, Optimization, Statistical Computing  
-- **文档与软件：** LaTeX, MS Office (Word, Excel, PowerPoint), Adobe Photoshop  
-- **语言：** 中文（母语）, 英文（流利）
-
-## 奖项与荣誉
-
-- **Kelland Memorial Prize** - University of Edinburgh (*2024*)：因作为直录进入数学二年级学生中的优异表现而获奖。
-- **William and Isabella Dick Prize** - University of Edinburgh (*2024*)：因在数学二年级中的优异表现而获奖。
-- **Top 3 in Programme / Top 5% in Year Group** - School of Mathematics, University of Edinburgh (*2025*)：在 2024/25 学年数学学院学术排名中，项目内位列第 3/24，年级总排名位列第 4/120。
-- **United Kingdom Best Pairs Entry** - Simon Marais Mathematics Competition (*2025*)：与 Kevin Zhao 搭档，在 West Division 中取得 United Kingdom 最佳双人组成绩，得分为 21。
-- **School of Mathematics Vacation Scholarship** - University of Edinburgh (*2024*)：获得爱丁堡大学数学学院暑期研究项目奖学金资助。
-- **Top 25% Worldwide** - Euclid Mathematics Contest (*2023*)：在 Euclid 数学竞赛中取得全球前 25% 的成绩。
+---
 
 ## 研究兴趣
 
-- Algebra  
-- Number Theory  
-- Algebraic Geometry  
-- Computational Algorithms
+- **纯数学：** 代数、数论、代数几何、分析、复分析、丢番图逼近。
+- **数学与计算机科学：** 算法、理论计算机科学、图论、基于图结构的机器学习、计算数学。
+- **应用与计算数学：** 优化、约束规划、仿真、统计建模、运筹学。
 
-## 兴趣爱好
+---
 
-- Piano  
-- Reading  
-- Badminton  
-- Photography4:T148b,# Need Update
+## 代表项目经历
 
-# Jingren Zhou (Jasper)
+### 有理数逼近（Approximation by Rationals）
+**爱丁堡大学四年级小组项目** · *指导教师：Professor Jim Wright*  
+*2025–2026*
 
-Email: jasper.zhou0925@gmail.com  
-LinkedIn: https://www.linkedin.com/in/zhoujingren  
-GitHub: https://github.com/jasperzhou
+- 参与一个关于**丢番图逼近**的纯数学项目，核心问题是研究实数能够被有理数逼近到何种程度。
+- 系统整理并研究了**连分数**、**Liouville 定理**、**Thue 定理**，以及它们与 **Pell 方程**、**二元齐次多项式**和 **Dirichlet 单位定理**之间的联系。
+- 进一步提升了严格证明、数学写作、文献组织和将多个数论主题整合为连贯逻辑叙述的能力。
+
+### 数学课程排课的约束规划模型
+**爱丁堡大学 Topics in Applied Operational Research 期末项目** · *组长*  
+*2026*
+
+- 主导开发并分析了一个面向爱丁堡大学荣誉年级数学课程排课问题的大规模 **CP-SAT 优化模型**。
+- 对课程时间安排、学生选课结构、联合学位学生的外院固定课程表、学生层面的冲突可行性以及课表质量规则进行了建模。
+- 使用 **Google OR-Tools CP-SAT**，并通过学生类型聚合减少模型规模，同时尽量保留项目层面的约束结构和外院课程时间表影响。
+- 比较了多个情景设定，包括午休限制、早九限制、课表紧凑性规则和连续讲座要求；结果表明，在合适规则组合下可以获得零冲突课表，而过于严格的讲座连续性规则会显著影响联合学位学生的可行性。
+
+### 基于随机游走的图神经网络
+**暑期研究项目**  
+*2025 年夏季*
+
+- 研究**基于随机游走的图神经网络方法**是否能够相较标准消息传递型 GNN 提升表达能力。
+- 学习并分析了 **oversmoothing** 与 **oversquashing** 等图神经网络中的典型局限，并梳理了图卷积网络与图注意力网络等模型结构。
+- 探索具有理论动机的随机游走方案，并考虑其在**超图**上的推广，因为超图能够表达普通图难以完全刻画的高阶关系。
+- 在图论、机器学习、表示学习和数学建模交叉方向上积累了研究经验。
+
+### 英国冬季峰值电力需求的定量建模
+**统计建模项目** · *组长*  
+*2025 年 4 月–5 月*
+
+- 带领小组基于 1991 至 2014 年的历史数据，对英国冬季峰值电力需求进行统计建模。
+- 建立多因素线性回归框架，将可再生能源发电量、季节性结构和工作日效应纳入模型，以提升模型可解释性和预测效果。
+- 设计自动化模型选择流程，结合 **五折交叉验证**、**AIC** 与 **BIC**，使验证过程更加系统和高效。
+- 将统计建模结果与严寒冬季条件下的备用容量估计联系起来，体现模型在实际能源规划问题中的应用价值。
+
+### BoxCar 拼车系统仿真研究
+**数据驱动的离散事件仿真项目** · *组长*  
+*2026 年 2 月*
+
+- 构建了一个拼车系统的离散事件仿真模型，刻画乘客到达、司机可用性、基于距离的匹配、行程执行、取消、收入与成本等过程。
+- 检验项目给定参数是否与观测数据在统计上相符，并发现原始参数配置会使系统接近饱和状态。
+- 使用**最大似然估计**重新估计关键参数，并比较调整后模型与原始基准模型的表现。
+- 分析了乘客服务质量、司机收入、平台盈利能力与系统平衡之间的权衡；结论表明，相比简单增加司机供给，提高匹配效率并减少空驶里程可能是更可持续的改进方向。
+
+### 战略劳动力分配优化
+**优化建模项目** · *组长*  
+*2025 年 4 月*
+
+- 将一家咨询公司的劳动力分配问题形式化为数学规划模型。
+- 在角色限制、差旅成本、bench 政策、远程工作限制、外包选项和中断情景等约束下，对不同地区、项目和职级的顾问进行分配。
+- 使用 **Xpress** 求解线性 / 整数优化模型，并评估需求变化、远程工作惩罚、外包成本和交通中断等战略情景。
+- 展示了数学规划如何在资源受限和运营不确定性条件下支持管理决策。
+
+### 多阶段笔记本电脑制造系统仿真研究
+**制造系统仿真项目** · *组长*  
+*2026 年 4 月*
+
+- 使用 **Simul8** 构建多阶段笔记本电脑制造系统的离散事件仿真模型，包含阻塞、返工、库存控制、部件匹配和订单层面的同步机制。
+- 对到达间隔和加工时间数据进行了输入分析，使用 **AIC**、**BIC**、**Kolmogorov–Smirnov 检验**和**最大似然估计**进行分布拟合与验证。
+- 识别出系统瓶颈主要集中在机壳制造、铝材供应、硬盘可用性和工作台容量等环节。
+- 设计逐步改进实验，在改进模型中降低了平均周期时间，提高了吞吐率，并降低了订单拒绝率。
+
+---
+
+## 教学、领导与学生代表经历
+
+### MathPALS Leader
+**爱丁堡大学学生会 / 爱丁堡大学数学学院**  
+*2024 年 4 月至今*
+
+- 为一年级数学学生组织非正式的同伴辅助学习活动，营造支持性的小组讨论环境。
+- 帮助学生讨论核心课程问题，理解抽象数学概念，并提升数学问题解决的信心。
+- 练习在不给出直接答案的情况下引导讨论，并与其他学生负责人共同准备学习活动。
+
+### Student Representative
+**爱丁堡大学学生会 / 爱丁堡大学数学学院**  
+*2024 年 9 月–2025 年 6 月*
+
+- 代表数学专业学生收集关于教学、评估、学习负担、学习资源和整体学术体验的反馈。
+- 通过学生代表机制和师生联络渠道向学院传达学生意见和建议。
+- 在将学生反馈转化为建设性、可执行建议的过程中，提升了沟通、协调与问题解决能力。
+
+### 学生志愿者
+**爱丁堡大学学生会 / Saltire Awards**  
+*2025*
+
+- 完成至少 **25 小时**志愿服务，并获得 Saltire Awards “The Approach” 证书。
+- 在学业之外积极参与校园生活与学生社区建设。
+
+### 志愿者 / 优秀志愿者
+**云南民族博物馆，中国昆明**  
+*2021–2023*
+
+- 参与面向公众的博物馆文化服务，协助传播云南多民族文化遗产。
+- 因志愿服务表现优秀，被评为**优秀志愿者**。
+- 在志愿活动中提升了责任感、文化理解能力以及与不同背景人群沟通的能力。
+
+---
+
+## 奖项与荣誉
+
+- **United Kingdom Best Pairs Entry**，Simon Marais Mathematics Competition，2025。与 Kevin Zhao 共同获得 West Division 中英国参赛队伍最高的双人组成绩。
+- **专业前三 / 年级前 5%**，爱丁堡大学数学学院，2025。在 2024/25 学年学术排名中，位列本专业 24 人中的第 3 名、全年级 120 人中的第 4 名。
+- **Kelland Memorial Prize**，爱丁堡大学，2024。因作为直接进入二年级的数学学生取得优异成绩而获奖。
+- **William and Isabella Dick Prize**，爱丁堡大学，2024。因二年级数学课程表现突出而获奖。
+- **School of Mathematics Vacation Scholarship**，爱丁堡大学，2024。获得数学学院暑期研究资助，用于开展受指导的暑期研究项目。
+- **全球前 25%**，Euclid Mathematics Contest，2023。获得滑铁卢大学 CEMC 欧几里得数学竞赛 Certificate of Distinction。
+- **省级三等奖**，中国数学奥林匹克，2021。
+
+---
+
+## 技术能力
+
+**数学与建模**  
+严格数学证明写作、数学表达、优化建模、统计建模、回归分析、仿真、情景分析、输入建模、模型验证、运筹学。
+
+**编程与计算工具**  
+Python、NumPy、Pandas、Matplotlib、PyTorch、R、Google OR-Tools CP-SAT、Xpress、Simul8、Excel VBA。
+
+**学术与专业工具**  
+LaTeX、Overleaf、Git、GitHub、Microsoft Word、Excel、PowerPoint、Adobe Photoshop。
+
+**语言能力**  
+中文：母语。  
+英文：流利。
+
+---
+
+## 其他兴趣
+
+- 钢琴，已获得十级证书。
+- 阅读、摄影、数独与羽毛球。
+
+---
+
+## 推荐人
+
+可根据需要提供。
+4:T3588,# Jingren Zhou (Jasper)
+
+**Final-Year BSc Mathematics Student, University of Edinburgh**  
+**Incoming MSc Student in Mathematics and Foundations of Computer Science, University of Oxford** *(expected 2026)*
+
+**Location:** United Kingdom  
+**Email:** *jasper.zhou0925@gmail.com*  
+**GitHub:** [github.com/zhoujasper](https://github.com/zhoujasper)  
+**Personal Website:** *[zhoujasper.github.io](https://zhoujasper.github.io/)*
+
+---
+
+## Profile
+
+I am a final-year Mathematics student at the University of Edinburgh, currently maintaining **First Class Honours** performance and preparing to begin the **MSc in Mathematics and Foundations of Computer Science** at the University of Oxford. My academic interests lie mainly in **pure mathematics**, especially algebra, analysis, number theory, and algebraic geometry, alongside mathematically grounded areas of computation such as optimisation, algorithms, statistical modelling, simulation, and graph-based machine learning.
+
+My background combines rigorous proof-based mathematics with substantial computational and modelling experience. I have worked on projects in **Diophantine approximation**, **constraint programming for university timetabling**, **graph neural networks**, **statistical forecasting**, and **discrete-event simulation**. I have also served as a **MathPALS Leader** and **Student Representative**, which has strengthened my communication, teaching, leadership, and collaborative skills.
+
+---
 
 ## Education
 
-**University of Oxford**, MSc in Mathematics and Foundations of Computer Science (Expected), *2026 - 2027*  
-- Received an offer for the Mathematics and Foundations of Computer Science programme.  
-- Academic interests span pure mathematics, computational methods, and theoretical aspects of computer science.
+### University of Oxford
+**MSc in Mathematics and Foundations of Computer Science**  
+*Expected 2026–2027*
 
-**University of Edinburgh**, BSc (Hons) Mathematics, *2023 - 2026*  
-- Currently maintaining **First Class Honours** standing.  
-- Entered the University of Edinburgh through the **Direct Entry** route.  
-- Relevant coursework includes: Honours Algebra (97%), Honours Complex Variables (94%), Honours Differential Equations (93%), Fundamentals of Pure Mathematics (93%), and Several Variable Calculus and Differential Equations (95%).  
-- Final-year project: **Approximation by Rationals**, supervised by **Professor Jim Wright**.
+- Expected to study advanced topics connecting pure mathematics, theoretical computer science, logic, algorithms, and computational methods.
+- Intended academic interests include algebra, number theory, proof-based mathematics, algorithms, and the mathematical foundations of computation.
 
-## Research and Project Experience
+### University of Edinburgh
+**BSc Mathematics with Honours**  
+*2023–2026*
 
-**Final Year Project: Approximation by Rationals**  
-University of Edinburgh, *2025 - 2026*  
-- Studied Diophantine approximation, focusing on rational approximation of real and algebraic numbers under the supervision of **Professor Jim Wright**.  
-- Explored continued fractions, Liouville’s theorem, and Thue’s theorem, together with applications to binary homogeneous polynomials, Pell equations, and Dirichlet’s Unit Theorem.
+- Final-year undergraduate student; current academic performance at **First Class Honours** level.
+- Entered directly into second year and achieved strong results across pure mathematics, applied mathematics, statistics, optimisation, and computing.
+- Final-year group project: **Approximation by Rationals**, supervised by **Professor Jim Wright**.
+- Selected advanced modules include **Commutative Algebra**, **Further Complex Variables**, **Numerical Linear Algebra**, **Introduction to Partial Differential Equations**, **Advanced Methods of Applied Mathematics**, **Topics in Applied Operational Research**, **Incomplete Data Analysis**, **Analytic Number Theory**, and **Algebraic Geometry**.
 
-**Random-Walk-Based Approach to Graph Neural Networks**  
-Vacation Research Project, *2025*  
-- Investigated limitations of message-passing graph neural networks, including oversmoothing and oversquashing.  
-- Explored random-walk-based architectures and extended related methodologies to hypergraph settings.  
-- Strengthened research skills in graph theory, deep learning frameworks, and model evaluation.
+**Selected academic results**
 
-**Quantitative Modeling of Winter Peak Electricity Demand in Great Britain**  
-Team Leader, *2025*  
-- Developed a multi-factor linear regression model using 1991–2014 data to forecast winter peak electricity demand in Great Britain.  
-- Incorporated renewable generation, seasonal patterns, and weekday effects to improve predictive accuracy.  
-- Built automated dashboards for five-fold cross-validation and AIC/BIC-based model selection.
+| Area | Selected courses and marks |
+|---|---|
+| Pure mathematics | Honours Algebra **97**, Commutative Algebra **95**, Honours Complex Variables **94**, Fundamentals of Pure Mathematics **93**, Logic 1 **90**, Geometry **85** |
+| Analysis, geometry, and differential equations | Several Variable Calculus and Differential Equations **95**, Honours Differential Equations **93**, Numerical Ordinary Differential Equations and Applications **86**, Honours Analysis **84** |
+| Computational, numerical, and applied mathematics | Computing and Numerics **92**, Mathematical Biology **83**, Numerical Linear Algebra **82** |
+| Probability, statistics, and modelling | Statistics **84**, Probability **82**, Statistical Methodology **81** |
 
-**Strategic Workforce Allocation Optimization: A MILP-Based Analysis**  
-Team Leader, *2025*  
-- Built a mixed-integer linear programming model in **Xpress-Mosel** to allocate 378 consultants across 13 projects under budget and role constraints.  
-- Extended the model by incorporating multiple risk factors, including demand shocks and outsourcing premiums.  
-- Performed scenario analysis to support strategic recommendations on outsourcing, remote work, and team composition.
+### Pennon Education
+**A-Level Mathematics, Further Mathematics, and Physics**  
+*2022–2023*
 
-## Teaching and Student Leadership
+- Achieved **A\*** in Mathematics, **A\*** in Further Mathematics, and **A\*** in Physics.
 
-**MathPALS Leader**  
-Edinburgh University Students’ Association  
-*2024 - Present*  
-- Led peer-mentoring sessions in key mathematics courses for first-year students.  
-- Helped create engaging and supportive learning environments through informal teaching strategies.  
-- Developed leadership, communication, and organisational skills through student support work.
+### Kunming No. 1 High School
+**Senior Secondary Education, Science Track**  
+*2020–2023*
 
-**Student Representative**  
-Edinburgh University Students’ Association  
-*2024 - 2025*  
-- Collected and presented student feedback in Student-Staff Liaison Committee meetings.  
-- Worked with fellow representatives to improve communication between students and staff.  
-- Contributed to fostering a supportive academic environment within the School of Mathematics.
+- Completed a rigorous science-track high-school curriculum in China.
+- Developed early interests in mathematical problem solving through olympiad-style training and international mathematics competitions.
 
-## Skills
-
-- **Programming and Computing:** Python, R, Excel VBA  
-- **Python Libraries:** Pandas, NumPy, Matplotlib, PyTorch  
-- **Mathematics and Modelling:** Mathematical Modelling, Optimisation, Statistical Computing  
-- **Software and Tools:** LaTeX, MS Office (Word, Excel, PowerPoint), Adobe Photoshop  
-- **Languages:** Chinese (Native), English (Fluent)
-
-## Awards and Honors
-
-- **Kelland Memorial Prize** - University of Edinburgh (*2024*): Awarded for distinguished performance as a direct entrant into second-year Mathematics.
-- **William and Isabella Dick Prize** - University of Edinburgh (*2024*): Awarded for outstanding performance in second-year Mathematics.
-- **Top 3 in Programme / Top 5% in Year Group** - School of Mathematics, University of Edinburgh (*2025*): Ranked 3rd out of 24 within the programme and 4th out of 120 in the year group in the 2024/25 academic rankings.
-- **United Kingdom Best Pairs Entry** - Simon Marais Mathematics Competition (*2025*): Together with Kevin Zhao, achieved the top-scoring pairs entry from the United Kingdom in the West Division, with a score of 21.
-- **School of Mathematics Vacation Scholarship** - University of Edinburgh (*2024*): Received summer research funding through the School of Mathematics.
-- **Top 25% Worldwide** - Euclid Mathematics Contest (*2023*): Placed in the top 25% worldwide in the Euclid Mathematics Contest.
+---
 
 ## Research Interests
 
-- Algebra  
-- Number Theory  
-- Algebraic Geometry  
-- Computational Algorithms
+- **Pure Mathematics:** algebra, number theory, algebraic geometry, analysis, complex variables, Diophantine approximation.
+- **Mathematical Computer Science:** algorithms, theoretical computer science, graph theory, graph-based machine learning, computational mathematics.
+- **Applied and Computational Mathematics:** optimisation, constraint programming, simulation, statistical modelling, operations research.
 
-## Interests
+---
 
-- Piano  
-- Reading  
-- Badminton  
-- Photography0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"dataByLocale":{"zh":{"type":"text","config":{"type":"text","title":"简历","source":"cv.md"},"content":"$3"},"en":{"type":"text","config":{"type":"text","title":"CV","source":"cv.md"},"content":"$4"}},"defaultLocale":"en"}],["$L5","$L6"],"$L7"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"6812Hz_mOwOcqgiM9wHkH"}
-5:["$","script","script-0",{"src":"/_next/static/chunks/143kxxj0-__vy.js","async":true}]
-6:["$","script","script-1",{"src":"/_next/static/chunks/03-tmvx0-ngsw.js","async":true}]
+## Selected Projects
+
+### Approximation by Rationals
+**Year 4 Group Project, University of Edinburgh** · *Supervisor: Professor Jim Wright*  
+*2025–2026*
+
+- Working on a pure mathematics project in **Diophantine approximation**, centred on the question of how well real numbers can be approximated by rational numbers.
+- Developed a structured mathematical account of **continued fractions**, **Liouville’s theorem**, **Thue’s theorem**, and their connections with **Pell equations**, **binary homogeneous polynomials**, and **Dirichlet’s Unit Theorem**.
+- Strengthened skills in rigorous proof, mathematical exposition, literature organisation, and building a coherent logical narrative across several related areas of number theory.
+
+### Constraint Programming for Mathematics Timetabling
+**TAOR Final Project, University of Edinburgh** · *Team Leader*  
+*2026*
+
+- Led the development and analysis of a large-scale **CP-SAT optimisation model** for honours-level Mathematics timetabling at the University of Edinburgh.
+- Modelled course scheduling, student choice structures, fixed outside-school timetables for joint-degree students, student-level clash feasibility, and timetable-quality rules.
+- Used **Google OR-Tools CP-SAT** with student-type aggregation to reduce model size while preserving programme-level constraints and external timetable structure.
+- Compared scenario variants involving lunch breaks, 9am restrictions, compactness rules, and consecutive-lecture requirements; showed that a zero-conflict timetable can be achieved under a suitable rule set, while overly restrictive lecture-block rules disproportionately affect joint-programme students.
+
+### Random-Walk-Based Graph Neural Networks
+**Vacation Research Project**  
+*Summer 2025*
+
+- Investigated whether **random-walk-based graph neural network methods** can improve expressivity compared with standard message-passing GNNs.
+- Studied limitations such as **oversmoothing** and **oversquashing**, and reviewed architectures including graph convolutional and graph attention networks.
+- Explored theoretically motivated random-walk schemes and considered extensions to **hypergraphs**, where higher-order relationships cannot be fully captured by ordinary graph structures.
+- Developed research skills at the intersection of graph theory, machine learning, representation learning, and mathematical modelling.
+
+### Quantitative Modelling of Winter Peak Electricity Demand in Great Britain
+**Statistical Modelling Project** · *Team Leader*  
+*April–May 2025*
+
+- Led a team project modelling winter peak electricity demand in Great Britain using historical data from 1991 to 2014.
+- Built a multi-factor linear regression framework incorporating renewable generation, seasonal structure, and weekday effects to improve interpretability and predictive performance.
+- Designed an automated model-selection workflow using **five-fold cross-validation**, **AIC**, and **BIC**, making validation more systematic and efficient.
+- Connected statistical modelling outputs to reserve-capacity estimation under severe winter conditions.
+
+### BoxCar Ride-Sharing Simulation Study
+**Data-Driven Discrete-Event Simulation Project** · *Team Leader*  
+*February 2026*
+
+- Built a discrete-event simulation model of a ride-sharing system, capturing rider arrivals, driver availability, distance-based matching, trip execution, cancellations, revenue, and costs.
+- Tested whether parameters in the project brief were statistically consistent with observed data and found that the original configuration drove the system close to saturation.
+- Re-estimated key parameters using **maximum likelihood methods** and compared adjusted and original baselines.
+- Analysed trade-offs between rider service quality, driver earnings, profitability, and system balance; concluded that improving matching efficiency and reducing empty miles can be more sustainable than simply oversupplying drivers.
+
+### Strategic Workforce Allocation Optimisation
+**Optimisation Modelling Project** · *Team Leader*  
+*April 2025*
+
+- Formulated and solved a workforce allocation problem for a consulting firm using mathematical programming.
+- Allocated consultants across projects, regions, and seniority levels while respecting role restrictions, travel costs, bench policies, remote-work limits, outsourcing options, and disruption scenarios.
+- Used **Xpress** to solve linear/integer optimisation models and evaluate strategic scenarios involving demand variability, remote-work penalties, outsourcing costs, and transport disruption.
+- Demonstrated how mathematical programming can support managerial decision-making under resource and operational constraints.
+
+### Multi-Stage Laptop Manufacturing System Simulation Study
+**Manufacturing System Simulation Project** · *Team Leader*  
+*April 2026*
+
+- Developed a **Simul8** discrete-event simulation of a multi-stage laptop manufacturing system with blocking, rework, inventory control, component matching, and order-level synchronisation.
+- Conducted input analysis on interarrival and processing-time data using **AIC**, **BIC**, **Kolmogorov–Smirnov testing**, and **maximum likelihood estimation**.
+- Diagnosed system bottlenecks in case manufacturing, aluminium supply, hard-disk availability, and workbench capacity.
+- Designed progressive improvement experiments that reduced average cycle time, increased throughput, and lowered rejection rates in the improved model.
+
+---
+
+## Teaching, Leadership, and Representation
+
+### MathPALS Leader
+**Edinburgh University Students’ Association / School of Mathematics, University of Edinburgh**  
+*April 2024–Present*
+
+- Led informal peer-assisted learning sessions for first-year Mathematics students in a supportive small-group environment.
+- Helped students discuss core course questions, understand abstract mathematical ideas, and develop confidence in problem solving.
+- Practised guiding discussion without simply giving away solutions and coordinated session preparation with other student leaders.
+
+### Student Representative
+**Edinburgh University Students’ Association / School of Mathematics, University of Edinburgh**  
+*September 2024–June 2025*
+
+- Represented Mathematics students by collecting feedback on teaching, assessment, workload, resources, and academic experience.
+- Communicated student concerns and suggestions through representative channels and staff-student liaison mechanisms.
+- Developed communication, coordination, and problem-solving skills by translating student feedback into constructive and actionable recommendations.
+
+### Student Volunteer
+**Edinburgh University Students’ Association / Saltire Awards**  
+*2025*
+
+- Completed at least **25 hours** of volunteering and received the Saltire Awards “The Approach” certificate.
+- Contributed to student life and campus community activities alongside academic study.
+
+### Volunteer / Outstanding Volunteer
+**Yunnan Nationalities Museum, Kunming, China**  
+*2021–2023*
+
+- Volunteered in public-facing museum cultural service and helped support the communication of Yunnan’s multi-ethnic cultural heritage.
+- Recognised as an **Outstanding Volunteer** for strong performance in volunteering activities.
+- Developed responsibility, cultural awareness, and confidence in communicating with people from different backgrounds.
+
+---
+
+## Awards and Distinctions
+
+- **United Kingdom Best Pairs Entry**, Simon Marais Mathematics Competition, 2025. Highest-scoring UK pairs entry in the West Division, achieved with Kevin Zhao.
+- **Top 3 in Programme / Top 5% in Year Group**, School of Mathematics, University of Edinburgh, 2025. Ranked 3rd out of 24 in programme and 4th out of 120 in year group for 2024/25.
+- **Kelland Memorial Prize**, University of Edinburgh, 2024. Awarded for distinguished performance as a direct entrant into second-year Mathematics.
+- **William and Isabella Dick Prize**, University of Edinburgh, 2024. Awarded for outstanding performance in second-year Mathematics.
+- **School of Mathematics Vacation Scholarship**, University of Edinburgh, 2024. Awarded summer research funding for supervised vacation research in mathematics.
+- **Top 25% Worldwide**, Euclid Mathematics Contest, 2023. Certificate of Distinction in the University of Waterloo CEMC Euclid Contest.
+- **Third Prize**, China Mathematical Olympiad, Provincial Level, 2021.
+
+---
+
+## Technical Skills
+
+**Mathematics and modelling**  
+Rigorous proof writing, mathematical exposition, optimisation modelling, statistical modelling, regression, simulation, scenario analysis, input modelling, validation, and operations research.
+
+**Programming and computational tools**  
+Python, NumPy, Pandas, Matplotlib, PyTorch, R, Google OR-Tools CP-SAT, Xpress, Simul8, Excel VBA.
+
+**Academic and professional tools**  
+LaTeX, Overleaf, Git, GitHub, Microsoft Word, Excel, PowerPoint, Adobe Photoshop.
+
+**Languages**  
+Chinese: native.  
+English: fluent.
+
+---
+
+## Additional Interests
+
+- Piano, with Level 10 certificate.
+- Reading, photography, sudoku, and badminton.
+
+---
+
+## References
+
+Available upon request.
+0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"dataByLocale":{"zh":{"type":"text","config":{"type":"text","title":"简历","source":"cv.md"},"content":"$3"},"en":{"type":"text","config":{"type":"text","title":"CV","source":"cv.md"},"content":"$4"}},"defaultLocale":"en"}],["$L5","$L6"],"$L7"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"0USCjN31GtzLsXz_3Z84p"}
+5:["$","script","script-0",{"src":"/_next/static/chunks/0_.b0r9r8~y00.js","async":true}]
+6:["$","script","script-1",{"src":"/_next/static/chunks/0soqck6pyx_80.js","async":true}]
 7:["$","$L8",null,{"children":["$","$9",null,{"name":"Next.MetadataOutlet","children":"$@a"}]}]
 a:null
