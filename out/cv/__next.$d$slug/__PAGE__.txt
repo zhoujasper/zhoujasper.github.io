@@ -1,5 +1,5 @@
 1:"$Sreact.fragment"
-2:I[21062,["/_next/static/chunks/0sttj63b0qs27.js","/_next/static/chunks/0q9sk20o7y8j7.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/027r0ojdmrt-x.js","/_next/static/chunks/143kxxj0-__vy.js","/_next/static/chunks/0epua.o4oltpi.js"],"default"]
+2:I[21062,["/_next/static/chunks/0sttj63b0qs27.js","/_next/static/chunks/0q9sk20o7y8j7.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/027r0ojdmrt-x.js","/_next/static/chunks/143kxxj0-__vy.js","/_next/static/chunks/073dyb9exa5py.js"],"default"]
 8:I[97367,["/_next/static/chunks/0sttj63b0qs27.js","/_next/static/chunks/0q9sk20o7y8j7.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/027r0ojdmrt-x.js"],"OutletBoundary"]
 9:"$Sreact.suspense"
 3:T12e2,# Need Update
@@ -182,8 +182,8 @@ Edinburgh University Students’ Association
 - Piano  
 - Reading  
 - Badminton  
-- Photography0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"dataByLocale":{"zh":{"type":"text","config":{"type":"text","title":"简历","source":"cv.md"},"content":"$3"},"en":{"type":"text","config":{"type":"text","title":"CV","source":"cv.md"},"content":"$4"}},"defaultLocale":"en"}],["$L5","$L6"],"$L7"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"Z1zN8626sfvfNKU6KVtZz"}
+- Photography0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"dataByLocale":{"zh":{"type":"text","config":{"type":"text","title":"简历","source":"cv.md"},"content":"$3"},"en":{"type":"text","config":{"type":"text","title":"CV","source":"cv.md"},"content":"$4"}},"defaultLocale":"en"}],["$L5","$L6"],"$L7"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"z-JuoTlZvQ5cJq9UfN84C"}
 5:["$","script","script-0",{"src":"/_next/static/chunks/143kxxj0-__vy.js","async":true}]
-6:["$","script","script-1",{"src":"/_next/static/chunks/0epua.o4oltpi.js","async":true}]
+6:["$","script","script-1",{"src":"/_next/static/chunks/073dyb9exa5py.js","async":true}]
 7:["$","$L8",null,{"children":["$","$9",null,{"name":"Next.MetadataOutlet","children":"$@a"}]}]
 a:null

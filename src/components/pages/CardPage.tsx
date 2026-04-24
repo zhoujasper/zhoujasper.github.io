@@ -120,16 +120,6 @@ export default function CardPage({
         }
     };
 
-    const getPreviewContent = (content: string): { preview: string; isLonger: boolean } => {
-        if (content.length <= previewLength) {
-            return { preview: content, isLonger: false };
-        }
-        return {
-            preview: content.slice(0, previewLength) + '...',
-            isLonger: true,
-        };
-    };
-
     const handleCardClick = (itemTitle: string) => {
         if (!normalizedLinkToPage) return;
 
@@ -354,7 +344,7 @@ export default function CardPage({
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.4, delay: 0.1 * index }}
                         onClick={() => isClickable && handleCardClick(item.title)}
-                        className={`bg-white dark:bg-neutral-900 ${embedded ? "p-4" : "p-6"} rounded-xl shadow-sm border border-neutral-200 dark:border-neutral-800 hover:shadow-lg transition-all duration-200 hover:scale-[1.01] ${isClickable ? 'cursor-pointer' : ''}`}
+                        className={`min-w-0 w-full bg-white dark:bg-neutral-900 ${embedded ? "p-4" : "p-6"} rounded-xl shadow-sm border border-neutral-200 dark:border-neutral-800 hover:shadow-lg transition-all duration-200 hover:scale-[1.01] ${isClickable ? 'cursor-pointer' : ''}`}
                     >
                         <div className="flex flex-col gap-1 sm:flex-row sm:justify-between sm:items-start mb-2">
                             <h3 className={`${embedded ? "text-lg" : "text-xl"} min-w-0 font-semibold text-primary break-words [overflow-wrap:anywhere]`}>{item.title}</h3>
@@ -369,12 +359,15 @@ export default function CardPage({
                         )}
                         {!onlyShowTitle && item.content && (
                             <div>
-                                <div className={`${embedded ? (expandedItems[itemStateKey] ? "text-sm" : "text-sm line-clamp-3 sm:line-clamp-none") : "text-base"} text-neutral-600 dark:text-neutral-500 leading-relaxed break-words [overflow-wrap:anywhere]`}>
+                                <div className={`${embedded
+                                    ? (expandedItems[itemStateKey] ? "text-sm" : "text-sm line-clamp-3 sm:line-clamp-none")
+                                    : (expandedItems[itemStateKey] ? "text-base" : "text-base line-clamp-4")
+                                    } text-neutral-600 dark:text-neutral-500 leading-relaxed break-words [overflow-wrap:anywhere]`}>
                                     <ReactMarkdown components={markdownComponents}>
-                                        {expandedItems[itemStateKey] ? item.content : getPreviewContent(item.content).preview}
+                                        {item.content}
                                     </ReactMarkdown>
                                 </div>
-                                {getPreviewContent(item.content).isLonger && (
+                                {item.content.length > previewLength && (
                                     <button
                                         type="button"
                                         onClick={(e) => {
@@ -464,7 +457,7 @@ export default function CardPage({
                                     handleCardClick(displayItem.title);
                                 }
                             }}
-                            className={`bg-white dark:bg-neutral-900 ${embedded ? 'p-4' : 'p-6'} rounded-xl shadow-sm border border-neutral-200 dark:border-neutral-800 hover:shadow-lg transition-all duration-200 hover:scale-[1.01] ${isClickable ? 'cursor-pointer' : ''}`}
+                            className={`min-w-0 w-full bg-white dark:bg-neutral-900 ${embedded ? 'p-4' : 'p-6'} rounded-xl shadow-sm border border-neutral-200 dark:border-neutral-800 hover:shadow-lg transition-all duration-200 hover:scale-[1.01] ${isClickable ? 'cursor-pointer' : ''}`}
                         >
                             <div className="flex justify-between items-start mb-2">
                                 <h3 className={`${embedded ? 'text-lg' : 'text-xl'} font-semibold text-primary break-words [overflow-wrap:anywhere]`}>{displayItem.title}</h3>
@@ -535,12 +528,15 @@ export default function CardPage({
 
                             {unlockedItem && !onlyShowTitle && unlockedItem.content && (
                                 <div>
-                                    <div className={`${embedded ? (expandedItems[itemStateKey] ? 'text-sm' : 'text-sm line-clamp-3 sm:line-clamp-none') : 'text-base'} text-neutral-600 dark:text-neutral-500 leading-relaxed break-words [overflow-wrap:anywhere]`}>
+                                    <div className={`${embedded
+                                        ? (expandedItems[itemStateKey] ? 'text-sm' : 'text-sm line-clamp-3 sm:line-clamp-none')
+                                        : (expandedItems[itemStateKey] ? 'text-base' : 'text-base line-clamp-4')
+                                        } text-neutral-600 dark:text-neutral-500 leading-relaxed break-words [overflow-wrap:anywhere]`}>
                                         <ReactMarkdown components={markdownComponents}>
-                                            {expandedItems[itemStateKey] ? unlockedItem.content : getPreviewContent(unlockedItem.content).preview}
+                                            {unlockedItem.content}
                                         </ReactMarkdown>
                                     </div>
-                                    {getPreviewContent(unlockedItem.content).isLonger && (
+                                    {unlockedItem.content.length > previewLength && (
                                         <button
                                             type="button"
                                             onClick={(e) => {
