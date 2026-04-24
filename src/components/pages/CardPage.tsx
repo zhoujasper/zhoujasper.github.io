@@ -71,7 +71,7 @@ export default function CardPage({
     const normalizedViewAllHref = normalizeInternalRouteHref(viewAllHref);
     const normalizedLinkToPage = linkToPage ? normalizeInternalRouteHref(linkToPage) : null;
 
-    const previewLength = 128;
+    const previewLength = embedded ? 96 : 128;
     const isStaticExportRuntime = process.env.NEXT_PUBLIC_IS_STATIC_EXPORT === 'true';
 
     const toggleExpanded = (itemKey: string) => {
@@ -369,7 +369,7 @@ export default function CardPage({
                         )}
                         {!onlyShowTitle && item.content && (
                             <div>
-                                <div className={`${embedded ? "text-sm" : "text-base"} text-neutral-600 dark:text-neutral-500 leading-relaxed`}>
+                                <div className={`${embedded ? "text-sm line-clamp-3 sm:line-clamp-none" : "text-base"} text-neutral-600 dark:text-neutral-500 leading-relaxed`}>
                                     <ReactMarkdown components={markdownComponents}>
                                         {expandedItems[itemStateKey] ? item.content : getPreviewContent(item.content).preview}
                                     </ReactMarkdown>
@@ -414,7 +414,7 @@ export default function CardPage({
                             </div>
                         )}
                         {!embedded && !onlyShowTitle && item.links && item.links.length > 0 && (
-                            <div className="mt-4 flex flex-wrap gap-2">
+                            <div className="mt-4 hidden sm:flex flex-wrap gap-2">
                                 {item.links.map((linkItem, linkIndex) => (
                                     <a
                                         key={linkIndex}
@@ -433,7 +433,7 @@ export default function CardPage({
                             </div>
                         )}
                         {!onlyShowTitle && item.tags && !embedded && (
-                            <div className="flex flex-wrap gap-2 mt-4">
+                            <div className="hidden sm:flex flex-wrap gap-2 mt-4">
                                 {item.tags.map(tag => (
                                     <span key={tag} className="text-xs text-neutral-500 bg-neutral-50 dark:bg-neutral-800/50 px-2 py-1 rounded border border-neutral-100 dark:border-neutral-800">
                                         {tag}
@@ -535,7 +535,7 @@ export default function CardPage({
 
                             {unlockedItem && !onlyShowTitle && unlockedItem.content && (
                                 <div>
-                                    <div className={`${embedded ? 'text-sm' : 'text-base'} text-neutral-600 dark:text-neutral-500 leading-relaxed`}>
+                                    <div className={`${embedded ? 'text-sm line-clamp-3 sm:line-clamp-none' : 'text-base'} text-neutral-600 dark:text-neutral-500 leading-relaxed`}>
                                         <ReactMarkdown components={markdownComponents}>
                                             {expandedItems[itemStateKey] ? unlockedItem.content : getPreviewContent(unlockedItem.content).preview}
                                         </ReactMarkdown>
@@ -582,7 +582,7 @@ export default function CardPage({
                             )}
 
                             {!embedded && unlockedItem && !onlyShowTitle && unlockedItem.links && unlockedItem.links.length > 0 && (
-                                <div className="mt-4 flex flex-wrap gap-2">
+                                <div className="mt-4 hidden sm:flex flex-wrap gap-2">
                                     {unlockedItem.links.map((linkItem, linkIndex) => (
                                         <a
                                             key={linkIndex}
@@ -602,7 +602,7 @@ export default function CardPage({
                             )}
 
                             {unlockedItem && !onlyShowTitle && unlockedItem.tags && !embedded && (
-                                <div className="flex flex-wrap gap-2 mt-4">
+                                <div className="hidden sm:flex flex-wrap gap-2 mt-4">
                                     {unlockedItem.tags.map((tag) => (
                                         <span key={tag} className="text-xs text-neutral-500 bg-neutral-50 dark:bg-neutral-800/50 px-2 py-1 rounded border border-neutral-100 dark:border-neutral-800">
                                             {tag}

@@ -223,6 +223,8 @@ export default function Navigation({
                 >
                   <Link
                     href="/"
+                    prefetch={false}
+                    onClick={(event) => handleStaticNavigationClick(event, '/')}
                     className="text-xl lg:text-2xl font-serif font-semibold text-primary hover:text-accent transition-colors duration-200"
                   >
                     {effectiveSiteTitle}
