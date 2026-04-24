@@ -47,7 +47,31 @@ function clearUserSelectedLocale() {
   }
 }
 
+function resolveLocaleFromEntryPath(config: I18nRuntimeConfig): string | null {
+  const path = window.location.pathname || '/';
+  const pathMatch = path.match(/^\/([^/?#]+)\/?$/);
+  if (!pathMatch) {
+    return null;
+  }
+
+  const token = pathMatch[1].trim().toLowerCase();
+  if (token === 'en') {
+    return matchLocale('en', config.locales);
+  }
+
+  if (token === 'cn') {
+    return matchLocale('zh', config.locales);
+  }
+
+  return null;
+}
+
 function resolveInitialLocale(config: I18nRuntimeConfig): string {
+  const pathLocale = resolveLocaleFromEntryPath(config);
+  if (pathLocale) {
+    return pathLocale;
+  }
+
   // User-selected locale always wins when persistence is enabled.
   if (config.persist) {
     const userSelected = readUserSelectedLocale(config.locales);
@@ -80,6 +104,7 @@ export const useLocaleStore = create<LocaleStore>()((set, get) => ({
   persistSelection: true,
 
   initialize: (config: I18nRuntimeConfig) => {
+    const pathLocale = resolveLocaleFromEntryPath(config);
     const initialLocale = resolveInitialLocale(config);
 
     set({
@@ -91,6 +116,10 @@ export const useLocaleStore = create<LocaleStore>()((set, get) => ({
     });
 
     if (config.persist) {
+      if (pathLocale) {
+        writeUserSelectedLocale(initialLocale);
+      }
+
       // Keep system-language auto detection as default behavior.
       // Persist only explicit user selections via setLocale.
       const existingUserSelection = readUserSelectedLocale(config.locales);
@@ -102,6 +131,13 @@ export const useLocaleStore = create<LocaleStore>()((set, get) => ({
     }
 
     updateDocumentLocale(initialLocale);
+
+    if (pathLocale) {
+      const path = window.location.pathname || '/';
+      if (path !== '/') {
+        window.location.replace('/' + window.location.search + window.location.hash);
+      }
+    }
   },
 
   setLocale: (locale: string) => {

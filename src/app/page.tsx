@@ -131,7 +131,7 @@ function loadPageDataForLocale(locale: string | undefined): HomePageLocaleData {
 
         const pageConfig = rawConfig as BasePageConfig;
 
-        if (pageConfig.type === 'about' || 'sections' in (rawConfig as object)) {
+        if (pageConfig.type === 'about') {
           return {
             type: 'about',
             id: item.target,

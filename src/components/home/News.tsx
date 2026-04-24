@@ -30,6 +30,8 @@ export default function News({
 
     const previewLength = 256;
 
+    const getPlainTextLength = (text: string): number => text.replace(/\s+/g, ' ').trim().length;
+
     const toggleExpanded = (index: number) => {
         setExpandedItems((prev) => ({
             ...prev,
@@ -65,7 +67,7 @@ export default function News({
                                     ? item.content
                                     : `${item.content.slice(0, previewLength)}...`}
                             </p>
-                            {item.content.length > previewLength && (
+                            {getPlainTextLength(item.content) > previewLength && (
                                 <button
                                     type="button"
                                     onClick={() => toggleExpanded(index)}

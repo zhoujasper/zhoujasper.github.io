@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 import { useMessages } from '@/lib/i18n/useMessages';
 
 interface AboutProps {
@@ -30,6 +31,16 @@ export default function About({ content, title }: AboutProps) {
                         ul: ({ children }) => <ul className="list-disc list-inside mb-4 space-y-1 ml-4">{children}</ul>,
                         ol: ({ children }) => <ol className="list-decimal list-inside mb-4 space-y-1 ml-4">{children}</ol>,
                         li: ({ children }) => <li className="mb-1">{children}</li>,
+                        table: ({ children }) => (
+                            <div className="my-4 overflow-x-auto">
+                                <table className="min-w-full border border-neutral-200 dark:border-neutral-800 text-sm">{children}</table>
+                            </div>
+                        ),
+                        thead: ({ children }) => <thead className="bg-neutral-100 dark:bg-neutral-800">{children}</thead>,
+                        tbody: ({ children }) => <tbody>{children}</tbody>,
+                        tr: ({ children }) => <tr className="border-b border-neutral-200 dark:border-neutral-800">{children}</tr>,
+                        th: ({ children }) => <th className="px-3 py-2 text-left font-semibold text-primary">{children}</th>,
+                        td: ({ children }) => <td className="px-3 py-2 align-top">{children}</td>,
                         a: ({ ...props }) => (
                             <a
                                 {...props}
@@ -46,6 +57,7 @@ export default function About({ content, title }: AboutProps) {
                         strong: ({ children }) => <strong className="font-semibold text-primary">{children}</strong>,
                         em: ({ children }) => <em className="italic text-neutral-600 dark:text-neutral-500">{children}</em>,
                     }}
+                    remarkPlugins={[remarkGfm]}
                 >
                     {content}
                 </ReactMarkdown>

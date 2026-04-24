@@ -1,9 +1,10 @@
 'use client';
 
-import { useState, useRef, useMemo } from 'react';
+import { useState, useRef, useMemo, useEffect, type CSSProperties } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FunnelIcon, CalendarIcon, TagIcon } from '@heroicons/react/24/outline';
 import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { CardItem, CardPageConfig, SecretCardItem } from '@/types/page';
@@ -34,11 +35,22 @@ const markdownComponents = {
     code: ({ children }: React.ComponentProps<'code'>) => (
         <code className="px-1.5 py-0.5 rounded bg-neutral-100 dark:bg-neutral-800 text-[0.95em]">{children}</code>
     ),
+    table: ({ children }: React.ComponentProps<'table'>) => (
+        <div className="my-3 overflow-x-auto">
+            <table className="min-w-full border border-neutral-200 dark:border-neutral-800 text-sm">{children}</table>
+        </div>
+    ),
+    thead: ({ children }: React.ComponentProps<'thead'>) => <thead className="bg-neutral-100 dark:bg-neutral-800">{children}</thead>,
+    tbody: ({ children }: React.ComponentProps<'tbody'>) => <tbody>{children}</tbody>,
+    tr: ({ children }: React.ComponentProps<'tr'>) => <tr className="border-b border-neutral-200 dark:border-neutral-800">{children}</tr>,
+    th: ({ children }: React.ComponentProps<'th'>) => <th className="px-3 py-2 text-left font-semibold text-primary">{children}</th>,
+    td: ({ children }: React.ComponentProps<'td'>) => <td className="px-3 py-2 align-top">{children}</td>,
 };
 
 export default function CardPage({
     config,
     embedded = false,
+    showDateInEmbedded = false,
     showDescription = true,
     showViewAll = false,
     viewAllHref = '/experience',
@@ -49,6 +61,7 @@ export default function CardPage({
     config: CardPageConfig;
     embedded?: boolean;
     showDescription?: boolean;
+    showDateInEmbedded?: boolean;
     showViewAll?: boolean;
     viewAllHref?: string;
     onlyShowTitle?: boolean;
@@ -67,12 +80,26 @@ export default function CardPage({
     const [secretLoading, setSecretLoading] = useState<Record<string, boolean>>({});
     const [secretShaking, setSecretShaking] = useState<Record<string, boolean>>({});
     const [unlockedSecretItems, setUnlockedSecretItems] = useState<Record<string, CardItem>>({});
+    const [overflowingItems, setOverflowingItems] = useState<Record<string, boolean>>({});
     const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
+    const contentRefs = useRef<Record<string, HTMLDivElement | null>>({});
     const normalizedViewAllHref = normalizeInternalRouteHref(viewAllHref);
     const normalizedLinkToPage = linkToPage ? normalizeInternalRouteHref(linkToPage) : null;
 
-    const previewLength = embedded ? 96 : 128;
     const isStaticExportRuntime = process.env.NEXT_PUBLIC_IS_STATIC_EXPORT === 'true';
+
+    const getClampStyle = (itemKey: string): CSSProperties | undefined => {
+        if (expandedItems[itemKey]) {
+            return undefined;
+        }
+
+        return {
+            display: '-webkit-box',
+            WebkitLineClamp: embedded ? 3 : 4,
+            WebkitBoxOrient: 'vertical',
+            overflow: 'hidden',
+        };
+    };
 
     const toggleExpanded = (itemKey: string) => {
         setExpandedItems((prev) => ({
@@ -206,6 +233,35 @@ export default function CardPage({
         });
     }, [config.secretItems, unlockedSecretItems, searchQuery, selectedYear, selectedTag]);
 
+    useEffect(() => {
+        const frameId = window.requestAnimationFrame(() => {
+            const nextOverflowing: Record<string, boolean> = {};
+
+            Object.entries(contentRefs.current).forEach(([key, el]) => {
+                if (!el) return;
+                nextOverflowing[key] = el.scrollHeight - el.clientHeight > 1;
+            });
+
+            setOverflowingItems(nextOverflowing);
+        });
+
+        return () => window.cancelAnimationFrame(frameId);
+    }, [filteredItems, filteredSecretItems, expandedItems]);
+
+    useEffect(() => {
+        const handleResize = () => {
+            const nextOverflowing: Record<string, boolean> = {};
+            Object.entries(contentRefs.current).forEach(([key, el]) => {
+                if (!el) return;
+                nextOverflowing[key] = el.scrollHeight - el.clientHeight > 1;
+            });
+            setOverflowingItems(nextOverflowing);
+        };
+
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
     return (
         <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -227,7 +283,7 @@ export default function CardPage({
                 </div>
                 {showDescription && config.description && (
                     <div className={`${embedded ? "text-base" : "text-lg"} text-neutral-600 dark:text-neutral-500 max-w-2xl leading-relaxed`}>
-                        <ReactMarkdown components={markdownComponents}>
+                        <ReactMarkdown components={markdownComponents} remarkPlugins={[remarkGfm]}>
                             {config.description}
                         </ReactMarkdown>
                     </div>
@@ -334,6 +390,7 @@ export default function CardPage({
                     const itemId = `card-${item.title.toLowerCase().replace(/\s+/g, '-')}`;
                     const isClickable = (!!normalizedLinkToPage && (onlyShowTitle || enableClickToJump));
                     const itemStateKey = `normal-${index}`;
+                    const shouldShowReadToggle = overflowingItems[itemStateKey] || expandedItems[itemStateKey];
                     
                     return (
                     <motion.div
@@ -348,7 +405,7 @@ export default function CardPage({
                     >
                         <div className="flex flex-col gap-1 sm:flex-row sm:justify-between sm:items-start mb-2">
                             <h3 className={`${embedded ? "text-lg" : "text-xl"} min-w-0 font-semibold text-primary break-words [overflow-wrap:anywhere]`}>{item.title}</h3>
-                            {!embedded && item.date && (
+                            {(!embedded || showDateInEmbedded) && item.date && (
                                 <span className="self-start sm:self-auto text-sm text-neutral-500 font-medium bg-neutral-100 dark:bg-neutral-800 px-2 py-1 rounded whitespace-nowrap" style={{ textAlign: "center" }}>
                                     {item.date}
                                 </span>
@@ -359,15 +416,18 @@ export default function CardPage({
                         )}
                         {!onlyShowTitle && item.content && (
                             <div>
-                                <div className={`${embedded
-                                    ? (expandedItems[itemStateKey] ? "text-sm" : "text-sm line-clamp-3 sm:line-clamp-none")
-                                    : (expandedItems[itemStateKey] ? "text-base" : "text-base line-clamp-4")
-                                    } text-neutral-600 dark:text-neutral-500 leading-relaxed break-words [overflow-wrap:anywhere]`}>
-                                    <ReactMarkdown components={markdownComponents}>
+                                <div
+                                    className={`${embedded ? 'text-sm' : 'text-base'} text-neutral-600 dark:text-neutral-500 leading-relaxed break-words [overflow-wrap:anywhere]`}
+                                    style={getClampStyle(itemStateKey)}
+                                    ref={(el) => {
+                                        contentRefs.current[itemStateKey] = el;
+                                    }}
+                                >
+                                    <ReactMarkdown components={markdownComponents} remarkPlugins={[remarkGfm]}>
                                         {item.content}
                                     </ReactMarkdown>
                                 </div>
-                                {item.content.length > previewLength && (
+                                {shouldShowReadToggle && (
                                     <button
                                         type="button"
                                         onClick={(e) => {
@@ -444,6 +504,9 @@ export default function CardPage({
                     const itemId = `card-${displayItem.title.toLowerCase().replace(/\s+/g, '-')}`;
                     const isClickable = Boolean(unlockedItem && normalizedLinkToPage && (onlyShowTitle || enableClickToJump));
                     const itemStateKey = `secret-${secretItem.id}`;
+                    const shouldShowReadToggle = unlockedItem
+                        ? (overflowingItems[itemStateKey] || expandedItems[itemStateKey])
+                        : false;
 
                     return (
                         <motion.div
@@ -461,7 +524,7 @@ export default function CardPage({
                         >
                             <div className="flex justify-between items-start mb-2">
                                 <h3 className={`${embedded ? 'text-lg' : 'text-xl'} font-semibold text-primary break-words [overflow-wrap:anywhere]`}>{displayItem.title}</h3>
-                                {!embedded && unlockedItem?.date && (
+                                {(!embedded || showDateInEmbedded) && unlockedItem?.date && (
                                     <span className="text-sm text-neutral-500 font-medium bg-neutral-100 dark:bg-neutral-800 px-2 py-1 rounded" style={{ textAlign: 'center' }}>
                                         {unlockedItem.date}
                                     </span>
@@ -528,15 +591,18 @@ export default function CardPage({
 
                             {unlockedItem && !onlyShowTitle && unlockedItem.content && (
                                 <div>
-                                    <div className={`${embedded
-                                        ? (expandedItems[itemStateKey] ? 'text-sm' : 'text-sm line-clamp-3 sm:line-clamp-none')
-                                        : (expandedItems[itemStateKey] ? 'text-base' : 'text-base line-clamp-4')
-                                        } text-neutral-600 dark:text-neutral-500 leading-relaxed break-words [overflow-wrap:anywhere]`}>
-                                        <ReactMarkdown components={markdownComponents}>
+                                    <div
+                                        className={`${embedded ? 'text-sm' : 'text-base'} text-neutral-600 dark:text-neutral-500 leading-relaxed break-words [overflow-wrap:anywhere]`}
+                                        style={getClampStyle(itemStateKey)}
+                                        ref={(el) => {
+                                            contentRefs.current[itemStateKey] = el;
+                                        }}
+                                    >
+                                        <ReactMarkdown components={markdownComponents} remarkPlugins={[remarkGfm]}>
                                             {unlockedItem.content}
                                         </ReactMarkdown>
                                     </div>
-                                    {unlockedItem.content.length > previewLength && (
+                                    {shouldShowReadToggle && (
                                         <button
                                             type="button"
                                             onClick={(e) => {

@@ -105,9 +105,9 @@ export default function HomePageClient({ dataByLocale, defaultLocale }: HomePage
                       />
                     );
                   case 'cards':
-                    const isAwardsSection = section.source === 'awards.toml';
-                    const isEducationSection = section.source === 'education.toml';
-                    const isProjectsSection = section.source === 'projects.toml';
+                    const sectionPageHref = section.source
+                      ? `/${section.source.replace(/\.toml$/, '')}`
+                      : null;
                     return (
                       <CardPage
                         key={section.id}
@@ -119,12 +119,13 @@ export default function HomePageClient({ dataByLocale, defaultLocale }: HomePage
                           secretItems: section.secretCards || [],
                         }}
                         embedded={true}
+                        showDateInEmbedded={true}
                         showDescription={false}
                         showViewAll={true}
-                        viewAllHref={section.source ? `/${section.source.replace(/\.toml$/, '')}` : '/experience'}
+                        viewAllHref={sectionPageHref || '/experience'}
                         onlyShowTitle={false}
-                        enableClickToJump={isEducationSection || isProjectsSection || isAwardsSection}
-                        linkToPage={isAwardsSection || isEducationSection || isProjectsSection ? `/${section.source?.replace(/\.toml$/, '') || 'education'}` : null}
+                        enableClickToJump={Boolean(sectionPageHref)}
+                        linkToPage={sectionPageHref}
                       />
                     );
                   default:

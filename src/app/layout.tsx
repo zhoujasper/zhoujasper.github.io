@@ -55,8 +55,20 @@ function buildLocaleBootstrapScript(config: ReturnType<typeof getRuntimeI18nConf
 
       let resolved = null;
 
+      const path = window.location.pathname || '/';
+      const pathMatch = path.match(/^\/([^/?#]+)\/?$/);
+      const pathLocaleRaw = pathMatch ? normalize(pathMatch[1]) : null;
+      const isLocaleEntryPath = pathLocaleRaw === 'en' || pathLocaleRaw === 'cn';
+
+      // Map URL locale aliases to runtime locales.
+      if (pathLocaleRaw === 'en') {
+        resolved = matchLocale('en');
+      } else if (pathLocaleRaw === 'cn') {
+        resolved = matchLocale('zh');
+      }
+
       if (cfg.persist) {
-        resolved = matchLocale(localStorage.getItem(storageKey));
+        resolved = resolved || matchLocale(localStorage.getItem(storageKey));
       }
 
       if (!resolved) {
@@ -77,6 +89,12 @@ function buildLocaleBootstrapScript(config: ReturnType<typeof getRuntimeI18nConf
 
       if (cfg.persist) {
         localStorage.setItem(storageKey, resolved);
+      }
+
+      // Treat /en and /cn as locale switch endpoints and return to root URL.
+      if (isLocaleEntryPath && path !== '/') {
+        window.location.replace('/' + window.location.search + window.location.hash);
+        return;
       }
     } catch (e) {
       const root = document.documentElement;
