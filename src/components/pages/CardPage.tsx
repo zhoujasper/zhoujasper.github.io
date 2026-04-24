@@ -407,7 +407,7 @@ export default function CardPage({
                             </div>
                         )}
                         {!embedded && !onlyShowTitle && item.links && item.links.length > 0 && (
-                            <div className="mt-4 hidden sm:flex flex-wrap gap-2">
+                            <div className="mt-4 grid grid-cols-1 gap-2 sm:flex sm:flex-wrap">
                                 {item.links.map((linkItem, linkIndex) => (
                                     <a
                                         key={linkIndex}
@@ -415,7 +415,7 @@ export default function CardPage({
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         onClick={(e) => e.stopPropagation()}
-                                        className="inline-flex items-center gap-2 px-4 py-2 bg-accent hover:bg-accent-dark text-white font-medium rounded-lg transition-all duration-200 text-sm"
+                                        className="inline-flex w-full sm:w-auto items-center justify-between sm:justify-start gap-2 px-3 py-2 bg-accent hover:bg-accent-dark text-white font-medium rounded-lg transition-all duration-200 text-sm"
                                     >
                                         <span>{linkItem.name}</span>
                                         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -426,7 +426,7 @@ export default function CardPage({
                             </div>
                         )}
                         {!onlyShowTitle && item.tags && !embedded && (
-                            <div className="hidden sm:flex flex-wrap gap-2 mt-4">
+                            <div className="flex flex-wrap gap-2 mt-4">
                                 {item.tags.map(tag => (
                                     <span key={tag} className="text-xs text-neutral-500 bg-neutral-50 dark:bg-neutral-800/50 px-2 py-1 rounded border border-neutral-100 dark:border-neutral-800">
                                         {tag}
@@ -578,7 +578,7 @@ export default function CardPage({
                             )}
 
                             {!embedded && unlockedItem && !onlyShowTitle && unlockedItem.links && unlockedItem.links.length > 0 && (
-                                <div className="mt-4 hidden sm:flex flex-wrap gap-2">
+                                <div className="mt-4 grid grid-cols-1 gap-2 sm:flex sm:flex-wrap">
                                     {unlockedItem.links.map((linkItem, linkIndex) => (
                                         <a
                                             key={linkIndex}
@@ -586,7 +586,7 @@ export default function CardPage({
                                             target="_blank"
                                             rel="noopener noreferrer"
                                             onClick={(e) => e.stopPropagation()}
-                                            className="inline-flex items-center gap-2 px-4 py-2 bg-accent hover:bg-accent-dark text-white font-medium rounded-lg transition-all duration-200 text-sm"
+                                            className="inline-flex w-full sm:w-auto items-center justify-between sm:justify-start gap-2 px-3 py-2 bg-accent hover:bg-accent-dark text-white font-medium rounded-lg transition-all duration-200 text-sm"
                                         >
                                             <span>{linkItem.name}</span>
                                             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -598,7 +598,7 @@ export default function CardPage({
                             )}
 
                             {unlockedItem && !onlyShowTitle && unlockedItem.tags && !embedded && (
-                                <div className="hidden sm:flex flex-wrap gap-2 mt-4">
+                                <div className="flex flex-wrap gap-2 mt-4">
                                     {unlockedItem.tags.map((tag) => (
                                         <span key={tag} className="text-xs text-neutral-500 bg-neutral-50 dark:bg-neutral-800/50 px-2 py-1 rounded border border-neutral-100 dark:border-neutral-800">
                                             {tag}
