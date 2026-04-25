@@ -1,5 +1,5 @@
 1:"$Sreact.fragment"
-2:I[21062,["/_next/static/chunks/0shfa0w7vx3ty.js","/_next/static/chunks/0dg8mowt35m~6.js","/_next/static/chunks/0iw2vjq4a6d0m.js","/_next/static/chunks/17sfdsy5vq21t.js","/_next/static/chunks/0_.b0r9r8~y00.js","/_next/static/chunks/0ck8hh1~v~oad.js"],"default"]
+2:I[21062,["/_next/static/chunks/0shfa0w7vx3ty.js","/_next/static/chunks/0dg8mowt35m~6.js","/_next/static/chunks/0iw2vjq4a6d0m.js","/_next/static/chunks/17sfdsy5vq21t.js","/_next/static/chunks/0_.b0r9r8~y00.js","/_next/static/chunks/04oo.pxsnmosr.js"],"default"]
 8:I[97367,["/_next/static/chunks/0shfa0w7vx3ty.js","/_next/static/chunks/0dg8mowt35m~6.js","/_next/static/chunks/0iw2vjq4a6d0m.js","/_next/static/chunks/17sfdsy5vq21t.js"],"OutletBoundary"]
 9:"$Sreact.suspense"
 3:T2f88,# 周靖人
@@ -422,8 +422,8 @@ English: fluent.
 ## References
 
 Available upon request.
-0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"dataByLocale":{"zh":{"type":"text","config":{"type":"text","title":"简历","source":"cv.md"},"content":"$3"},"en":{"type":"text","config":{"type":"text","title":"CV","source":"cv.md"},"content":"$4"}},"defaultLocale":"en"}],["$L5","$L6"],"$L7"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"7QobDej43i4lWEZaOK3dm"}
+0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"dataByLocale":{"zh":{"type":"text","config":{"type":"text","title":"简历","source":"cv.md"},"content":"$3"},"en":{"type":"text","config":{"type":"text","title":"CV","source":"cv.md"},"content":"$4"}},"defaultLocale":"en"}],["$L5","$L6"],"$L7"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"iBiSXjeCDF3v3a12LYzf4"}
 5:["$","script","script-0",{"src":"/_next/static/chunks/0_.b0r9r8~y00.js","async":true}]
-6:["$","script","script-1",{"src":"/_next/static/chunks/0ck8hh1~v~oad.js","async":true}]
+6:["$","script","script-1",{"src":"/_next/static/chunks/04oo.pxsnmosr.js","async":true}]
 7:["$","$L8",null,{"children":["$","$9",null,{"name":"Next.MetadataOutlet","children":"$@a"}]}]
 a:null

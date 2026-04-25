@@ -25,11 +25,43 @@ interface PublicationsListProps {
 export default function PublicationsList({ config, publications, embedded = false }: PublicationsListProps) {
     const messages = useMessages();
     const [searchQuery, setSearchQuery] = useState('');
-    const [selectedYear, setSelectedYear] = useState<number | 'all'>('all');
-    const [selectedType, setSelectedType] = useState<string | 'all'>('all');
+    const [selectedYears, setSelectedYears] = useState<Array<number | 'all'>>(['all']);
+    const [selectedTypes, setSelectedTypes] = useState<Array<string | 'all'>>(['all']);
     const [showFilters, setShowFilters] = useState(false);
     const [expandedBibtexId, setExpandedBibtexId] = useState<string | null>(null);
     const [expandedAbstractId, setExpandedAbstractId] = useState<string | null>(null);
+
+    const toggleYear = (year: number | 'all') => {
+        setSelectedYears(prev => {
+            if (year === 'all') {
+                return ['all'];
+            }
+
+            const withoutAll = prev.filter(item => item !== 'all') as number[];
+            if (withoutAll.includes(year)) {
+                const next = withoutAll.filter(item => item !== year);
+                return next.length > 0 ? next : ['all'];
+            }
+
+            return [...withoutAll, year];
+        });
+    };
+
+    const toggleType = (type: string | 'all') => {
+        setSelectedTypes(prev => {
+            if (type === 'all') {
+                return ['all'];
+            }
+
+            const withoutAll = prev.filter(item => item !== 'all') as string[];
+            if (withoutAll.includes(type)) {
+                const next = withoutAll.filter(item => item !== type);
+                return next.length > 0 ? next : ['all'];
+            }
+
+            return [...withoutAll, type];
+        });
+    };
 
     // Extract unique years and types for filters
     const years = useMemo(() => {
@@ -51,12 +83,12 @@ export default function PublicationsList({ config, publications, embedded = fals
                 pub.journal?.toLowerCase().includes(searchQuery.toLowerCase()) ||
                 pub.conference?.toLowerCase().includes(searchQuery.toLowerCase());
 
-            const matchesYear = selectedYear === 'all' || pub.year === selectedYear;
-            const matchesType = selectedType === 'all' || pub.type === selectedType;
+            const matchesYear = selectedYears.includes('all') || selectedYears.includes(pub.year);
+            const matchesType = selectedTypes.includes('all') || selectedTypes.includes(pub.type);
 
             return matchesSearch && matchesYear && matchesType;
         });
-    }, [publications, searchQuery, selectedYear, selectedType]);
+    }, [publications, searchQuery, selectedYears, selectedTypes]);
 
     return (
         <motion.div
@@ -117,10 +149,10 @@ export default function PublicationsList({ config, publications, embedded = fals
                                     </label>
                                     <div className="flex flex-wrap gap-2">
                                         <button
-                                            onClick={() => setSelectedYear('all')}
+                                            onClick={() => toggleYear('all')}
                                             className={cn(
                                                 "px-3 py-1 text-xs rounded-full transition-colors",
-                                                selectedYear === 'all'
+                                                selectedYears.includes('all')
                                                     ? "bg-accent text-white"
                                                     : "bg-white dark:bg-neutral-800 text-neutral-600 hover:bg-neutral-100 dark:hover:bg-neutral-700"
                                             )}
@@ -130,10 +162,10 @@ export default function PublicationsList({ config, publications, embedded = fals
                                         {years.map(year => (
                                             <button
                                                 key={year}
-                                                onClick={() => setSelectedYear(year)}
+                                                onClick={() => toggleYear(year)}
                                                 className={cn(
                                                     "px-3 py-1 text-xs rounded-full transition-colors",
-                                                    selectedYear === year
+                                                    selectedYears.includes(year)
                                                         ? "bg-accent text-white"
                                                         : "bg-white dark:bg-neutral-800 text-neutral-600 hover:bg-neutral-100 dark:hover:bg-neutral-700"
                                                 )}
@@ -151,10 +183,10 @@ export default function PublicationsList({ config, publications, embedded = fals
                                     </label>
                                     <div className="flex flex-wrap gap-2">
                                         <button
-                                            onClick={() => setSelectedType('all')}
+                                            onClick={() => toggleType('all')}
                                             className={cn(
                                                 "px-3 py-1 text-xs rounded-full transition-colors",
-                                                selectedType === 'all'
+                                                selectedTypes.includes('all')
                                                     ? "bg-accent text-white"
                                                     : "bg-white dark:bg-neutral-800 text-neutral-600 hover:bg-neutral-100 dark:hover:bg-neutral-700"
                                             )}
@@ -164,10 +196,10 @@ export default function PublicationsList({ config, publications, embedded = fals
                                         {types.map(type => (
                                             <button
                                                 key={type}
-                                                onClick={() => setSelectedType(type)}
+                                                onClick={() => toggleType(type)}
                                                 className={cn(
                                                     "px-3 py-1 text-xs rounded-full capitalize transition-colors",
-                                                    selectedType === type
+                                                    selectedTypes.includes(type)
                                                         ? "bg-accent text-white"
                                                         : "bg-white dark:bg-neutral-800 text-neutral-600 hover:bg-neutral-100 dark:hover:bg-neutral-700"
                                                 )}

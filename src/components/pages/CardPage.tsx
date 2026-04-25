@@ -71,8 +71,8 @@ export default function CardPage({
     const messages = useMessages();
     const router = useRouter();
     const [searchQuery, setSearchQuery] = useState('');
-    const [selectedYear, setSelectedYear] = useState<string | 'all'>('all');
-    const [selectedTag, setSelectedTag] = useState<string | 'all'>('all');
+    const [selectedYears, setSelectedYears] = useState<Array<string | 'all'>>(['all']);
+    const [selectedTags, setSelectedTags] = useState<Array<string | 'all'>>(['all']);
     const [showFilters, setShowFilters] = useState(false);
     const [expandedItems, setExpandedItems] = useState<Record<string, boolean>>({});
     const [secretPasswords, setSecretPasswords] = useState<Record<string, string>>({});
@@ -168,6 +168,38 @@ export default function CardPage({
         router.push(normalizedLinkToPage);
     };
 
+    const toggleYear = (year: string | 'all') => {
+        setSelectedYears((prev) => {
+            if (year === 'all') {
+                return ['all'];
+            }
+
+            const withoutAll = prev.filter((item) => item !== 'all') as string[];
+            if (withoutAll.includes(year)) {
+                const next = withoutAll.filter((item) => item !== year);
+                return next.length > 0 ? next : ['all'];
+            }
+
+            return [...withoutAll, year];
+        });
+    };
+
+    const toggleTag = (tag: string | 'all') => {
+        setSelectedTags((prev) => {
+            if (tag === 'all') {
+                return ['all'];
+            }
+
+            const withoutAll = prev.filter((item) => item !== 'all') as string[];
+            if (withoutAll.includes(tag)) {
+                const next = withoutAll.filter((item) => item !== tag);
+                return next.length > 0 ? next : ['all'];
+            }
+
+            return [...withoutAll, tag];
+        });
+    };
+
     const years = useMemo(() => {
         const uniqueYears = Array.from(
             new Set(
@@ -203,12 +235,12 @@ export default function CardPage({
                 .toLowerCase();
 
             const matchesSearch = !query || searchableText.includes(query);
-            const matchesYear = selectedYear === 'all' || (item.date?.trim() || '') === selectedYear;
-            const matchesTag = selectedTag === 'all' || (item.tags || []).includes(selectedTag);
+            const matchesYear = selectedYears.includes('all') || selectedYears.includes(item.date?.trim() || '');
+            const matchesTag = selectedTags.includes('all') || (item.tags || []).some((tag) => selectedTags.includes(tag));
 
             return matchesSearch && matchesYear && matchesTag;
         });
-    }, [config.items, searchQuery, selectedYear, selectedTag]);
+    }, [config.items, searchQuery, selectedYears, selectedTags]);
 
     const filteredSecretItems = useMemo(() => {
         const query = searchQuery.trim().toLowerCase();
@@ -228,12 +260,12 @@ export default function CardPage({
                 .toLowerCase();
 
             const matchesSearch = !query || searchableText.includes(query);
-            const matchesYear = selectedYear === 'all' || (unlockedItem?.date?.trim() || '') === selectedYear;
-            const matchesTag = selectedTag === 'all' || (unlockedItem?.tags || []).includes(selectedTag);
+            const matchesYear = selectedYears.includes('all') || selectedYears.includes(unlockedItem?.date?.trim() || '');
+            const matchesTag = selectedTags.includes('all') || (unlockedItem?.tags || []).some((tag) => selectedTags.includes(tag));
 
             return matchesSearch && matchesYear && matchesTag;
         });
-    }, [config.secretItems, unlockedSecretItems, searchQuery, selectedYear, selectedTag]);
+    }, [config.secretItems, unlockedSecretItems, searchQuery, selectedYears, selectedTags]);
 
     useEffect(() => {
         const frameId = window.requestAnimationFrame(() => {
@@ -337,8 +369,8 @@ export default function CardPage({
                                         <div className="flex flex-wrap gap-2">
                                             <button
                                                 type="button"
-                                                onClick={() => setSelectedYear('all')}
-                                                className={`px-3 py-1 text-xs rounded-full transition-colors ${selectedYear === 'all'
+                                                onClick={() => toggleYear('all')}
+                                                className={`px-3 py-1 text-xs rounded-full transition-colors ${selectedYears.includes('all')
                                                     ? 'bg-accent text-white'
                                                     : 'bg-white dark:bg-neutral-800 text-neutral-600 hover:bg-neutral-100 dark:hover:bg-neutral-700'}`}
                                             >
@@ -348,8 +380,8 @@ export default function CardPage({
                                                 <button
                                                     type="button"
                                                     key={year}
-                                                    onClick={() => setSelectedYear(year)}
-                                                    className={`px-3 py-1 text-xs rounded-full transition-colors ${selectedYear === year
+                                                    onClick={() => toggleYear(year)}
+                                                    className={`px-3 py-1 text-xs rounded-full transition-colors ${selectedYears.includes(year)
                                                         ? 'bg-accent text-white'
                                                         : 'bg-white dark:bg-neutral-800 text-neutral-600 hover:bg-neutral-100 dark:hover:bg-neutral-700'}`}
                                                 >
@@ -366,8 +398,8 @@ export default function CardPage({
                                         <div className="flex flex-wrap gap-2">
                                             <button
                                                 type="button"
-                                                onClick={() => setSelectedTag('all')}
-                                                className={`px-3 py-1 text-xs rounded-full transition-colors ${selectedTag === 'all'
+                                                onClick={() => toggleTag('all')}
+                                                className={`px-3 py-1 text-xs rounded-full transition-colors ${selectedTags.includes('all')
                                                     ? 'bg-accent text-white'
                                                     : 'bg-white dark:bg-neutral-800 text-neutral-600 hover:bg-neutral-100 dark:hover:bg-neutral-700'}`}
                                             >
@@ -377,8 +409,8 @@ export default function CardPage({
                                                 <button
                                                     type="button"
                                                     key={tag}
-                                                    onClick={() => setSelectedTag(tag)}
-                                                    className={`px-3 py-1 text-xs rounded-full transition-colors ${selectedTag === tag
+                                                    onClick={() => toggleTag(tag)}
+                                                    className={`px-3 py-1 text-xs rounded-full transition-colors ${selectedTags.includes(tag)
                                                         ? 'bg-accent text-white'
                                                         : 'bg-white dark:bg-neutral-800 text-neutral-600 hover:bg-neutral-100 dark:hover:bg-neutral-700'}`}
                                                 >
