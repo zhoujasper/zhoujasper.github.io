@@ -163,6 +163,15 @@ export default function Navigation({
       return;
     }
 
+    const shouldBypassClientRouting = href === '/' || href === '/cv' || href === '/cv/';
+
+    if (shouldBypassClientRouting) {
+      event.preventDefault();
+      clearStaticFallbackTimer();
+      window.location.assign(href);
+      return;
+    }
+
     const previousLocation = window.location.pathname + window.location.search + window.location.hash;
     const targetLocation = toCanonicalUrlPath(href);
     const currentLocation = toCanonicalUrlPath(previousLocation);
