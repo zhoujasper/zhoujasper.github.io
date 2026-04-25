@@ -132,6 +132,14 @@ export default function Navigation({
   const shouldUseStaticFallbackNavigation = !enableOnePageMode && process.env.NEXT_PUBLIC_IS_STATIC_EXPORT === 'true';
   const staticFallbackTimerRef = useRef<number | null>(null);
 
+  const toCanonicalUrlPath = useCallback((value: string) => {
+    const parsed = new URL(value, window.location.origin);
+    const normalizedPathname = parsed.pathname === '/'
+      ? '/'
+      : parsed.pathname.replace(/\/+$/, '');
+    return `${normalizedPathname}${parsed.search}${parsed.hash}`;
+  }, []);
+
   const clearStaticFallbackTimer = useCallback(() => {
     if (staticFallbackTimerRef.current !== null) {
       window.clearTimeout(staticFallbackTimerRef.current);
@@ -155,20 +163,29 @@ export default function Navigation({
       return;
     }
 
-    event.preventDefault();
     const previousLocation = window.location.pathname + window.location.search + window.location.hash;
+    const targetLocation = toCanonicalUrlPath(href);
+    const currentLocation = toCanonicalUrlPath(previousLocation);
+
+    // Skip fallback handling for same-route clicks to avoid unnecessary forced reloads.
+    if (targetLocation === currentLocation) {
+      clearStaticFallbackTimer();
+      return;
+    }
+
+    event.preventDefault();
 
     clearStaticFallbackTimer();
     router.push(href);
 
-    // In static export deployment, fallback to document navigation only when client navigation stalls.
+    // In static export deployment, fallback to document navigation only when client navigation clearly stalls.
     staticFallbackTimerRef.current = window.setTimeout(() => {
       const currentLocation = window.location.pathname + window.location.search + window.location.hash;
-      if (currentLocation === previousLocation) {
+      if (toCanonicalUrlPath(currentLocation) === toCanonicalUrlPath(previousLocation)) {
         window.location.assign(href);
       }
-    }, 900);
-  }, [clearStaticFallbackTimer, router, shouldUseStaticFallbackNavigation]);
+    }, 3000);
+  }, [clearStaticFallbackTimer, router, shouldUseStaticFallbackNavigation, toCanonicalUrlPath]);
 
   const measureIndicator = useCallback(() => {
     const container = navContainerRef.current;
@@ -208,6 +225,10 @@ export default function Navigation({
   }, [measureIndicator]);
 
   useEffect(() => clearStaticFallbackTimer, [clearStaticFallbackTimer]);
+
+  useEffect(() => {
+    clearStaticFallbackTimer();
+  }, [pathname, clearStaticFallbackTimer]);
 
   useEffect(() => {
     const container = navContainerRef.current;
