@@ -81,6 +81,7 @@ export default function CardPage({
     const [secretShaking, setSecretShaking] = useState<Record<string, boolean>>({});
     const [unlockedSecretItems, setUnlockedSecretItems] = useState<Record<string, CardItem>>({});
     const [overflowingItems, setOverflowingItems] = useState<Record<string, boolean>>({});
+    const [expandedHeights, setExpandedHeights] = useState<Record<string, number>>({});
     const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
     const contentRefs = useRef<Record<string, HTMLDivElement | null>>({});
     const normalizedViewAllHref = normalizeInternalRouteHref(viewAllHref);
@@ -89,15 +90,16 @@ export default function CardPage({
     const isStaticExportRuntime = process.env.NEXT_PUBLIC_IS_STATIC_EXPORT === 'true';
 
     const getClampStyle = (itemKey: string): CSSProperties | undefined => {
-        if (expandedItems[itemKey]) {
-            return undefined;
-        }
+        const collapsedLines = embedded ? 3 : 4;
+        const collapsedHeight = collapsedLines * 1.625 * 16;
+        const expandedHeight = expandedHeights[itemKey] ?? collapsedHeight;
 
         return {
-            display: '-webkit-box',
-            WebkitLineClamp: embedded ? 3 : 4,
-            WebkitBoxOrient: 'vertical',
+            maxHeight: expandedItems[itemKey] ? `${expandedHeight}px` : `${collapsedHeight}px`,
+            opacity: expandedItems[itemKey] ? 1 : 0.92,
             overflow: 'hidden',
+            transition: 'max-height 420ms cubic-bezier(0.16, 1, 0.3, 1), opacity 240ms ease-out',
+            willChange: 'max-height',
         };
     };
 
@@ -236,17 +238,24 @@ export default function CardPage({
     useEffect(() => {
         const frameId = window.requestAnimationFrame(() => {
             const nextOverflowing: Record<string, boolean> = {};
+            const nextExpandedHeights: Record<string, number> = {};
+            const collapsedLines = embedded ? 3 : 4;
 
             Object.entries(contentRefs.current).forEach(([key, el]) => {
                 if (!el) return;
-                nextOverflowing[key] = el.scrollHeight - el.clientHeight > 1;
+                const fullHeight = el.scrollHeight;
+                const computedLineHeight = Number.parseFloat(window.getComputedStyle(el).lineHeight) || 26;
+                const collapsedHeight = collapsedLines * computedLineHeight;
+                nextExpandedHeights[key] = fullHeight;
+                nextOverflowing[key] = fullHeight - collapsedHeight > 1;
             });
 
             setOverflowingItems(nextOverflowing);
+            setExpandedHeights((prev) => ({ ...prev, ...nextExpandedHeights }));
         });
 
         return () => window.cancelAnimationFrame(frameId);
-    }, [filteredItems, filteredSecretItems, expandedItems]);
+    }, [filteredItems, filteredSecretItems, expandedItems, embedded]);
 
     useEffect(() => {
         const handleResize = () => {
@@ -391,6 +400,7 @@ export default function CardPage({
                     const isClickable = (!!normalizedLinkToPage && (onlyShowTitle || enableClickToJump));
                     const itemStateKey = `normal-${index}`;
                     const shouldShowReadToggle = overflowingItems[itemStateKey] || expandedItems[itemStateKey];
+                    const showCollapsedFade = shouldShowReadToggle && !expandedItems[itemStateKey];
                     
                     return (
                     <motion.div
@@ -416,16 +426,24 @@ export default function CardPage({
                         )}
                         {!onlyShowTitle && item.content && (
                             <div>
-                                <div
-                                    className={`${embedded ? 'text-sm' : 'text-base'} text-neutral-600 dark:text-neutral-500 leading-relaxed break-words [overflow-wrap:anywhere]`}
-                                    style={getClampStyle(itemStateKey)}
-                                    ref={(el) => {
-                                        contentRefs.current[itemStateKey] = el;
-                                    }}
-                                >
-                                    <ReactMarkdown components={markdownComponents} remarkPlugins={[remarkGfm]}>
-                                        {item.content}
-                                    </ReactMarkdown>
+                                <div className="relative">
+                                    <div
+                                        className={`${embedded ? 'text-sm' : 'text-base'} text-neutral-600 dark:text-neutral-500 leading-relaxed break-words [overflow-wrap:anywhere] ${showCollapsedFade ? 'pb-8' : ''}`}
+                                        style={getClampStyle(itemStateKey)}
+                                        ref={(el) => {
+                                            contentRefs.current[itemStateKey] = el;
+                                        }}
+                                    >
+                                        <ReactMarkdown components={markdownComponents} remarkPlugins={[remarkGfm]}>
+                                            {item.content}
+                                        </ReactMarkdown>
+                                    </div>
+                                    {showCollapsedFade && (
+                                        <div
+                                            aria-hidden="true"
+                                            className="pointer-events-none absolute inset-x-0 bottom-0 h-8 bg-gradient-to-t from-white via-white/90 to-transparent dark:from-neutral-900 dark:via-neutral-900/90"
+                                        />
+                                    )}
                                 </div>
                                 {shouldShowReadToggle && (
                                     <button
@@ -507,6 +525,7 @@ export default function CardPage({
                     const shouldShowReadToggle = unlockedItem
                         ? (overflowingItems[itemStateKey] || expandedItems[itemStateKey])
                         : false;
+                    const showCollapsedFade = shouldShowReadToggle && !expandedItems[itemStateKey];
 
                     return (
                         <motion.div
@@ -591,16 +610,24 @@ export default function CardPage({
 
                             {unlockedItem && !onlyShowTitle && unlockedItem.content && (
                                 <div>
-                                    <div
-                                        className={`${embedded ? 'text-sm' : 'text-base'} text-neutral-600 dark:text-neutral-500 leading-relaxed break-words [overflow-wrap:anywhere]`}
-                                        style={getClampStyle(itemStateKey)}
-                                        ref={(el) => {
-                                            contentRefs.current[itemStateKey] = el;
-                                        }}
-                                    >
-                                        <ReactMarkdown components={markdownComponents} remarkPlugins={[remarkGfm]}>
-                                            {unlockedItem.content}
-                                        </ReactMarkdown>
+                                    <div className="relative">
+                                        <div
+                                            className={`${embedded ? 'text-sm' : 'text-base'} text-neutral-600 dark:text-neutral-500 leading-relaxed break-words [overflow-wrap:anywhere] ${showCollapsedFade ? 'pb-8' : ''}`}
+                                            style={getClampStyle(itemStateKey)}
+                                            ref={(el) => {
+                                                contentRefs.current[itemStateKey] = el;
+                                            }}
+                                        >
+                                            <ReactMarkdown components={markdownComponents} remarkPlugins={[remarkGfm]}>
+                                                {unlockedItem.content}
+                                            </ReactMarkdown>
+                                        </div>
+                                        {showCollapsedFade && (
+                                            <div
+                                                aria-hidden="true"
+                                                className="pointer-events-none absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-white via-white/90 to-transparent dark:from-neutral-900 dark:via-neutral-900/90"
+                                            />
+                                        )}
                                     </div>
                                     {shouldShowReadToggle && (
                                         <button

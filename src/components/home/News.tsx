@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { useMessages } from '@/lib/i18n/useMessages';
@@ -27,10 +27,29 @@ export default function News({
     const messages = useMessages();
     const resolvedTitle = title || messages.home.news;
     const [expandedItems, setExpandedItems] = useState<Record<number, boolean>>({});
+    const [suffixHeights, setSuffixHeights] = useState<Record<number, number>>({});
+    const suffixRefs = useRef<Record<number, HTMLDivElement | null>>({});
 
     const previewLength = 256;
 
     const getPlainTextLength = (text: string): number => text.replace(/\s+/g, ' ').trim().length;
+
+    useEffect(() => {
+        const nextHeights: Record<number, number> = {};
+
+        items.forEach((item, index) => {
+            if (getPlainTextLength(item.content) <= previewLength) {
+                return;
+            }
+
+            const el = suffixRefs.current[index];
+            if (el) {
+                nextHeights[index] = el.scrollHeight;
+            }
+        });
+
+        setSuffixHeights(nextHeights);
+    }, [items]);
 
     const toggleExpanded = (index: number) => {
         setExpandedItems((prev) => ({
@@ -62,11 +81,32 @@ export default function News({
                     <div key={index} className="flex items-start space-x-3">
                         <span className="text-xs text-neutral-500 mt-1 w-16 flex-shrink-0">{item.date}</span>
                         <div className="text-sm text-neutral-700">
-                            <p>
-                                {expandedItems[index] || item.content.length <= previewLength
-                                    ? item.content
-                                    : `${item.content.slice(0, previewLength)}...`}
-                            </p>
+                            {item.content.length <= previewLength ? (
+                                <p>{item.content}</p>
+                            ) : (
+                                <>
+                                    <p>
+                                        {item.content.slice(0, previewLength)}
+                                        {!expandedItems[index] && '...'}
+                                    </p>
+                                    <div
+                                        className="overflow-hidden transition-[max-height,opacity] duration-[420ms] [transition-timing-function:cubic-bezier(0.16,1,0.3,1)]"
+                                        style={{
+                                            maxHeight: expandedItems[index] ? `${suffixHeights[index] ?? 0}px` : '0px',
+                                            opacity: expandedItems[index] ? 1 : 0,
+                                            willChange: 'max-height',
+                                        }}
+                                    >
+                                        <div
+                                            ref={(el) => {
+                                                suffixRefs.current[index] = el;
+                                            }}
+                                        >
+                                            <p>{item.content.slice(previewLength)}</p>
+                                        </div>
+                                    </div>
+                                </>
+                            )}
                             {getPlainTextLength(item.content) > previewLength && (
                                 <button
                                     type="button"
