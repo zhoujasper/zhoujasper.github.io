@@ -1,8 +1,8 @@
 'use client';
 
-import { useState, useEffect, useMemo, useRef, useCallback, useLayoutEffect } from 'react';
+import { useState, useEffect, useMemo, useRef, useCallback, useLayoutEffect, type MouseEvent } from 'react';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Disclosure } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
@@ -32,6 +32,7 @@ export default function Navigation({
   siteTitleByLocale,
 }: NavigationProps) {
   const pathname = usePathname();
+  const router = useRouter();
   const locale = useLocaleStore((state) => state.locale);
   const [scrolled, setScrolled] = useState(false);
   const [activeHash, setActiveHash] = useState(
@@ -128,6 +129,46 @@ export default function Navigation({
   const activeItem = effectiveItems.find((item) => isDesktopItemActive(item)) ?? null;
   const activeHref = activeItem ? getDesktopItemHref(activeItem) : null;
   const indicatorHref = hoveredHref ?? activeHref;
+  const shouldUseStaticFallbackNavigation = !enableOnePageMode && process.env.NEXT_PUBLIC_IS_STATIC_EXPORT === 'true';
+  const staticFallbackTimerRef = useRef<number | null>(null);
+
+  const clearStaticFallbackTimer = useCallback(() => {
+    if (staticFallbackTimerRef.current !== null) {
+      window.clearTimeout(staticFallbackTimerRef.current);
+      staticFallbackTimerRef.current = null;
+    }
+  }, []);
+
+  const handleStaticNavigationFallback = useCallback((event: MouseEvent<HTMLAnchorElement>, href: string) => {
+    if (!shouldUseStaticFallbackNavigation) {
+      return;
+    }
+
+    if (
+      event.defaultPrevented
+      || event.button !== 0
+      || event.metaKey
+      || event.ctrlKey
+      || event.shiftKey
+      || event.altKey
+    ) {
+      return;
+    }
+
+    event.preventDefault();
+    const previousLocation = window.location.pathname + window.location.search + window.location.hash;
+
+    clearStaticFallbackTimer();
+    router.push(href);
+
+    // In static export deployment, fallback to document navigation only when client navigation stalls.
+    staticFallbackTimerRef.current = window.setTimeout(() => {
+      const currentLocation = window.location.pathname + window.location.search + window.location.hash;
+      if (currentLocation === previousLocation) {
+        window.location.assign(href);
+      }
+    }, 900);
+  }, [clearStaticFallbackTimer, router, shouldUseStaticFallbackNavigation]);
 
   const measureIndicator = useCallback(() => {
     const container = navContainerRef.current;
@@ -166,6 +207,8 @@ export default function Navigation({
     return () => window.removeEventListener('resize', measureIndicator);
   }, [measureIndicator]);
 
+  useEffect(() => clearStaticFallbackTimer, [clearStaticFallbackTimer]);
+
   useEffect(() => {
     const container = navContainerRef.current;
     if (!container || typeof ResizeObserver === 'undefined') return;
@@ -201,6 +244,7 @@ export default function Navigation({
                 >
                   <Link
                     href="/"
+                    onClick={(event) => handleStaticNavigationFallback(event, '/')}
                     className="text-xl lg:text-2xl font-serif font-semibold text-primary hover:text-accent transition-colors duration-200"
                   >
                     {effectiveSiteTitle}
@@ -251,6 +295,7 @@ export default function Navigation({
                                 return;
                               }
                             }}
+                            onClickCapture={(event) => handleStaticNavigationFallback(event, href)}
                             onMouseEnter={() => setHoveredHref(href)}
                             className={cn(
                               'relative px-3 py-2 text-sm font-medium rounded-lg transition-colors duration-150',
@@ -330,6 +375,7 @@ export default function Navigation({
                                 return;
                               }
                             }}
+                            onClickCapture={(event) => handleStaticNavigationFallback(event, href)}
                             className={cn(
                               'block px-3 py-2 rounded-md text-base font-medium transition-all duration-200',
                               isActive

@@ -56,7 +56,7 @@ function buildLocaleBootstrapScript(config: ReturnType<typeof getRuntimeI18nConf
       let resolved = null;
 
       const path = window.location.pathname || '/';
-      const pathMatch = path.match(/^\/([^/?#]+)\/?$/);
+      const pathMatch = path.match(/^\\/([^/?#]+)\\/?$/);
       const pathLocaleRaw = pathMatch ? normalize(pathMatch[1]) : null;
       const isLocaleEntryPath = pathLocaleRaw === 'en' || pathLocaleRaw === 'cn';
 
