@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useMemo, useRef, useCallback, useLayoutEffect, type MouseEvent } from 'react';
+import { useState, useEffect, useMemo, useRef, useCallback, useLayoutEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -128,28 +128,6 @@ export default function Navigation({
   const activeItem = effectiveItems.find((item) => isDesktopItemActive(item)) ?? null;
   const activeHref = activeItem ? getDesktopItemHref(activeItem) : null;
   const indicatorHref = hoveredHref ?? activeHref;
-  const shouldForceDocumentNavigation = !enableOnePageMode && process.env.NEXT_PUBLIC_IS_STATIC_EXPORT === 'true';
-
-  const handleStaticNavigationClick = useCallback((event: MouseEvent<HTMLAnchorElement>, href: string) => {
-    if (!shouldForceDocumentNavigation) {
-      return;
-    }
-
-    if (
-      event.defaultPrevented
-      || event.button !== 0
-      || event.metaKey
-      || event.ctrlKey
-      || event.shiftKey
-      || event.altKey
-    ) {
-      return;
-    }
-
-    // For static export deployment, force document navigation to avoid intermittent RSC stream errors.
-    event.preventDefault();
-    window.location.assign(href);
-  }, [shouldForceDocumentNavigation]);
 
   const measureIndicator = useCallback(() => {
     const container = navContainerRef.current;
@@ -223,8 +201,6 @@ export default function Navigation({
                 >
                   <Link
                     href="/"
-                    prefetch={false}
-                    onClick={(event) => handleStaticNavigationClick(event, '/')}
                     className="text-xl lg:text-2xl font-serif font-semibold text-primary hover:text-accent transition-colors duration-200"
                   >
                     {effectiveSiteTitle}
@@ -269,13 +245,11 @@ export default function Navigation({
                             key={item.target}
                             href={href}
                             data-nav-href={href}
-                            prefetch={false}
-                            onClick={(event) => {
+                            onClick={() => {
                               if (enableOnePageMode) {
                                 setActiveHash(`#${item.target}`);
                                 return;
                               }
-                              handleStaticNavigationClick(event, href);
                             }}
                             onMouseEnter={() => setHoveredHref(href)}
                             className={cn(
@@ -350,13 +324,11 @@ export default function Navigation({
                           <Disclosure.Button
                             as={Link}
                             href={href}
-                            prefetch={false}
-                            onClick={(event) => {
+                            onClick={() => {
                               if (enableOnePageMode) {
                                 setActiveHash(item.href === '/' ? '' : `#${item.target}`);
                                 return;
                               }
-                              handleStaticNavigationClick(event, href);
                             }}
                             className={cn(
                               'block px-3 py-2 rounded-md text-base font-medium transition-all duration-200',
