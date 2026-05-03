@@ -422,7 +422,7 @@ English: fluent.
 ## References
 
 Available upon request.
-0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"dataByLocale":{"zh":{"type":"text","config":{"type":"text","title":"简历","source":"cv.md"},"content":"$3"},"en":{"type":"text","config":{"type":"text","title":"CV","source":"cv.md"},"content":"$4"}},"defaultLocale":"en"}],["$L5","$L6"],"$L7"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"zwI0sqg3WcreJ-8IK-C0K"}
+0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"dataByLocale":{"zh":{"type":"text","config":{"type":"text","title":"简历","source":"cv.md"},"content":"$3"},"en":{"type":"text","config":{"type":"text","title":"CV","source":"cv.md"},"content":"$4"}},"defaultLocale":"en"}],["$L5","$L6"],"$L7"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"S3sBy16NuHRK0RN8bNETC"}
 5:["$","script","script-0",{"src":"/_next/static/chunks/0_.b0r9r8~y00.js","async":true}]
 6:["$","script","script-1",{"src":"/_next/static/chunks/04oo.pxsnmosr.js","async":true}]
 7:["$","$L8",null,{"children":["$","$9",null,{"name":"Next.MetadataOutlet","children":"$@a"}]}]
