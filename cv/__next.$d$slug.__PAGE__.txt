@@ -212,10 +212,10 @@ LaTeX、Overleaf、Git、GitHub、Microsoft Word、Excel、PowerPoint、Adobe Ph
 ## 推荐人
 
 可根据需要提供。
-4:T34b6,# Jingren Zhou (Jasper)
+4:T32eb,# Jingren Zhou (Jasper)
 
 **Final-Year BSc Mathematics Student, University of Edinburgh**  
-**Incoming MSc Student in Mathematics and Foundations of Computer Science, University of Oxford** *(expected 2026)*
+**Incoming MSc Student in Mathematics and Foundations of Computer Science, University of Oxford** *(2026–2027)*
 
 **Location:** United Kingdom  
 **Email:** *jasper.zhou0925@gmail.com*  
@@ -226,9 +226,11 @@ LaTeX、Overleaf、Git、GitHub、Microsoft Word、Excel、PowerPoint、Adobe Ph
 
 ## Profile
 
-I am a final-year Mathematics student at the University of Edinburgh, currently maintaining **First Class Honours** performance and preparing to begin the **MSc in Mathematics and Foundations of Computer Science** at the University of Oxford. My academic interests lie mainly in **pure mathematics**, especially algebra, analysis, number theory, and algebraic geometry, alongside mathematically grounded areas of computation such as optimisation, algorithms, statistical modelling, simulation, and graph-based machine learning.
+I am a final-year Mathematics student at the University of Edinburgh, currently maintaining **First Class Honours** performance, and an incoming MSc student in **Mathematics and Foundations of Computer Science** at the University of Oxford. My current research interests lie in the **mathematical foundations of computation**, especially **formal verification**, **programming languages**, **proof assistants**, and **quantum computation**.
 
-My background combines rigorous proof-based mathematics with substantial computational and modelling experience. I have worked on projects in **Diophantine approximation**, **constraint programming for university timetabling**, **graph neural networks**, **statistical forecasting**, and **discrete-event simulation**. I have also served as a **MathPALS Leader** and **Student Representative**, which has strengthened my communication, teaching, leadership, and collaborative skills.
+My academic training is rooted in rigorous proof-based mathematics, with strong results in algebra, commutative algebra, logic, analysis, complex variables, and numerical linear algebra. I am particularly interested in areas where algebraic, logical, categorical, or type-theoretic structures provide rigorous guarantees about computation, correctness, and information. Alongside my pure mathematical background, I have completed computational projects in CP-SAT modelling, graph neural networks, statistical modelling, optimisation, and simulation.
+
+I am currently preparing for research directions around **formalised mathematics**, **program verification**, **type systems**, **automated theorem proving**, **quantum processes**, and **quantum program reasoning**.
 
 ---
 
@@ -236,26 +238,26 @@ My background combines rigorous proof-based mathematics with substantial computa
 
 ### University of Oxford
 **MSc in Mathematics and Foundations of Computer Science**  
-*Expected 2026–2027*
+*Incoming, 2026–2027*
 
-- Expected to study advanced topics connecting pure mathematics, theoretical computer science, logic, algorithms, and computational methods.
-- Intended academic interests include algebra, number theory, proof-based mathematics, algorithms, and the mathematical foundations of computation.
+- Intended study areas include formal verification, programming languages, proof assistants, type theory, category-theoretic structures, quantum computation, and the mathematical foundations of computation.
+- Particularly interested in modules such as **Computer-Aided Formal Verification**, **Lambda Calculus and Types**, **Categories, Proofs and Processes**, **Introduction to Quantum Information**, and **Quantum Processes and Computation**.
 
 ### University of Edinburgh
 **BSc Mathematics with Honours**  
 *2023–2026*
 
 - Final-year undergraduate student; current academic performance at **First Class Honours** level.
-- Entered directly into second year and achieved strong results across pure mathematics, applied mathematics, statistics, optimisation, and computing.
+- Entered directly into second year and achieved strong results across pure mathematics, computational mathematics, statistics, optimisation, and mathematical modelling.
 - Final-year group project: **Approximation by Rationals**, supervised by **Professor Jim Wright**.
-- Selected advanced modules include **Commutative Algebra**, **Further Complex Variables**, **Numerical Linear Algebra**, **Introduction to Partial Differential Equations**, **Advanced Methods of Applied Mathematics**, **Topics in Applied Operational Research**, **Incomplete Data Analysis**, **Analytic Number Theory**, and **Algebraic Geometry**.
+- Selected advanced modules include **Commutative Algebra**, **Numerical Linear Algebra**, **Geometry**, **Mathematical Biology**, **Algebraic Geometry**, **Analytic Number Theory**, **Advanced Methods of Applied Mathematics**, **Topics in Applied Operational Research**, and **Incomplete Data Analysis**.
 
 **Selected academic results**
 
 | Area | Selected courses and marks |
 |---|---|
-| Pure mathematics | Honours Algebra **97**, Commutative Algebra **95**, Honours Complex Variables **94**, Fundamentals of Pure Mathematics **93**, Logic 1 **90**, Geometry **85** |
-| Analysis, geometry, and differential equations | Several Variable Calculus and Differential Equations **95**, Honours Differential Equations **93**, Numerical Ordinary Differential Equations and Applications **86**, Honours Analysis **84** |
+| Algebra, logic, and proof-based mathematics | Honours Algebra **97**, Commutative Algebra **95**, Fundamentals of Pure Mathematics **93**, Logic 1 **90**, Geometry **85** |
+| Analysis, complex variables, and differential equations | Several Variable Calculus and Differential Equations **95**, Honours Complex Variables **94**, Honours Differential Equations **93**, Numerical Ordinary Differential Equations and Applications **86**, Honours Analysis **84** |
 | Computational, numerical, and applied mathematics | Computing and Numerics **92**, Mathematical Biology **83**, Numerical Linear Algebra **82** |
 | Probability, statistics, and modelling | Statistics **84**, Probability **82**, Statistical Methodology **81** |
 
@@ -269,16 +271,17 @@ My background combines rigorous proof-based mathematics with substantial computa
 **Senior Secondary Education, Science Track**  
 *2020–2023*
 
-- Completed a rigorous science-track high-school curriculum in China.
+- Completed a rigorous science-track curriculum in China.
 - Developed early interests in mathematical problem solving through olympiad-style training and international mathematics competitions.
 
 ---
 
 ## Research Interests
 
-- **Pure Mathematics:** algebra, number theory, algebraic geometry, analysis, complex variables, Diophantine approximation.
-- **Mathematical Computer Science:** algorithms, theoretical computer science, graph theory, graph-based machine learning, computational mathematics.
-- **Applied and Computational Mathematics:** optimisation, constraint programming, simulation, statistical modelling, operations research.
+- **Formal Verification and Proof Assistants:** Lean, Coq/Rocq, Isabelle/HOL, formalised mathematics, program correctness, verified algorithms, theorem proving.
+- **Programming Languages and Type Theory:** lambda calculus, type systems, operational semantics, program logics, proof/program correspondence.
+- **Quantum Computation and Quantum Information:** quantum algorithms, quantum processes, categorical quantum mechanics, ZX-calculus, quantum program reasoning.
+- **Algebraic and Logical Methods in Computation:** algebra, commutative algebra, logic, algebraic structures in computation, mathematically grounded theoretical computer science.
 
 ---
 
@@ -288,18 +291,19 @@ My background combines rigorous proof-based mathematics with substantial computa
 **Year 4 Group Project, University of Edinburgh** · *Supervisor: Professor Jim Wright*  
 *2025–2026*
 
-- Working on a pure mathematics project in **Diophantine approximation**, centred on the question of how well real numbers can be approximated by rational numbers.
-- Developed a structured mathematical account of **continued fractions**, **Liouville’s theorem**, **Thue’s theorem**, and their connections with **Pell equations**, **binary homogeneous polynomials**, and **Dirichlet’s Unit Theorem**.
-- Strengthened skills in rigorous proof, mathematical exposition, literature organisation, and building a coherent logical narrative across several related areas of number theory.
+- Developed a proof-based mathematical account of **Diophantine approximation**, centred on how real numbers can be approximated by rationals.
+- Studied **continued fractions**, **Liouville's theorem**, **Thue's theorem**, and their connections with **Pell equations**, **binary homogeneous polynomials**, and **Dirichlet's Unit Theorem**.
+- Strengthened skills in rigorous proof, mathematical exposition, literature organisation, and building a coherent logical narrative across number theory and algebra.
+- This project motivates my interest in transferring proof-based mathematical training toward formalised mathematics, theorem proving, and mechanised reasoning.
 
 ### Constraint Programming for Mathematics Timetabling
 **TAOR Final Project, University of Edinburgh** · *Team Leader*  
 *2026*
 
-- Led the development and analysis of a large-scale **CP-SAT optimisation model** for honours-level Mathematics timetabling at the University of Edinburgh.
-- Modelled course scheduling, student choice structures, fixed outside-school timetables for joint-degree students, student-level clash feasibility, and timetable-quality rules.
-- Used **Google OR-Tools CP-SAT** with student-type aggregation to reduce model size while preserving programme-level constraints and external timetable structure.
-- Compared scenario variants involving lunch breaks, 9am restrictions, compactness rules, and consecutive-lecture requirements; showed that a zero-conflict timetable can be achieved under a suitable rule set, while overly restrictive lecture-block rules disproportionately affect joint-programme students.
+- Led the development and analysis of a large-scale **CP-SAT model** for honours-level Mathematics timetabling at the University of Edinburgh.
+- Modelled course scheduling, student choice structures, fixed outside-school timetables for joint-degree students, clash feasibility, and timetable-quality rules.
+- Used **Google OR-Tools CP-SAT** with student-type aggregation to reduce model size while preserving key combinatorial and programme-level structures.
+- The project strengthened my interest in formal modelling, computational guarantees, and the gap between practical constraint systems and rigorous correctness/verification questions.
 
 ### Random-Walk-Based Graph Neural Networks
 **Vacation Research Project**  
@@ -315,43 +319,40 @@ My background combines rigorous proof-based mathematics with substantial computa
 *April–May 2025*
 
 - Led a team project modelling winter peak electricity demand in Great Britain using historical data from 1991 to 2014.
-- Built a multi-factor linear regression framework incorporating renewable generation, seasonal structure, and weekday effects to improve interpretability and predictive performance.
-- Designed an automated model-selection workflow using **five-fold cross-validation**, **AIC**, and **BIC**, making validation more systematic and efficient.
-- Connected statistical modelling outputs to reserve-capacity estimation under severe winter conditions.
+- Built a multi-factor linear regression framework incorporating renewable generation, seasonal structure, and weekday effects.
+- Designed an automated model-selection workflow using **five-fold cross-validation**, **AIC**, and **BIC**.
+- Strengthened experience in reproducible modelling, validation, and communicating mathematical results from data.
 
 ### BoxCar Ride-Sharing Simulation Study
 **Data-Driven Discrete-Event Simulation Project** · *Team Leader*  
 *February 2026*
 
-- Built a discrete-event simulation model of a ride-sharing system, capturing rider arrivals, driver availability, distance-based matching, trip execution, cancellations, revenue, and costs.
-- Tested whether parameters in the project brief were statistically consistent with observed data and found that the original configuration drove the system close to saturation.
+- Built a discrete-event simulation model of a ride-sharing system, capturing rider arrivals, driver availability, matching, trip execution, cancellations, revenue, and costs.
 - Re-estimated key parameters using **maximum likelihood methods** and compared adjusted and original baselines.
-- Analysed trade-offs between rider service quality, driver earnings, profitability, and system balance; concluded that improving matching efficiency and reducing empty miles can be more sustainable than simply oversupplying drivers.
+- Analysed trade-offs between rider service quality, driver earnings, profitability, and system balance.
 
 ### Strategic Workforce Allocation Optimisation
 **Optimisation Modelling Project** · *Team Leader*  
 *April 2025*
 
-- Formulated and solved a workforce allocation problem for a consulting firm using mathematical programming.
-- Allocated consultants across projects, regions, and seniority levels while respecting role restrictions, travel costs, bench policies, remote-work limits, outsourcing options, and disruption scenarios.
-- Used **Xpress** to solve linear/integer optimisation models and evaluate strategic scenarios involving demand variability, remote-work penalties, outsourcing costs, and transport disruption.
-- Demonstrated how mathematical programming can support managerial decision-making under resource and operational constraints.
+- Formulated and solved a workforce allocation problem for a consulting firm using linear/integer optimisation.
+- Used **Xpress** to evaluate scenarios involving role restrictions, transport disruption, remote-work limits, outsourcing, and demand variability.
+- Developed experience in mathematical programming, structured modelling, and computational experimentation.
 
 ### Multi-Stage Laptop Manufacturing System Simulation Study
 **Manufacturing System Simulation Project** · *Team Leader*  
 *April 2026*
 
 - Developed a **Simul8** discrete-event simulation of a multi-stage laptop manufacturing system with blocking, rework, inventory control, component matching, and order-level synchronisation.
-- Conducted input analysis on interarrival and processing-time data using **AIC**, **BIC**, **Kolmogorov–Smirnov testing**, and **maximum likelihood estimation**.
-- Diagnosed system bottlenecks in case manufacturing, aluminium supply, hard-disk availability, and workbench capacity.
-- Designed progressive improvement experiments that reduced average cycle time, increased throughput, and lowered rejection rates in the improved model.
+- Conducted input analysis using **AIC**, **BIC**, **Kolmogorov–Smirnov testing**, and **maximum likelihood estimation**.
+- Diagnosed system bottlenecks and designed progressive improvement experiments.
 
 ---
 
 ## Teaching, Leadership, and Representation
 
 ### MathPALS Leader
-**Edinburgh University Students’ Association / School of Mathematics, University of Edinburgh**  
+**Edinburgh University Students' Association / School of Mathematics, University of Edinburgh**  
 *April 2024–Present*
 
 - Led informal peer-assisted learning sessions for first-year Mathematics students in a supportive small-group environment.
@@ -359,27 +360,25 @@ My background combines rigorous proof-based mathematics with substantial computa
 - Practised guiding discussion without simply giving away solutions and coordinated session preparation with other student leaders.
 
 ### Student Representative
-**Edinburgh University Students’ Association / School of Mathematics, University of Edinburgh**  
+**Edinburgh University Students' Association / School of Mathematics, University of Edinburgh**  
 *September 2024–June 2025*
 
 - Represented Mathematics students by collecting feedback on teaching, assessment, workload, resources, and academic experience.
 - Communicated student concerns and suggestions through representative channels and staff-student liaison mechanisms.
-- Developed communication, coordination, and problem-solving skills by translating student feedback into constructive and actionable recommendations.
+- Developed communication, coordination, and problem-solving skills by translating student feedback into constructive recommendations.
 
 ### Student Volunteer
-**Edinburgh University Students’ Association / Saltire Awards**  
+**Edinburgh University Students' Association / Saltire Awards**  
 *2025*
 
 - Completed at least **25 hours** of volunteering and received the Saltire Awards “The Approach” certificate.
-- Contributed to student life and campus community activities alongside academic study.
 
 ### Volunteer / Outstanding Volunteer
 **Yunnan Nationalities Museum, Kunming, China**  
 *2021–2023*
 
-- Volunteered in public-facing museum cultural service and helped support the communication of Yunnan’s multi-ethnic cultural heritage.
+- Volunteered in public-facing museum cultural service and helped support the communication of Yunnan's multi-ethnic cultural heritage.
 - Recognised as an **Outstanding Volunteer** for strong performance in volunteering activities.
-- Developed responsibility, cultural awareness, and confidence in communicating with people from different backgrounds.
 
 ---
 
@@ -397,11 +396,14 @@ My background combines rigorous proof-based mathematics with substantial computa
 
 ## Technical Skills
 
-**Mathematics and modelling**  
-Rigorous proof writing, mathematical exposition, optimisation modelling, statistical modelling, regression, simulation, scenario analysis, input modelling, validation, and operations research.
+**Mathematics and theoretical preparation**  
+Rigorous proof writing, mathematical exposition, algebra, commutative algebra, logic, analysis, numerical linear algebra, optimisation modelling, statistical modelling, simulation, and validation.
 
 **Programming and computational tools**  
 Python, NumPy, Pandas, Matplotlib, PyTorch, R, Google OR-Tools CP-SAT, Xpress, Simul8, Excel VBA.
+
+**Developing research tools and interests**  
+Lean 4, Coq/Rocq, Isabelle/HOL, SAT/SMT solving, Z3, theorem proving, quantum programming and verification tools.
 
 **Academic and professional tools**  
 LaTeX, Overleaf, Git, GitHub, Microsoft Word, Excel, PowerPoint, Adobe Photoshop.
@@ -421,8 +423,7 @@ English: fluent.
 
 ## References
 
-Available upon request.
-0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"dataByLocale":{"zh":{"type":"text","config":{"type":"text","title":"简历","source":"cv.md"},"content":"$3"},"en":{"type":"text","config":{"type":"text","title":"CV","source":"cv.md"},"content":"$4"}},"defaultLocale":"en"}],["$L5","$L6"],"$L7"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"pmp_Kq4Gi1wlyi0wa-mqq"}
+Available upon request.0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"dataByLocale":{"zh":{"type":"text","config":{"type":"text","title":"简历","source":"cv.md"},"content":"$3"},"en":{"type":"text","config":{"type":"text","title":"CV","source":"cv.md"},"content":"$4"}},"defaultLocale":"en"}],["$L5","$L6"],"$L7"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"LFeia67krIwnzjY5_iBU1"}
 5:["$","script","script-0",{"src":"/_next/static/chunks/0_.b0r9r8~y00.js","async":true}]
 6:["$","script","script-1",{"src":"/_next/static/chunks/04oo.pxsnmosr.js","async":true}]
 7:["$","$L8",null,{"children":["$","$9",null,{"name":"Next.MetadataOutlet","children":"$@a"}]}]
