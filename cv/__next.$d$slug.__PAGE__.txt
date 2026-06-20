@@ -214,13 +214,13 @@ LaTeX、Overleaf、Git、GitHub、Microsoft Word、Excel、PowerPoint、Adobe Ph
 
 ## 推荐人
 
-可根据需要提供。4:T32eb,# Jingren Zhou (Jasper)
+可根据需要提供。4:T32df,# Jingren Zhou (Jasper)
 
-**Final-Year BSc Mathematics Student, University of Edinburgh**  
+**BSc (Hons) Mathematics, University of Edinburgh**  
 **Incoming MSc Student in Mathematics and Foundations of Computer Science, University of Oxford** *(2026–2027)*
 
 **Location:** United Kingdom  
-**Email:** *jasper.zhou0925@gmail.com*  
+**Email:** *pianoart@zhoujingren.com*  
 **GitHub:** [github.com/zhoujasper](https://github.com/zhoujasper)  
 **Personal Website:** *[zhoujasper.github.io](https://zhoujasper.github.io/)*
 
@@ -228,11 +228,11 @@ LaTeX、Overleaf、Git、GitHub、Microsoft Word、Excel、PowerPoint、Adobe Ph
 
 ## Profile
 
-I am a final-year Mathematics student at the University of Edinburgh, currently maintaining **First Class Honours** performance, and an incoming MSc student in **Mathematics and Foundations of Computer Science** at the University of Oxford. My current research interests lie in the **mathematical foundations of computation**, especially **formal verification**, **programming languages**, **proof assistants**, and **quantum computation**.
+I am an incoming MSc student in **Mathematics and Foundations of Computer Science** at the University of Oxford, after completing my BSc (Hons) Mathematics at the University of Edinburgh. My academic background is primarily in rigorous proof-based mathematics, with strong results in algebra, commutative algebra, logic, analysis, complex variables, and numerical linear algebra.
 
-My academic training is rooted in rigorous proof-based mathematics, with strong results in algebra, commutative algebra, logic, analysis, complex variables, and numerical linear algebra. I am particularly interested in areas where algebraic, logical, categorical, or type-theoretic structures provide rigorous guarantees about computation, correctness, and information. Alongside my pure mathematical background, I have completed computational projects in CP-SAT modelling, graph neural networks, statistical modelling, optimisation, and simulation.
+My current research interests lie in the **mathematical foundations of computation**, especially **formal verification**, **programming languages**, **proof assistants**, **type theory**, and **quantum computation**. I am particularly interested in research areas where algebraic, logical, categorical, or type-theoretic structures provide rigorous guarantees about computation, correctness, and information.
 
-I am currently preparing for research directions around **formalised mathematics**, **program verification**, **type systems**, **automated theorem proving**, **quantum processes**, and **quantum program reasoning**.
+I am preparing for research directions around **formalised mathematics**, **program verification**, **type systems**, **theorem proving**, **verified algorithms**, **quantum processes**, **quantum programming languages**, and **quantum program reasoning**. Alongside my pure mathematical background, I have completed computational projects in CP-SAT modelling, graph neural networks, statistical modelling, optimisation, and simulation.
 
 ---
 
@@ -243,13 +243,13 @@ I am currently preparing for research directions around **formalised mathematics
 *Incoming, 2026–2027*
 
 - Intended study areas include formal verification, programming languages, proof assistants, type theory, category-theoretic structures, quantum computation, and the mathematical foundations of computation.
-- Particularly interested in modules such as **Computer-Aided Formal Verification**, **Lambda Calculus and Types**, **Categories, Proofs and Processes**, **Introduction to Quantum Information**, and **Quantum Processes and Computation**.
+- Particularly interested in courses and topics such as computer-aided formal verification, lambda calculus and types, categories, proofs and processes, quantum information, and quantum processes.
 
 ### University of Edinburgh
 **BSc Mathematics with Honours**  
 *2023–2026*
 
-- Final-year undergraduate student; current academic performance at **First Class Honours** level.
+- Completed undergraduate study with **First Class Honours**-level performance.
 - Entered directly into second year and achieved strong results across pure mathematics, computational mathematics, statistics, optimisation, and mathematical modelling.
 - Final-year group project: **Approximation by Rationals**, supervised by **Professor Jim Wright**.
 - Selected advanced modules include **Commutative Algebra**, **Numerical Linear Algebra**, **Geometry**, **Mathematical Biology**, **Algebraic Geometry**, **Analytic Number Theory**, **Advanced Methods of Applied Mathematics**, **Topics in Applied Operational Research**, and **Incomplete Data Analysis**.
@@ -281,9 +281,9 @@ I am currently preparing for research directions around **formalised mathematics
 ## Research Interests
 
 - **Formal Verification and Proof Assistants:** Lean, Coq/Rocq, Isabelle/HOL, formalised mathematics, program correctness, verified algorithms, theorem proving.
-- **Programming Languages and Type Theory:** lambda calculus, type systems, operational semantics, program logics, proof/program correspondence.
-- **Quantum Computation and Quantum Information:** quantum algorithms, quantum processes, categorical quantum mechanics, ZX-calculus, quantum program reasoning.
-- **Algebraic and Logical Methods in Computation:** algebra, commutative algebra, logic, algebraic structures in computation, mathematically grounded theoretical computer science.
+- **Programming Languages and Type Theory:** lambda calculus, type systems, operational semantics, program logics, proof/program correspondence, certified software.
+- **Quantum Computation and Quantum Information:** quantum algorithms, quantum processes, quantum programming languages, categorical quantum mechanics, ZX-calculus, quantum program reasoning.
+- **Algebraic and Logical Methods in Computation:** algebra, commutative algebra, logic, categorical structures, and mathematically grounded theoretical computer science.
 
 ---
 
@@ -419,13 +419,14 @@ English: fluent.
 ## Additional Interests
 
 - Piano, with Level 10 certificate.
-- Reading, photography, sudoku, and badminton.
+- Reading, photography, Sudoku, and badminton.
 
 ---
 
 ## References
 
-Available upon request.0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"dataByLocale":{"zh":{"type":"text","config":{"type":"text","title":"简历","source":"cv.md"},"content":"$3"},"en":{"type":"text","config":{"type":"text","title":"CV","source":"cv.md"},"content":"$4"}},"defaultLocale":"en"}],["$L5","$L6"],"$L7"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"whRsfdmBf90EOwCJKfsUo"}
+Available upon request.
+0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"dataByLocale":{"zh":{"type":"text","config":{"type":"text","title":"简历","source":"cv.md"},"content":"$3"},"en":{"type":"text","config":{"type":"text","title":"CV","source":"cv.md"},"content":"$4"}},"defaultLocale":"en"}],["$L5","$L6"],"$L7"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"DAzGmcLKJTZH3olMTHdyJ"}
 5:["$","script","script-0",{"src":"/_next/static/chunks/0_.b0r9r8~y00.js","async":true}]
 6:["$","script","script-1",{"src":"/_next/static/chunks/04oo.pxsnmosr.js","async":true}]
 7:["$","$L8",null,{"children":["$","$9",null,{"name":"Next.MetadataOutlet","children":"$@a"}]}]
