@@ -64,7 +64,7 @@
       root.lang = 'en';
       root.setAttribute('data-locale', 'en');
     }
-  0:{"P":null,"c":["","cv",""],"q":"","i":false,"f":[[["",{"children":[["slug","cv","d",null],{"children":["__PAGE__",{}]}]},"$undefined","$undefined",16],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0d7n1_mvyoh4f.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/0shfa0w7vx3ty.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/0r2gcbiqni8ic.js","async":true,"nonce":"$undefined"}],["$","script","script-2",{"src":"/_next/static/chunks/0iw2vjq4a6d0m.js","async":true,"nonce":"$undefined"}],["$","script","script-3",{"src":"/_next/static/chunks/17sfdsy5vq21t.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","className":"scroll-smooth","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","link",null,{"rel":"icon","href":"/favicon.svg","type":"image/svg+xml"}],["$","link",null,{"rel":"dns-prefetch","href":"https://jialeliu.com"}],["$","link",null,{"rel":"preconnect","href":"https://jialeliu.com","crossOrigin":""}],["$","link",null,{"rel":"preload","as":"font","type":"font/woff2","href":"https://jialeliu.com/fonts/georgiab.woff2","crossOrigin":""}],["$","script",null,{"dangerouslySetInnerHTML":{"__html":"\n              try {\n                const theme = localStorage.getItem('theme-storage');\n                const parsed = theme ? JSON.parse(theme) : null;\n                const setting = parsed?.state?.theme || 'light';\n                const effective = setting === 'dark' ? 'dark' : 'light';\n                var root = document.documentElement;\n                root.classList.remove('light', 'dark');\n                root.classList.add(effective);\n                root.setAttribute('data-theme', effective);\n              } catch (e) {\n                var root = document.documentElement;\n                root.classList.remove('light', 'dark');\n                root.classList.add('light');\n                root.setAttribute('data-theme', 'light');\n              }\n            "}}],["$","script",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}]]}],"$L3"]}]]}],{"children":["$L4",{"children":["$L5",{},null,false,null]},null,false,"$@6"]},null,false,null],"$L7",false]],"m":"$undefined","G":["$8",["$L9"]],"S":true,"h":null,"s":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"DAzGmcLKJTZH3olMTHdyJ"}
+  0:{"P":null,"c":["","cv",""],"q":"","i":false,"f":[[["",{"children":[["slug","cv","d",null],{"children":["__PAGE__",{}]}]},"$undefined","$undefined",16],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0d7n1_mvyoh4f.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/0shfa0w7vx3ty.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/0r2gcbiqni8ic.js","async":true,"nonce":"$undefined"}],["$","script","script-2",{"src":"/_next/static/chunks/0iw2vjq4a6d0m.js","async":true,"nonce":"$undefined"}],["$","script","script-3",{"src":"/_next/static/chunks/17sfdsy5vq21t.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","className":"scroll-smooth","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","link",null,{"rel":"icon","href":"/favicon.svg","type":"image/svg+xml"}],["$","link",null,{"rel":"dns-prefetch","href":"https://jialeliu.com"}],["$","link",null,{"rel":"preconnect","href":"https://jialeliu.com","crossOrigin":""}],["$","link",null,{"rel":"preload","as":"font","type":"font/woff2","href":"https://jialeliu.com/fonts/georgiab.woff2","crossOrigin":""}],["$","script",null,{"dangerouslySetInnerHTML":{"__html":"\n              try {\n                const theme = localStorage.getItem('theme-storage');\n                const parsed = theme ? JSON.parse(theme) : null;\n                const setting = parsed?.state?.theme || 'light';\n                const effective = setting === 'dark' ? 'dark' : 'light';\n                var root = document.documentElement;\n                root.classList.remove('light', 'dark');\n                root.classList.add(effective);\n                root.setAttribute('data-theme', effective);\n              } catch (e) {\n                var root = document.documentElement;\n                root.classList.remove('light', 'dark');\n                root.classList.add('light');\n                root.setAttribute('data-theme', 'light');\n              }\n            "}}],["$","script",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}]]}],"$L3"]}]]}],{"children":["$L4",{"children":["$L5",{},null,false,null]},null,false,"$@6"]},null,false,null],"$L7",false]],"m":"$undefined","G":["$8",["$L9"]],"S":true,"h":null,"s":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"jaxW0cP1x7ixr4tecBqrA"}
 a:I[94519,["/_next/static/chunks/0shfa0w7vx3ty.js","/_next/static/chunks/0r2gcbiqni8ic.js","/_next/static/chunks/0iw2vjq4a6d0m.js","/_next/static/chunks/17sfdsy5vq21t.js"],"ThemeProvider"]
 b:I[71889,["/_next/static/chunks/0shfa0w7vx3ty.js","/_next/static/chunks/0r2gcbiqni8ic.js","/_next/static/chunks/0iw2vjq4a6d0m.js","/_next/static/chunks/17sfdsy5vq21t.js"],"LocaleProvider"]
 c:I[28127,["/_next/static/chunks/0shfa0w7vx3ty.js","/_next/static/chunks/0r2gcbiqni8ic.js","/_next/static/chunks/0iw2vjq4a6d0m.js","/_next/static/chunks/17sfdsy5vq21t.js"],"default"]
@@ -76,7 +76,7 @@ f:I[22016,["/_next/static/chunks/0shfa0w7vx3ty.js","/_next/static/chunks/0r2gcbi
 13:"$Sreact.suspense"
 16:I[97367,["/_next/static/chunks/0shfa0w7vx3ty.js","/_next/static/chunks/0r2gcbiqni8ic.js","/_next/static/chunks/0iw2vjq4a6d0m.js","/_next/static/chunks/17sfdsy5vq21t.js"],"ViewportBoundary"]
 18:I[97367,["/_next/static/chunks/0shfa0w7vx3ty.js","/_next/static/chunks/0r2gcbiqni8ic.js","/_next/static/chunks/0iw2vjq4a6d0m.js","/_next/static/chunks/17sfdsy5vq21t.js"],"MetadataBoundary"]
-3:["$","body",null,{"className":"font-sans antialiased","children":["$","$La",null,{"children":["$","$Lb",null,{"config":{"enabled":true,"locales":["zh","en"],"defaultLocale":"en","mode":"auto","fixedLocale":"en","persist":true,"switcher":true,"labels":{"zh":"中文","en":"English"}},"children":[["$","$Lc",null,{"items":[{"title":"About","type":"page","target":"about","href":"/"},{"title":"Education","type":"page","target":"education","href":"/education"},{"title":"Projects","type":"page","target":"projects","href":"/projects"},{"title":"Experience","type":"page","target":"experience","href":"/experience"},{"title":"Awards","type":"page","target":"awards","href":"/awards"},{"title":"CV","type":"page","target":"cv","href":"/cv"},{"title":"News","type":"page","target":"news","href":"/news"},{"title":"More","type":"page","target":"more","href":"/more"}],"siteTitle":"Jingren Zhou","enableOnePageMode":false,"i18n":"$3:props:children:props:children:props:config","itemsByLocale":{"zh":[{"title":"关于我","type":"page","target":"about","href":"/"},{"title":"教育背景","type":"page","target":"education","href":"/education"},{"title":"项目","type":"page","target":"projects","href":"/projects"},{"title":"履历","type":"page","target":"experience","href":"/experience"},{"title":"奖项与竞赛","type":"page","target":"awards","href":"/awards"},{"title":"简历","type":"page","target":"cv","href":"/cv"},{"title":"动态","type":"page","target":"news","href":"/news"},{"title":"更多","type":"page","target":"more","href":"/more"}],"en":[{"title":"About","type":"page","target":"about","href":"/"},{"title":"Education","type":"page","target":"education","href":"/education"},{"title":"Projects","type":"page","target":"projects","href":"/projects"},{"title":"Experience","type":"page","target":"experience","href":"/experience"},{"title":"Awards","type":"page","target":"awards","href":"/awards"},{"title":"CV","type":"page","target":"cv","href":"/cv"},{"title":"News","type":"page","target":"news","href":"/news"},{"title":"More","type":"page","target":"more","href":"/more"}]},"siteTitleByLocale":{"zh":"周靖人","en":"Jingren Zhou"}}],["$","main",null,{"className":"min-h-screen pt-16 lg:pt-20","children":["$","$Ld",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Le",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","section",null,{"className":"max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-20","children":["$","div",null,{"className":"rounded-2xl border border-neutral-200 dark:border-[rgba(148,163,184,0.24)] card-bg p-8 sm:p-10 shadow-sm","children":[["$","p",null,{"className":"text-sm font-semibold uppercase tracking-wide text-accent","children":"404"}],["$","h1",null,{"className":"mt-3 text-3xl sm:text-4xl font-serif font-semibold text-primary","children":"Page Not Found"}],["$","p",null,{"className":"mt-4 text-base text-neutral-700 dark:text-neutral-300 leading-relaxed","children":"The page you requested does not exist or has been moved."}],["$","p",null,{"className":"mt-2 text-base text-neutral-700 dark:text-neutral-300 leading-relaxed","children":"你访问的页面不存在，或已被移动。"}],["$","div",null,{"className":"mt-8","children":["$","$Lf",null,{"href":"/","className":"inline-flex items-center rounded-lg bg-accent/25 px-4 py-2 text-sm font-medium text-primary hover:bg-accent/35 transition-colors duration-200","children":"Back to Home / 返回首页"}]}]]}]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","$L10",null,{"lastUpdated":"June 20, 2026","lastUpdatedByLocale":{"zh":"2026年6月8日","en":"June 20, 2026"},"defaultLocale":"en"}]]}]}]}]
+3:["$","body",null,{"className":"font-sans antialiased","children":["$","$La",null,{"children":["$","$Lb",null,{"config":{"enabled":true,"locales":["zh","en"],"defaultLocale":"en","mode":"auto","fixedLocale":"en","persist":true,"switcher":true,"labels":{"zh":"中文","en":"English"}},"children":[["$","$Lc",null,{"items":[{"title":"About","type":"page","target":"about","href":"/"},{"title":"Education","type":"page","target":"education","href":"/education"},{"title":"Projects","type":"page","target":"projects","href":"/projects"},{"title":"Experience","type":"page","target":"experience","href":"/experience"},{"title":"Awards","type":"page","target":"awards","href":"/awards"},{"title":"CV","type":"page","target":"cv","href":"/cv"},{"title":"News","type":"page","target":"news","href":"/news"},{"title":"More","type":"page","target":"more","href":"/more"}],"siteTitle":"Jingren Zhou","enableOnePageMode":false,"i18n":"$3:props:children:props:children:props:config","itemsByLocale":{"zh":[{"title":"关于我","type":"page","target":"about","href":"/"},{"title":"教育背景","type":"page","target":"education","href":"/education"},{"title":"项目","type":"page","target":"projects","href":"/projects"},{"title":"履历","type":"page","target":"experience","href":"/experience"},{"title":"奖项与竞赛","type":"page","target":"awards","href":"/awards"},{"title":"简历","type":"page","target":"cv","href":"/cv"},{"title":"动态","type":"page","target":"news","href":"/news"},{"title":"更多","type":"page","target":"more","href":"/more"}],"en":[{"title":"About","type":"page","target":"about","href":"/"},{"title":"Education","type":"page","target":"education","href":"/education"},{"title":"Projects","type":"page","target":"projects","href":"/projects"},{"title":"Experience","type":"page","target":"experience","href":"/experience"},{"title":"Awards","type":"page","target":"awards","href":"/awards"},{"title":"CV","type":"page","target":"cv","href":"/cv"},{"title":"News","type":"page","target":"news","href":"/news"},{"title":"More","type":"page","target":"more","href":"/more"}]},"siteTitleByLocale":{"zh":"周靖人","en":"Jingren Zhou"}}],["$","main",null,{"className":"min-h-screen pt-16 lg:pt-20","children":["$","$Ld",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Le",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","section",null,{"className":"max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-20","children":["$","div",null,{"className":"rounded-2xl border border-neutral-200 dark:border-[rgba(148,163,184,0.24)] card-bg p-8 sm:p-10 shadow-sm","children":[["$","p",null,{"className":"text-sm font-semibold uppercase tracking-wide text-accent","children":"404"}],["$","h1",null,{"className":"mt-3 text-3xl sm:text-4xl font-serif font-semibold text-primary","children":"Page Not Found"}],["$","p",null,{"className":"mt-4 text-base text-neutral-700 dark:text-neutral-300 leading-relaxed","children":"The page you requested does not exist or has been moved."}],["$","p",null,{"className":"mt-2 text-base text-neutral-700 dark:text-neutral-300 leading-relaxed","children":"你访问的页面不存在，或已被移动。"}],["$","div",null,{"className":"mt-8","children":["$","$Lf",null,{"href":"/","className":"inline-flex items-center rounded-lg bg-accent/25 px-4 py-2 text-sm font-medium text-primary hover:bg-accent/35 transition-colors duration-200","children":"Back to Home / 返回首页"}]}]]}]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","$L10",null,{"lastUpdated":"June 20, 2026","lastUpdatedByLocale":{"zh":"2026年6月20日","en":"June 20, 2026"},"defaultLocale":"en"}]]}]}]}]
 4:["$","$1","c",{"children":[null,["$","$Ld",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Le",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
 5:["$","$1","c",{"children":["$L11",[["$","script","script-0",{"src":"/_next/static/chunks/0_.b0r9r8~y00.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/04oo.pxsnmosr.js","async":true,"nonce":"$undefined"}]],["$","$L12",null,{"children":["$","$13",null,{"name":"Next.MetadataOutlet","children":"$@14"}]}]]}]
 15:[]
@@ -84,13 +84,13 @@ f:I[22016,["/_next/static/chunks/0shfa0w7vx3ty.js","/_next/static/chunks/0r2gcbi
 7:["$","$1","h",{"children":[null,["$","$L16",null,{"children":"$L17"}],["$","div",null,{"hidden":true,"children":["$","$L18",null,{"children":["$","$13",null,{"name":"Next.Metadata","children":"$L19"}]}]}],null]}]
 9:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0d7n1_mvyoh4f.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
 1a:I[21062,["/_next/static/chunks/0shfa0w7vx3ty.js","/_next/static/chunks/0r2gcbiqni8ic.js","/_next/static/chunks/0iw2vjq4a6d0m.js","/_next/static/chunks/17sfdsy5vq21t.js","/_next/static/chunks/0_.b0r9r8~y00.js","/_next/static/chunks/04oo.pxsnmosr.js"],"default"]
-1b:T2df9,# 周靖人
+1b:T2d29,# 周靖人（Jasper）
 
-**爱丁堡大学数学专业本科四年级学生**  
+**爱丁堡大学 BSc (Hons) Mathematics**  
 **即将入读牛津大学 MSc in Mathematics and Foundations of Computer Science**（2026–2027）
 
 **所在地：** 英国  
-**邮箱：** *jasper.zhou0925@gmail.com*  
+**邮箱：** *pianoart@zhoujingren.com*  
 **GitHub：** [github.com/zhoujasper](https://github.com/zhoujasper)  
 **个人网站：** [zhoujasper.github.io](https://zhoujasper.github.io/)
 
@@ -98,11 +98,11 @@ f:I[22016,["/_next/static/chunks/0shfa0w7vx3ty.js","/_next/static/chunks/0r2gcbi
 
 ## 个人简介
 
-我目前是爱丁堡大学数学专业本科四年级学生，成绩保持在 **First Class Honours** 水平，并即将于 2026 年入读牛津大学 **MSc in Mathematics and Foundations of Computer Science**。我现在的主要研究兴趣在于**计算的数学基础**，尤其是**形式化验证（Formal Verification）**、**程序语言（Programming Languages）**、**证明助手（Proof Assistants）** 和**量子计算（Quantum Computation）**。
+我即将入读牛津大学 **MSc in Mathematics and Foundations of Computer Science**，此前在爱丁堡大学完成 BSc (Hons) Mathematics。本科阶段我的学术训练主要来自严格的证明型数学，并在代数、交换代数、逻辑、分析、复变函数和数值线性代数等课程中取得了较强成绩。
 
-我的学术训练主要来自证明型数学，并在代数、交换代数、逻辑、分析、复变函数和数值线性代数等课程中取得了较强成绩。我尤其关注代数、逻辑、范畴或类型论结构如何为计算、程序正确性、数学证明和信息处理提供严格保证。除了纯数学训练之外，我也完成过 CP-SAT 建模、图神经网络、统计建模、优化和仿真等计算项目。
+我现在的主要研究兴趣在于**计算的数学基础**，尤其是**形式化验证（Formal Verification）**、**程序语言（Programming Languages）**、**证明助手（Proof Assistants）**、**类型论（Type Theory）** 和**量子计算（Quantum Computation）**。我尤其关注代数、逻辑、范畴或类型论结构如何为计算、程序正确性和信息处理提供严格保证。
 
-目前我正在为未来可能的研究方向做准备，包括**数学证明形式化**、**程序验证**、**类型系统**、**自动定理证明**、**量子过程**和**量子程序推理**。
+目前我正在为未来可能的研究方向做准备，包括**数学证明形式化**、**程序验证**、**类型系统**、**定理证明**、**算法验证**、**量子过程**、**量子程序语言**和**量子程序推理**。除了纯数学训练之外，我也完成过 CP-SAT 建模、图神经网络、统计建模、优化和仿真等计算项目。
 
 ---
 
@@ -113,15 +113,15 @@ f:I[22016,["/_next/static/chunks/0shfa0w7vx3ty.js","/_next/static/chunks/0r2gcbi
 *即将入读，2026–2027*
 
 - 计划学习形式化验证、程序语言、证明助手、类型论、范畴结构、量子计算以及计算的数学基础等方向。
-- 特别关注 **Computer-Aided Formal Verification**、**Lambda Calculus and Types**、**Categories, Proofs and Processes**、**Introduction to Quantum Information** 和 **Quantum Processes and Computation** 等课程。
+- 特别关注 computer-aided formal verification、lambda calculus and types、categories, proofs and processes、quantum information 和 quantum processes 等课程与主题。
 
 ### 爱丁堡大学
 **BSc Mathematics with Honours**  
 *2023–2026*
 
-- 本科四年级学生，目前成绩保持在 **First Class Honours** 水平。
-- 直接进入大学二年级学习，并在纯数学、计算数学、统计、优化和数学建模等课程中取得优秀成绩。
-- 毕业小组项目：**Approximation by Rationals**，指导教师为 **Professor Jim Wright**。
+- 完成数学荣誉学士阶段学习，成绩保持在 **First Class Honours** 水平。
+- 通过 Direct Entry 路径入学，并在纯数学、计算数学、统计、优化和数学建模等课程中取得优秀成绩。
+- 本科毕业小组项目：**Approximation by Rationals**，指导教师为 **Professor Jim Wright**。
 - 已修或正在学习的高级课程包括 **Commutative Algebra**、**Numerical Linear Algebra**、**Geometry**、**Mathematical Biology**、**Algebraic Geometry**、**Analytic Number Theory**、**Advanced Methods of Applied Mathematics**、**Topics in Applied Operational Research** 与 **Incomplete Data Analysis**。
 
 **部分代表性课程成绩**
@@ -151,9 +151,9 @@ f:I[22016,["/_next/static/chunks/0shfa0w7vx3ty.js","/_next/static/chunks/0r2gcbi
 ## 研究兴趣
 
 - **形式化验证与证明助手：** Lean、Coq/Rocq、Isabelle/HOL、数学证明形式化、程序正确性、算法验证、定理证明。
-- **程序语言与类型论：** lambda calculus、类型系统、操作语义、程序逻辑、证明与程序之间的对应。
-- **量子计算与量子信息：** 量子算法、量子过程、范畴量子力学、ZX-calculus、量子程序推理。
-- **计算中的代数与逻辑方法：** 代数、交换代数、逻辑、计算中的代数结构、具有数学基础的理论计算机科学。
+- **程序语言与类型论：** lambda calculus、类型系统、操作语义、程序逻辑、证明与程序之间的对应、可信软件。
+- **量子计算与量子信息：** 量子算法、量子过程、量子程序语言、范畴量子力学、ZX-calculus、量子程序推理。
+- **计算中的代数与逻辑方法：** 代数、交换代数、逻辑、范畴结构以及具有数学基础的理论计算机科学。
 
 ---
 
@@ -184,7 +184,7 @@ f:I[22016,["/_next/static/chunks/0shfa0w7vx3ty.js","/_next/static/chunks/0r2gcbi
 - 研究**基于随机游走的图神经网络方法**是否能够相较标准消息传递型 GNN 提升表达能力。
 - 学习并分析了 **oversmoothing** 与 **oversquashing** 等图神经网络中的典型局限，并梳理了图卷积网络与图注意力网络等模型结构。
 - 探索具有理论动机的随机游走方案，并考虑其在**超图**上的推广。
-- 虽然我目前并不打算以应用 AI 作为主方向，但这个项目让我接触到图论、表示学习以及机器学习模型中的理论结构问题。
+- 该项目让我接触到图论、表示学习以及机器学习模型中的理论结构问题。
 
 ### 英国冬季峰值电力需求的定量建模
 **统计建模项目** · *组长*  
@@ -193,7 +193,7 @@ f:I[22016,["/_next/static/chunks/0shfa0w7vx3ty.js","/_next/static/chunks/0r2gcbi
 - 带领小组基于 1991 至 2014 年的历史数据，对英国冬季峰值电力需求进行统计建模。
 - 建立多因素线性回归框架，将可再生能源发电量、季节性结构和工作日效应纳入模型。
 - 设计自动化模型选择流程，结合 **五折交叉验证**、**AIC** 与 **BIC**。
-- 该项目体现了我在可复现建模、验证和定量结果表达方面的经验，但我当前的研究兴趣更偏理论与验证方向。
+- 该项目体现了我在可复现建模、验证和定量结果表达方面的经验。
 
 ### BoxCar 拼车系统仿真研究
 **数据驱动的离散事件仿真项目** · *组长*  
@@ -210,7 +210,7 @@ f:I[22016,["/_next/static/chunks/0shfa0w7vx3ty.js","/_next/static/chunks/0r2gcbi
 - 将一家咨询公司的劳动力分配问题形式化为线性 / 整数优化模型。
 - 在角色限制、差旅成本、bench 政策、远程工作限制、外包选项和中断情景等约束下，对不同地区、项目和职级的顾问进行分配。
 - 使用 **Xpress** 求解模型，并评估需求变化、远程工作惩罚、外包成本和交通中断等情景。
-- 该项目体现了我的结构化建模与计算实验能力，但我现在主要将其作为 formal modelling 能力的证据，而不是主要研究方向。
+- 该项目体现了我的结构化建模与计算实验能力。
 
 ### 多阶段笔记本电脑制造系统仿真研究
 **制造系统仿真项目** · *组长*  
@@ -296,7 +296,8 @@ LaTeX、Overleaf、Git、GitHub、Microsoft Word、Excel、PowerPoint、Adobe Ph
 
 ## 推荐人
 
-可根据需要提供。1c:T32df,# Jingren Zhou (Jasper)
+可根据需要提供。
+1c:T32df,# Jingren Zhou (Jasper)
 
 **BSc (Hons) Mathematics, University of Edinburgh**  
 **Incoming MSc Student in Mathematics and Foundations of Computer Science, University of Oxford** *(2026–2027)*
