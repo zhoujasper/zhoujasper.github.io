@@ -2,10 +2,10 @@
 2:I[21062,["/_next/static/chunks/0shfa0w7vx3ty.js","/_next/static/chunks/0r2gcbiqni8ic.js","/_next/static/chunks/0iw2vjq4a6d0m.js","/_next/static/chunks/17sfdsy5vq21t.js","/_next/static/chunks/0_.b0r9r8~y00.js","/_next/static/chunks/04oo.pxsnmosr.js"],"default"]
 8:I[97367,["/_next/static/chunks/0shfa0w7vx3ty.js","/_next/static/chunks/0r2gcbiqni8ic.js","/_next/static/chunks/0iw2vjq4a6d0m.js","/_next/static/chunks/17sfdsy5vq21t.js"],"OutletBoundary"]
 9:"$Sreact.suspense"
-3:T2d29,# 周靖人（Jasper）
+3:T2d31,# 周靖人（Jasper）
 
 **爱丁堡大学 BSc (Hons) Mathematics**  
-**即将入读牛津大学 MSc in Mathematics and Foundations of Computer Science**（2026–2027）
+**就读牛津大学 MSc in Mathematics and Foundations of Computer Science**（2026–2027）
 
 **所在地：** 英国  
 **邮箱：** *pianoart@zhoujingren.com*  
@@ -16,7 +16,7 @@
 
 ## 个人简介
 
-我即将入读牛津大学 **MSc in Mathematics and Foundations of Computer Science**，此前在爱丁堡大学完成 BSc (Hons) Mathematics。本科阶段我的学术训练主要来自严格的证明型数学，并在代数、交换代数、逻辑、分析、复变函数和数值线性代数等课程中取得了较强成绩。
+我目前在牛津大学赫特福德学院就读 **MSc in Mathematics and Foundations of Computer Science**，此前在爱丁堡大学完成 BSc (Hons) Mathematics。本科阶段我的学术训练主要来自严格的证明型数学，并在代数、交换代数、逻辑、分析、复变函数和数值线性代数等课程中取得了较强成绩。
 
 我现在的主要研究兴趣在于**计算的数学基础**，尤其是**形式化验证（Formal Verification）**、**程序语言（Programming Languages）**、**证明助手（Proof Assistants）**、**类型论（Type Theory）** 和**量子计算（Quantum Computation）**。我尤其关注代数、逻辑、范畴或类型论结构如何为计算、程序正确性和信息处理提供严格保证。
 
@@ -28,19 +28,19 @@
 
 ### 牛津大学
 **MSc in Mathematics and Foundations of Computer Science**  
-*即将入读，2026–2027*
+*2026–2027（在读）*
 
-- 计划学习形式化验证、程序语言、证明助手、类型论、范畴结构、量子计算以及计算的数学基础等方向。
+- 学习兴趣包括形式化验证、程序语言、证明助手、类型论、范畴结构、量子计算以及计算的数学基础等方向。
 - 特别关注 computer-aided formal verification、lambda calculus and types、categories, proofs and processes、quantum information 和 quantum processes 等课程与主题。
 
 ### 爱丁堡大学
 **BSc Mathematics with Honours**  
 *2023–2026*
 
-- 完成数学荣誉学士阶段学习，成绩保持在 **First Class Honours** 水平。
+- 获得数学荣誉学士学位，毕业等级为 **First Class Honours（一等荣誉）**。
 - 通过 Direct Entry 路径入学，并在纯数学、计算数学、统计、优化和数学建模等课程中取得优秀成绩。
 - 本科毕业小组项目：**Approximation by Rationals**，指导教师为 **Professor Jim Wright**。
-- 已修或正在学习的高级课程包括 **Commutative Algebra**、**Numerical Linear Algebra**、**Geometry**、**Mathematical Biology**、**Algebraic Geometry**、**Analytic Number Theory**、**Advanced Methods of Applied Mathematics**、**Topics in Applied Operational Research** 与 **Incomplete Data Analysis**。
+- 已修的高级课程包括 **Commutative Algebra**、**Numerical Linear Algebra**、**Geometry**、**Mathematical Biology**、**Algebraic Geometry**、**Analytic Number Theory**、**Advanced Methods of Applied Mathematics**、**Topics in Applied Operational Research** 与 **Incomplete Data Analysis**。
 
 **部分代表性课程成绩**
 
@@ -215,10 +215,10 @@ LaTeX、Overleaf、Git、GitHub、Microsoft Word、Excel、PowerPoint、Adobe Ph
 ## 推荐人
 
 可根据需要提供。
-4:T32df,# Jingren Zhou (Jasper)
+4:T32bc,# Jingren Zhou (Jasper)
 
 **BSc (Hons) Mathematics, University of Edinburgh**  
-**Incoming MSc Student in Mathematics and Foundations of Computer Science, University of Oxford** *(2026–2027)*
+**MSc Student in Mathematics and Foundations of Computer Science, University of Oxford** *(2026–2027)*
 
 **Location:** United Kingdom  
 **Email:** *pianoart@zhoujingren.com*  
@@ -229,7 +229,7 @@ LaTeX、Overleaf、Git、GitHub、Microsoft Word、Excel、PowerPoint、Adobe Ph
 
 ## Profile
 
-I am an incoming MSc student in **Mathematics and Foundations of Computer Science** at the University of Oxford, after completing my BSc (Hons) Mathematics at the University of Edinburgh. My academic background is primarily in rigorous proof-based mathematics, with strong results in algebra, commutative algebra, logic, analysis, complex variables, and numerical linear algebra.
+I am an MSc student in **Mathematics and Foundations of Computer Science** at the University of Oxford (Hertford College), after completing my BSc (Hons) Mathematics at the University of Edinburgh. My academic background is primarily in rigorous proof-based mathematics, with strong results in algebra, commutative algebra, logic, analysis, complex variables, and numerical linear algebra.
 
 My current research interests lie in the **mathematical foundations of computation**, especially **formal verification**, **programming languages**, **proof assistants**, **type theory**, and **quantum computation**. I am particularly interested in research areas where algebraic, logical, categorical, or type-theoretic structures provide rigorous guarantees about computation, correctness, and information.
 
@@ -241,16 +241,16 @@ I am preparing for research directions around **formalised mathematics**, **prog
 
 ### University of Oxford
 **MSc in Mathematics and Foundations of Computer Science**  
-*Incoming, 2026–2027*
+*2026–2027 (in progress)*
 
-- Intended study areas include formal verification, programming languages, proof assistants, type theory, category-theoretic structures, quantum computation, and the mathematical foundations of computation.
+- My study interests include formal verification, programming languages, proof assistants, type theory, category-theoretic structures, quantum computation, and the mathematical foundations of computation.
 - Particularly interested in courses and topics such as computer-aided formal verification, lambda calculus and types, categories, proofs and processes, quantum information, and quantum processes.
 
 ### University of Edinburgh
 **BSc Mathematics with Honours**  
 *2023–2026*
 
-- Completed undergraduate study with **First Class Honours**-level performance.
+- Graduated with **First Class Honours**.
 - Entered directly into second year and achieved strong results across pure mathematics, computational mathematics, statistics, optimisation, and mathematical modelling.
 - Final-year group project: **Approximation by Rationals**, supervised by **Professor Jim Wright**.
 - Selected advanced modules include **Commutative Algebra**, **Numerical Linear Algebra**, **Geometry**, **Mathematical Biology**, **Algebraic Geometry**, **Analytic Number Theory**, **Advanced Methods of Applied Mathematics**, **Topics in Applied Operational Research**, and **Incomplete Data Analysis**.
@@ -427,7 +427,7 @@ English: fluent.
 ## References
 
 Available upon request.
-0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"dataByLocale":{"zh":{"type":"text","config":{"type":"text","title":"简历","source":"cv.md"},"content":"$3"},"en":{"type":"text","config":{"type":"text","title":"CV","source":"cv.md"},"content":"$4"}},"defaultLocale":"en"}],["$L5","$L6"],"$L7"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"MtitrEkM1lnATuQyO2YmE"}
+0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"dataByLocale":{"zh":{"type":"text","config":{"type":"text","title":"简历","source":"cv.md"},"content":"$3"},"en":{"type":"text","config":{"type":"text","title":"CV","source":"cv.md"},"content":"$4"}},"defaultLocale":"en"}],["$L5","$L6"],"$L7"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"HgHeogyu93mssO8eHSl2a"}
 5:["$","script","script-0",{"src":"/_next/static/chunks/0_.b0r9r8~y00.js","async":true}]
 6:["$","script","script-1",{"src":"/_next/static/chunks/04oo.pxsnmosr.js","async":true}]
 7:["$","$L8",null,{"children":["$","$9",null,{"name":"Next.MetadataOutlet","children":"$@a"}]}]
