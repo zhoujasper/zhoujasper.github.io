@@ -2,7 +2,7 @@
 2:I[21062,["/_next/static/chunks/0shfa0w7vx3ty.js","/_next/static/chunks/0r2gcbiqni8ic.js","/_next/static/chunks/0iw2vjq4a6d0m.js","/_next/static/chunks/17sfdsy5vq21t.js","/_next/static/chunks/0_.b0r9r8~y00.js","/_next/static/chunks/04oo.pxsnmosr.js"],"default"]
 8:I[97367,["/_next/static/chunks/0shfa0w7vx3ty.js","/_next/static/chunks/0r2gcbiqni8ic.js","/_next/static/chunks/0iw2vjq4a6d0m.js","/_next/static/chunks/17sfdsy5vq21t.js"],"OutletBoundary"]
 9:"$Sreact.suspense"
-3:T2d31,# 周靖人（Jasper）
+3:T3038,# 周靖人（Jasper）
 
 **爱丁堡大学 BSc (Hons) Mathematics**  
 **就读牛津大学 MSc in Mathematics and Foundations of Computer Science**（2026–2027）
@@ -30,8 +30,9 @@
 **MSc in Mathematics and Foundations of Computer Science**  
 *2026–2027（在读）*
 
-- 学习兴趣包括形式化验证、程序语言、证明助手、类型论、范畴结构、量子计算以及计算的数学基础等方向。
-- 特别关注 computer-aided formal verification、lambda calculus and types、categories, proofs and processes、quantum information 和 quantum processes 等课程与主题。
+- 学院：**Hertford College（赫特福德学院）**。
+- **Michaelmas 学期在修：** Quantum Processes and Computation；Computer-Aided Formal Verification；Categories, Proofs and Processes。
+- **Hilary 学期暂定：** Geometric Deep Learning；Networks；Classical and Quantum Compositional Distributional Meaning。后续选课仍可能调整。
 
 ### 爱丁堡大学
 **BSc Mathematics with Honours**  
@@ -76,6 +77,16 @@
 ---
 
 ## 代表项目经历
+
+### Silk Math Preview
+**开源 Visual Studio Code 扩展** · *开发与维护*
+
+*2026 年至今*
+
+- 使用 **TypeScript** 开发实时 LaTeX 公式预览扩展，支持 TeX、Markdown、MDX、Quarto 与 Jupyter 笔记本，已在 [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=silkmath.silk-math-preview) 发布。
+- 实现工作区自定义宏支持、公式补全、本地图片 OCR，以及通过本地 WebAssembly 渲染器提供的可选 TikZ／pgfplots 预览。
+- 维护增量扫描、缓存与异步渲染，针对编辑器交互和文档解析开展回归检查与修复。
+- [源代码](https://github.com/zhoujasper/silk-math-preview)。
 
 ### 有理数逼近（Approximation by Rationals）
 **爱丁堡大学四年级小组项目** · *指导教师：Professor Jim Wright*  
@@ -144,7 +155,7 @@
 
 ### MathPALS Leader
 **爱丁堡大学学生会 / 爱丁堡大学数学学院**  
-*2024 年 4 月至今*
+*2024 年 4 月–2026 年 6 月*
 
 - 为一年级数学学生组织非正式的同伴辅助学习活动，营造支持性的小组讨论环境。
 - 帮助学生讨论核心课程问题，理解抽象数学概念，并提升数学问题解决的信心。
@@ -191,7 +202,7 @@
 严格证明写作、数学表达、代数、交换代数、逻辑、分析、数值线性代数、优化建模、统计建模、仿真和模型验证。
 
 **编程与计算工具**  
-Python、NumPy、Pandas、Matplotlib、PyTorch、R、Google OR-Tools CP-SAT、Xpress、Simul8、Excel VBA。
+Python、NumPy、Pandas、Matplotlib、PyTorch、R、Google OR-Tools CP-SAT、TypeScript、VS Code Extension API、MathJax、Xpress、Simul8、Excel VBA。
 
 **正在发展的研究工具与兴趣**  
 Lean 4、Coq/Rocq、Isabelle/HOL、SAT/SMT 求解、Z3、定理证明、量子编程与量子验证工具。
@@ -215,7 +226,7 @@ LaTeX、Overleaf、Git、GitHub、Microsoft Word、Excel、PowerPoint、Adobe Ph
 ## 推荐人
 
 可根据需要提供。
-4:T32bc,# Jingren Zhou (Jasper)
+4:T357a,# Jingren Zhou (Jasper)
 
 **BSc (Hons) Mathematics, University of Edinburgh**  
 **MSc Student in Mathematics and Foundations of Computer Science, University of Oxford** *(2026–2027)*
@@ -243,8 +254,9 @@ I am preparing for research directions around **formalised mathematics**, **prog
 **MSc in Mathematics and Foundations of Computer Science**  
 *2026–2027 (in progress)*
 
-- My study interests include formal verification, programming languages, proof assistants, type theory, category-theoretic structures, quantum computation, and the mathematical foundations of computation.
-- Particularly interested in courses and topics such as computer-aided formal verification, lambda calculus and types, categories, proofs and processes, quantum information, and quantum processes.
+- College: **Hertford College**.
+- **Current Michaelmas courses:** Quantum Processes and Computation; Computer-Aided Formal Verification; Categories, Proofs and Processes.
+- **Planned Hilary courses:** Geometric Deep Learning; Networks; Classical and Quantum Compositional Distributional Meaning. These choices remain provisional.
 
 ### University of Edinburgh
 **BSc Mathematics with Honours**  
@@ -289,6 +301,16 @@ I am preparing for research directions around **formalised mathematics**, **prog
 ---
 
 ## Selected Projects
+
+### Silk Math Preview
+**Open-Source Visual Studio Code Extension** · *Developer and Maintainer*
+
+*2026–Present*
+
+- Developed a **TypeScript** extension for live LaTeX formula previews in TeX, Markdown, MDX, Quarto and Jupyter notebooks; published on the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=silkmath.silk-math-preview).
+- Implemented workspace macro support, formula completion, local image OCR and optional TikZ/pgfplots previews using a local WebAssembly renderer.
+- Maintain incremental scanning, caching and asynchronous rendering, with regression checks and fixes for editor interaction and document parsing.
+- [Source code](https://github.com/zhoujasper/silk-math-preview).
 
 ### Approximation by Rationals
 **Year 4 Group Project, University of Edinburgh** · *Supervisor: Professor Jim Wright*  
@@ -356,7 +378,7 @@ I am preparing for research directions around **formalised mathematics**, **prog
 
 ### MathPALS Leader
 **Edinburgh University Students' Association / School of Mathematics, University of Edinburgh**  
-*April 2024–Present*
+*April 2024–June 2026*
 
 - Led informal peer-assisted learning sessions for first-year Mathematics students in a supportive small-group environment.
 - Helped students discuss core course questions, understand abstract mathematical ideas, and develop confidence in problem solving.
@@ -403,7 +425,7 @@ I am preparing for research directions around **formalised mathematics**, **prog
 Rigorous proof writing, mathematical exposition, algebra, commutative algebra, logic, analysis, numerical linear algebra, optimisation modelling, statistical modelling, simulation, and validation.
 
 **Programming and computational tools**  
-Python, NumPy, Pandas, Matplotlib, PyTorch, R, Google OR-Tools CP-SAT, Xpress, Simul8, Excel VBA.
+Python, NumPy, Pandas, Matplotlib, PyTorch, R, Google OR-Tools CP-SAT, TypeScript, VS Code Extension API, MathJax, Xpress, Simul8, Excel VBA.
 
 **Developing research tools and interests**  
 Lean 4, Coq/Rocq, Isabelle/HOL, SAT/SMT solving, Z3, theorem proving, quantum programming and verification tools.
@@ -427,7 +449,7 @@ English: fluent.
 ## References
 
 Available upon request.
-0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"dataByLocale":{"zh":{"type":"text","config":{"type":"text","title":"简历","source":"cv.md"},"content":"$3"},"en":{"type":"text","config":{"type":"text","title":"CV","source":"cv.md"},"content":"$4"}},"defaultLocale":"en"}],["$L5","$L6"],"$L7"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"HgHeogyu93mssO8eHSl2a"}
+0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"dataByLocale":{"zh":{"type":"text","config":{"type":"text","title":"简历","source":"cv.md"},"content":"$3"},"en":{"type":"text","config":{"type":"text","title":"CV","source":"cv.md"},"content":"$4"}},"defaultLocale":"en"}],["$L5","$L6"],"$L7"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"MVSkjk1WTUHumtRf-CXWR"}
 5:["$","script","script-0",{"src":"/_next/static/chunks/0_.b0r9r8~y00.js","async":true}]
 6:["$","script","script-1",{"src":"/_next/static/chunks/04oo.pxsnmosr.js","async":true}]
 7:["$","$L8",null,{"children":["$","$9",null,{"name":"Next.MetadataOutlet","children":"$@a"}]}]
