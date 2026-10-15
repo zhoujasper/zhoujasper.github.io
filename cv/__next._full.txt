@@ -64,7 +64,7 @@
       root.lang = 'en';
       root.setAttribute('data-locale', 'en');
     }
-  0:{"P":null,"c":["","cv",""],"q":"","i":false,"f":[[["",{"children":[["slug","cv","d",null],{"children":["__PAGE__",{}]}]},"$undefined","$undefined",16],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/17~3kcg5l~mm4.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/0shfa0w7vx3ty.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/09.oixl_l63s~.js","async":true,"nonce":"$undefined"}],["$","script","script-2",{"src":"/_next/static/chunks/0iw2vjq4a6d0m.js","async":true,"nonce":"$undefined"}],["$","script","script-3",{"src":"/_next/static/chunks/0sn6qqg36~2tn.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","className":"scroll-smooth","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","link",null,{"rel":"icon","href":"/favicon.svg","type":"image/svg+xml"}],["$","link",null,{"rel":"dns-prefetch","href":"https://jialeliu.com"}],["$","link",null,{"rel":"preconnect","href":"https://jialeliu.com","crossOrigin":""}],["$","link",null,{"rel":"preload","as":"font","type":"font/woff2","href":"https://jialeliu.com/fonts/georgiab.woff2","crossOrigin":""}],["$","script",null,{"dangerouslySetInnerHTML":{"__html":"\n              try {\n                const theme = localStorage.getItem('theme-storage');\n                const parsed = theme ? JSON.parse(theme) : null;\n                const setting = parsed?.state?.theme || 'light';\n                const effective = setting === 'dark' ? 'dark' : 'light';\n                var root = document.documentElement;\n                root.classList.remove('light', 'dark');\n                root.classList.add(effective);\n                root.setAttribute('data-theme', effective);\n              } catch (e) {\n                var root = document.documentElement;\n                root.classList.remove('light', 'dark');\n                root.classList.add('light');\n                root.setAttribute('data-theme', 'light');\n              }\n            "}}],["$","script",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}]]}],"$L3"]}]]}],{"children":["$L4",{"children":["$L5",{},null,false,null]},null,false,"$@6"]},null,false,null],"$L7",false]],"m":"$undefined","G":["$8",["$L9"]],"S":true,"h":null,"s":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"FHajsP56lj2xRB7jqi3RJ"}
+  0:{"P":null,"c":["","cv",""],"q":"","i":false,"f":[[["",{"children":[["slug","cv","d",null],{"children":["__PAGE__",{}]}]},"$undefined","$undefined",16],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/17~3kcg5l~mm4.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/0shfa0w7vx3ty.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/09.oixl_l63s~.js","async":true,"nonce":"$undefined"}],["$","script","script-2",{"src":"/_next/static/chunks/0iw2vjq4a6d0m.js","async":true,"nonce":"$undefined"}],["$","script","script-3",{"src":"/_next/static/chunks/0sn6qqg36~2tn.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","className":"scroll-smooth","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","link",null,{"rel":"icon","href":"/favicon.svg","type":"image/svg+xml"}],["$","link",null,{"rel":"dns-prefetch","href":"https://jialeliu.com"}],["$","link",null,{"rel":"preconnect","href":"https://jialeliu.com","crossOrigin":""}],["$","link",null,{"rel":"preload","as":"font","type":"font/woff2","href":"https://jialeliu.com/fonts/georgiab.woff2","crossOrigin":""}],["$","script",null,{"dangerouslySetInnerHTML":{"__html":"\n              try {\n                const theme = localStorage.getItem('theme-storage');\n                const parsed = theme ? JSON.parse(theme) : null;\n                const setting = parsed?.state?.theme || 'light';\n                const effective = setting === 'dark' ? 'dark' : 'light';\n                var root = document.documentElement;\n                root.classList.remove('light', 'dark');\n                root.classList.add(effective);\n                root.setAttribute('data-theme', effective);\n              } catch (e) {\n                var root = document.documentElement;\n                root.classList.remove('light', 'dark');\n                root.classList.add('light');\n                root.setAttribute('data-theme', 'light');\n              }\n            "}}],["$","script",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}]]}],"$L3"]}]]}],{"children":["$L4",{"children":["$L5",{},null,false,null]},null,false,"$@6"]},null,false,null],"$L7",false]],"m":"$undefined","G":["$8",["$L9"]],"S":true,"h":null,"s":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"VRp2m6NXZNSTo9eW5Hom7"}
 a:I[94519,["/_next/static/chunks/0shfa0w7vx3ty.js","/_next/static/chunks/09.oixl_l63s~.js","/_next/static/chunks/0iw2vjq4a6d0m.js","/_next/static/chunks/0sn6qqg36~2tn.js"],"ThemeProvider"]
 b:I[71889,["/_next/static/chunks/0shfa0w7vx3ty.js","/_next/static/chunks/09.oixl_l63s~.js","/_next/static/chunks/0iw2vjq4a6d0m.js","/_next/static/chunks/0sn6qqg36~2tn.js"],"LocaleProvider"]
 c:I[28127,["/_next/static/chunks/0shfa0w7vx3ty.js","/_next/static/chunks/09.oixl_l63s~.js","/_next/static/chunks/0iw2vjq4a6d0m.js","/_next/static/chunks/0sn6qqg36~2tn.js"],"default"]
@@ -84,7 +84,7 @@ f:I[22016,["/_next/static/chunks/0shfa0w7vx3ty.js","/_next/static/chunks/09.oixl
 7:["$","$1","h",{"children":[null,["$","$L16",null,{"children":"$L17"}],["$","div",null,{"hidden":true,"children":["$","$L18",null,{"children":["$","$13",null,{"name":"Next.Metadata","children":"$L19"}]}]}],null]}]
 9:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/17~3kcg5l~mm4.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
 1a:I[21062,["/_next/static/chunks/0shfa0w7vx3ty.js","/_next/static/chunks/09.oixl_l63s~.js","/_next/static/chunks/0iw2vjq4a6d0m.js","/_next/static/chunks/0sn6qqg36~2tn.js","/_next/static/chunks/0pio9l_h4sf03.js","/_next/static/chunks/109g9m2a3hzoi.js"],"default"]
-1b:T3038,# 周靖人（Jasper）
+1b:T30b6,# 周靖人（Jasper）
 
 **爱丁堡大学 BSc (Hons) Mathematics**  
 **就读牛津大学 MSc in Mathematics and Foundations of Computer Science**（2026–2027）
@@ -268,6 +268,7 @@ f:I[22016,["/_next/static/chunks/0shfa0w7vx3ty.js","/_next/static/chunks/09.oixl
 
 ## 奖项与荣誉
 
+- **Napier Medal and Gangadhar Balwant Gadgil Prize**, 爱丁堡大学，2026。因四年级最杰出的学业表现获奖。
 - **United Kingdom Best Pairs Entry**, Simon Marais Mathematics Competition, 2025。与 Kevin Zhao 合作获得 West Division 英国最佳双人组成绩。
 - **专业第 3 / 年级前 5%**, 爱丁堡大学数学学院，2025。2024/25 学年排名为专业 3/24，年级 4/120。
 - **Kelland Memorial Prize**, University of Edinburgh, 2024。授予二年级直入数学学生中的优异表现者。
@@ -308,7 +309,7 @@ LaTeX、Overleaf、Git、GitHub、Microsoft Word、Excel、PowerPoint、Adobe Ph
 ## 推荐人
 
 可根据需要提供。
-1c:T357a,# Jingren Zhou (Jasper)
+1c:T3613,# Jingren Zhou (Jasper)
 
 **BSc (Hons) Mathematics, University of Edinburgh**  
 **MSc Student in Mathematics and Foundations of Computer Science, University of Oxford** *(2026–2027)*
@@ -491,6 +492,7 @@ I am preparing for research directions around **formalised mathematics**, **prog
 
 ## Awards and Distinctions
 
+- **Napier Medal and Gangadhar Balwant Gadgil Prize**, University of Edinburgh, 2026. Awarded for the most distinguished performance in the fourth year.
 - **United Kingdom Best Pairs Entry**, Simon Marais Mathematics Competition, 2025. Highest-scoring UK pairs entry in the West Division, achieved with Kevin Zhao.
 - **Top 3 in Programme / Top 5% in Year Group**, School of Mathematics, University of Edinburgh, 2025. Ranked 3rd out of 24 in programme and 4th out of 120 in year group for 2024/25.
 - **Kelland Memorial Prize**, University of Edinburgh, 2024. Awarded for distinguished performance as a direct entrant into second-year Mathematics.

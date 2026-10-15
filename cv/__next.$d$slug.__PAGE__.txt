@@ -2,7 +2,7 @@
 2:I[21062,["/_next/static/chunks/0shfa0w7vx3ty.js","/_next/static/chunks/09.oixl_l63s~.js","/_next/static/chunks/0iw2vjq4a6d0m.js","/_next/static/chunks/0sn6qqg36~2tn.js","/_next/static/chunks/0pio9l_h4sf03.js","/_next/static/chunks/109g9m2a3hzoi.js"],"default"]
 8:I[97367,["/_next/static/chunks/0shfa0w7vx3ty.js","/_next/static/chunks/09.oixl_l63s~.js","/_next/static/chunks/0iw2vjq4a6d0m.js","/_next/static/chunks/0sn6qqg36~2tn.js"],"OutletBoundary"]
 9:"$Sreact.suspense"
-3:T3038,# 周靖人（Jasper）
+3:T30b6,# 周靖人（Jasper）
 
 **爱丁堡大学 BSc (Hons) Mathematics**  
 **就读牛津大学 MSc in Mathematics and Foundations of Computer Science**（2026–2027）
@@ -186,6 +186,7 @@
 
 ## 奖项与荣誉
 
+- **Napier Medal and Gangadhar Balwant Gadgil Prize**, 爱丁堡大学，2026。因四年级最杰出的学业表现获奖。
 - **United Kingdom Best Pairs Entry**, Simon Marais Mathematics Competition, 2025。与 Kevin Zhao 合作获得 West Division 英国最佳双人组成绩。
 - **专业第 3 / 年级前 5%**, 爱丁堡大学数学学院，2025。2024/25 学年排名为专业 3/24，年级 4/120。
 - **Kelland Memorial Prize**, University of Edinburgh, 2024。授予二年级直入数学学生中的优异表现者。
@@ -226,7 +227,7 @@ LaTeX、Overleaf、Git、GitHub、Microsoft Word、Excel、PowerPoint、Adobe Ph
 ## 推荐人
 
 可根据需要提供。
-4:T357a,# Jingren Zhou (Jasper)
+4:T3613,# Jingren Zhou (Jasper)
 
 **BSc (Hons) Mathematics, University of Edinburgh**  
 **MSc Student in Mathematics and Foundations of Computer Science, University of Oxford** *(2026–2027)*
@@ -409,6 +410,7 @@ I am preparing for research directions around **formalised mathematics**, **prog
 
 ## Awards and Distinctions
 
+- **Napier Medal and Gangadhar Balwant Gadgil Prize**, University of Edinburgh, 2026. Awarded for the most distinguished performance in the fourth year.
 - **United Kingdom Best Pairs Entry**, Simon Marais Mathematics Competition, 2025. Highest-scoring UK pairs entry in the West Division, achieved with Kevin Zhao.
 - **Top 3 in Programme / Top 5% in Year Group**, School of Mathematics, University of Edinburgh, 2025. Ranked 3rd out of 24 in programme and 4th out of 120 in year group for 2024/25.
 - **Kelland Memorial Prize**, University of Edinburgh, 2024. Awarded for distinguished performance as a direct entrant into second-year Mathematics.
@@ -449,7 +451,7 @@ English: fluent.
 ## References
 
 Available upon request.
-0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"dataByLocale":{"zh":{"type":"text","config":{"type":"text","title":"简历","source":"cv.md"},"content":"$3"},"en":{"type":"text","config":{"type":"text","title":"CV","source":"cv.md"},"content":"$4"}},"defaultLocale":"en"}],["$L5","$L6"],"$L7"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"FHajsP56lj2xRB7jqi3RJ"}
+0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"dataByLocale":{"zh":{"type":"text","config":{"type":"text","title":"简历","source":"cv.md"},"content":"$3"},"en":{"type":"text","config":{"type":"text","title":"CV","source":"cv.md"},"content":"$4"}},"defaultLocale":"en"}],["$L5","$L6"],"$L7"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"VRp2m6NXZNSTo9eW5Hom7"}
 5:["$","script","script-0",{"src":"/_next/static/chunks/0pio9l_h4sf03.js","async":true}]
 6:["$","script","script-1",{"src":"/_next/static/chunks/109g9m2a3hzoi.js","async":true}]
 7:["$","$L8",null,{"children":["$","$9",null,{"name":"Next.MetadataOutlet","children":"$@a"}]}]
